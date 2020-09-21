@@ -34,23 +34,47 @@
   margin-right: 1.5vw;
 }
 
-#html-mobile #presentations h2 {
+#html-mobile #presentations {
+  padding-top: 10.3vw;
+  padding-bottom: 14vw;
+  background: #f6f6f6;
+}
+
+#html-mobile #presentations h2:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 6.3vw;
-  padding: 8.5vw;
+  padding-bottom: 10.2vw;
 }
 
 #html-mobile #presentations p:nth-child(2) {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: green;
+  font-size: 4.5vw;
+  color: #656565;
+  margin-bottom: 7.5vw;
 }
 
 #html-mobile #presentations p:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(couleur_primaire));
-  background: linear-gradient(#FF79DA, couleur_primaire);
+  border-radius: 10vw;
+  background-color: #9356D7;
+  padding: 4vw;
+  background: linear-gradient(175deg, #FF79DA, #9356D7);
+  -webkit-box-shadow: 3px 5px 7px silver;
+          box-shadow: 3px 5px 7px silver;
   color: red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: white;
+  font-size: 4vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+#html-mobile #principe {
+  padding-top: 6vw;
+  padding-bottom: 13vw;
 }
 
 img {
