@@ -1,0 +1,43 @@
+
+
+$couleur_primaire: #9356D7;
+$couleur_secondaire: #FF79DA;
+$couleur_tertiaire: #99E2D0;
+
+$font_logo: 'Shrikhand', cursive;
+$font_titre: 'Shrikhand', cursive;
+$font_texte: 'Shrikhand', cursive;
+
+$border_noire: 1px solid black;
+$border_vert: 1px solid green;
+$border_rouge: 1px solid red;
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+/* media querry valable pour smartphone*/
+
+
+body {
+    background-color: rgb(87, 83, 83);
+    color: white;
+}
+
+.global-starting {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-site {
+    color: $couleur_primaire;
+    font-size: 60px;
+    font-family: $font_texte;
+    text-align: center;
+    text-decoration: none;
+    border: $border_vert;
+    flex-grow: 1;
+}
+
+footer p {
+
+}
