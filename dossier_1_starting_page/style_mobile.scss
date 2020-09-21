@@ -12,32 +12,52 @@ $border_noire: 1px solid black;
 $border_vert: 1px solid green;
 $border_rouge: 1px solid red;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /* media querry valable pour smartphone*/
 
 
 body {
-    background-color: rgb(87, 83, 83);
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
-.global-starting {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
 
-#logo-site {
-    color: $couleur_primaire;
-    font-size: 60px;
-    font-family: $font_texte;
-    text-align: center;
-    text-decoration: none;
-    border: $border_vert;
-    flex-grow: 1;
-}
+@media screen and (max-width: 668px) {
 
-footer p {
+    .global-starting {
+        margin: auto;
+        width: 96%;
+        height:600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border: $border_rouge;
+        background-color: #3f3f3f;
+    }
 
+    header {
+        // border: $border_noire;
+        flex-grow: 1;
+        padding: 40% 0;
+    }
+
+    // footer { border: $border_noire; }
+
+    #logo-site {
+        color: $couleur_primaire;
+        font-size: 60px;
+        font-family: $font_texte;
+        text-align: center;
+        text-decoration: none;
+        // border: $border_vert;
+    }
+
+    // footer p {}
 }

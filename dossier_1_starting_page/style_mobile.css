@@ -1,29 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* media querry valable pour smartphone*/
 body {
-  background-color: #575353;
+  background-color: white;
   color: white;
 }
 
-.global-starting {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#logo-site {
-  color: #9356D7;
-  font-size: 60px;
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  text-decoration: none;
-  border: 1px solid green;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+@media screen and (max-width: 668px) {
+  .global-starting {
+    margin: auto;
+    width: 96%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3f3f3f;
+  }
+  header {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 40% 0;
+  }
+  #logo-site {
+    color: #9356D7;
+    font-size: 60px;
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=style_mobile.css.map */
