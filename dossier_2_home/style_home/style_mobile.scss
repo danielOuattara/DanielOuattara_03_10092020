@@ -3,13 +3,103 @@
 $couleur_primaire: #9356D7;
 $couleur_secondaire: #FF79DA;
 $couleur_tertiaire: #99E2D0;
+$white_background: #ffffff;
 $font_logo: 'Shrikhand', cursive;
 $font_titre: 'Shrikhand', cursive;
-$font_texte: 'Shrikhand', cursive;
+$font_texte: 'Roboto', sans-serif;
+$color_white: white;
+
+$font_weight_bold: bold;
+$font_weight_light: 300;
+
+$border_noire: 1px solid black;
+$border_vert: 1px solid green;
+$border_rouge: 1px solid red;
 
 
 // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /* media querry valable pour smartphone*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#html-mobile {
+    // width: 96%;
+    margin: auto;
+    text-align: center;
+
+
+        header #logo-site {
+            // width: 375px;
+            // height: 63px;
+            text-align: center;
+            font-family: $font-logo;
+            font-size: 7.5vw;
+            padding-top: 2.8vw;
+            padding-bottom: 1.6vw;
+   
+            background-color: $white_background;
+            // border: $border_noire
+        }
+
+    #localisation {
+        background:linear-gradient(#cfcfcf, 4%, #eaeaea);
+        font-family: $font_texte;
+        font-weight: 500;
+        font-size: 4.0vw;
+        padding: 3vw;
+    
+        .material-icons {
+            font-size: 5vw;
+            margin-right: 1.5vw;
+    
+        }
+    }
+
+
+        #presentations h2 {
+            font-family: $font_texte;
+            font-weight: $font_weight_bold;
+            font-size: 6.3vw;
+            padding: 8.5vw;
+        }
+
+        #presentations p:nth-child(2) {
+            font-family: $font_texte;
+            font-weight: $font_weight_light;
+            color: green;
+        }
+
+        #presentations p:nth-child(3) {
+            background: linear-gradient($couleur_secondaire, couleur_primaire);
+            color: red;
+        }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,58 @@
 /* media querry valable pour smartphone*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#html-mobile {
+  margin: auto;
+  text-align: center;
+}
+
+#html-mobile header #logo-site {
+  text-align: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 7.5vw;
+  padding-top: 2.8vw;
+  padding-bottom: 1.6vw;
+  background-color: #ffffff;
+}
+
+#html-mobile #localisation {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), color-stop(4%), to(#eaeaea));
+  background: linear-gradient(#cfcfcf, 4%, #eaeaea);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 4.0vw;
+  padding: 3vw;
+}
+
+#html-mobile #localisation .material-icons {
+  font-size: 5vw;
+  margin-right: 1.5vw;
+}
+
+#html-mobile #presentations h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6.3vw;
+  padding: 8.5vw;
+}
+
+#html-mobile #presentations p:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: green;
+}
+
+#html-mobile #presentations p:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(couleur_primaire));
+  background: linear-gradient(#FF79DA, couleur_primaire);
+  color: red;
+}
+
 img {
   width: 335px;
   height: 174px;
