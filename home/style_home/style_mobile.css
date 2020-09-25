@@ -11,16 +11,19 @@
   text-align: center;
 }
 
-#html-mobile header #logo-site {
+#html-mobile header .logo-site {
   text-align: center;
   font-family: "Shrikhand", cursive;
   font-size: 7.5vw;
   padding-top: 2.8vw;
   padding-bottom: 1.6vw;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 7px silver;
+          box-shadow: 0 10px 7px silver;
+  /* disfonctionne !!! */
 }
 
-#html-mobile #localisation {
+#html-mobile .localisation {
   background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), color-stop(4%), to(#eaeaea));
   background: linear-gradient(#cfcfcf, 4%, #eaeaea);
   font-family: "Roboto", sans-serif;
@@ -29,25 +32,25 @@
   padding: 3vw;
 }
 
-#html-mobile #localisation .material-icons {
+#html-mobile .localisation .material-icons {
   font-size: 5vw;
   margin-right: 1.5vw;
 }
 
-#html-mobile #presentations {
+#html-mobile .presentations {
   padding-top: 10.3vw;
   padding-bottom: 14vw;
   background: #f6f6f6;
 }
 
-#html-mobile #presentations h2:nth-child(1) {
+#html-mobile .presentations h2:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 6.3vw;
   padding-bottom: 10.2vw;
 }
 
-#html-mobile #presentations p:nth-child(2) {
+#html-mobile .presentations p:nth-child(2) {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 4.5vw;
@@ -55,7 +58,7 @@
   margin-bottom: 7.5vw;
 }
 
-#html-mobile #presentations p:nth-child(3) {
+#html-mobile .presentations p:nth-child(3) {
   border-radius: 10vw;
   background-color: #9356D7;
   padding: 4vw;
@@ -72,9 +75,33 @@
   font-weight: 500;
 }
 
-#html-mobile #principe {
-  padding-top: 6vw;
+#html-mobile .principe {
+  padding-top: 12.8vw;
   padding-bottom: 13vw;
+}
+
+#html-mobile .principe h2:nth-child(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6.3vw;
+  padding-left: 5vw;
+  text-align: left;
+  padding-bottom: 6.8vw;
+}
+
+#html-mobile .principe .utilisation-application {
+  background: #f6f6f6;
+  max-width: 85%;
+  margin: auto;
+  border-radius: 5vw;
+  padding: 5.1vw;
+  margin-bottom: 6vw;
+  -webkit-box-shadow: 3px 5px 7px silver;
+          box-shadow: 3px 5px 7px silver;
+}
+
+#html-mobile .principe .utilisation-application i.fas {
+  display: inline-block;
 }
 
 img {
