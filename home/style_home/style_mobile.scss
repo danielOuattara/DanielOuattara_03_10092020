@@ -27,7 +27,7 @@ $border_rouge: 1px solid red;
     font-family: $font_texte;
 }
 
-div.html-mobile {
+html {
     margin: auto;
     text-align: center;
 
@@ -38,7 +38,7 @@ div.html-mobile {
         padding-bottom: 0.5vw;
     }
 
-        header .logo-site {
+        header .logo {
             text-align: center;
             font-family: $font-logo;
             font-size: 7.5vw;
@@ -147,8 +147,7 @@ div.html-mobile {
             padding: 1vw 2vw;
             margin-right: 20px;
             display: inline-block;
-            position: relative;
-            // left: 10px;
+            // position: relative;
             border-radius: 50%;
             font-family: $font_texte;
             color: white;
@@ -177,7 +176,7 @@ div.html-mobile {
                 margin: auto;
                 border-radius: 4vw 4vw 0 0;
                 width: 85vw; 
-                height:auto;
+                height: auto;
             }
         }
 

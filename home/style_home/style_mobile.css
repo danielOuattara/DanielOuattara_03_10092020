@@ -7,19 +7,19 @@
   font-family: "Roboto", sans-serif;
 }
 
-div.html-mobile {
+html {
   margin: auto;
   text-align: center;
 }
 
-div.html-mobile header {
+html header {
   -webkit-box-shadow: 0 1vw 1vw #cfcfcf;
           box-shadow: 0 1vw 1vw #cfcfcf;
   margin-bottom: 1vw;
   padding-bottom: 0.5vw;
 }
 
-div.html-mobile header .logo-site {
+html header .logo {
   text-align: center;
   font-family: "Shrikhand", cursive;
   font-size: 7.5vw;
@@ -28,7 +28,7 @@ div.html-mobile header .logo-site {
   background-color: #ffffff;
 }
 
-div.html-mobile div.localisation {
+html div.localisation {
   background: #eaeaea;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -36,25 +36,25 @@ div.html-mobile div.localisation {
   padding: 3vw;
 }
 
-div.html-mobile div.localisation .material-icons {
+html div.localisation .material-icons {
   font-size: 5vw;
   margin-right: 1.5vw;
 }
 
-div.html-mobile section.presentations {
+html section.presentations {
   padding-top: 9.5vw;
   padding-bottom: 14vw;
   background: #f6f6f6;
 }
 
-div.html-mobile section.presentations h2:nth-child(1) {
+html section.presentations h2:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 6.3vw;
   padding-bottom: 10.2vw;
 }
 
-div.html-mobile section.presentations p:nth-child(2) {
+html section.presentations p:nth-child(2) {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 4.5vw;
@@ -62,7 +62,7 @@ div.html-mobile section.presentations p:nth-child(2) {
   margin-bottom: 7.5vw;
 }
 
-div.html-mobile section.presentations p:nth-child(3) {
+html section.presentations p:nth-child(3) {
   border-radius: 10vw;
   background-color: #9356D7;
   padding: 4vw;
@@ -79,13 +79,13 @@ div.html-mobile section.presentations p:nth-child(3) {
   font-weight: 500;
 }
 
-div.html-mobile section.explication {
+html section.explication {
   padding-top: 12.8vw;
   padding-bottom: 11vw;
   counter-reset: item;
 }
 
-div.html-mobile section.explication h2:nth-child(1) {
+html section.explication h2:nth-child(1) {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 6.3vw;
@@ -94,7 +94,7 @@ div.html-mobile section.explication h2:nth-child(1) {
   padding-bottom: 6.8vw;
 }
 
-div.html-mobile section.explication div.explication-application {
+html section.explication div.explication-application {
   background: #f6f6f6;
   max-width: 85%;
   margin: auto;
@@ -108,20 +108,19 @@ div.html-mobile section.explication div.explication-application {
   font-weight: 500;
 }
 
-div.html-mobile section.explication div.explication-application .icons-explication {
+html section.explication div.explication-application .icons-explication {
   margin-right: 20px;
   color: grey;
   font-size: 20px;
 }
 
-div.html-mobile section.explication div.explication-application::before {
+html section.explication div.explication-application::before {
   counter-increment: item;
   content: counter(item);
   background: grey;
   padding: 1vw 2vw;
   margin-right: 20px;
   display: inline-block;
-  position: relative;
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -130,19 +129,19 @@ div.html-mobile section.explication div.explication-application::before {
   background: #9356D7;
 }
 
-div.html-mobile section.nos-restaurants {
+html section.nos-restaurants {
   background: #f6f6f6;
   padding-top: 15vw;
   text-align: left;
 }
 
-div.html-mobile section.nos-restaurants h2 {
+html section.nos-restaurants h2 {
   text-align: left;
   margin-left: 5vw;
   padding-bottom: 5vw;
 }
 
-div.html-mobile section.nos-restaurants div.contenaires-image img {
+html section.nos-restaurants div.contenaires-image img {
   display: block;
   margin: auto;
   border-radius: 4vw 4vw 0 0;
@@ -150,7 +149,7 @@ div.html-mobile section.nos-restaurants div.contenaires-image img {
   height: auto;
 }
 
-div.html-mobile section.nos-restaurants div.contenaires-nom-ville {
+html section.nos-restaurants div.contenaires-nom-ville {
   padding: 5vw;
   margin: auto;
   background: white;
@@ -159,12 +158,12 @@ div.html-mobile section.nos-restaurants div.contenaires-nom-ville {
   margin-bottom: 5vw;
 }
 
-div.html-mobile section.nos-restaurants div.contenaires-nom-ville .ville {
+html section.nos-restaurants div.contenaires-nom-ville .ville {
   font-weight: 300;
   padding-top: 5px;
 }
 
-div.html-mobile footer {
+html footer {
   margin-top: 15vw;
   background: #353535;
   padding: 5vw 5vw 5vw 15vw;
@@ -172,12 +171,12 @@ div.html-mobile footer {
   line-height: 1.8;
 }
 
-div.html-mobile footer h3 {
+html footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
 }
 
-div.html-mobile footer .icons-footer {
+html footer .icons-footer {
   font-size: 14px;
   margin-right: 10px;
 }
