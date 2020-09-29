@@ -13,10 +13,8 @@
 $couleur_primaire: #9356D7;
 $couleur_secondaire: #FF79DA;
 $couleur_tertiaire: #99E2D0;
-$white_background: #ffffff;
 $font_texte: 'Roboto', sans-serif;
-$font_logo: 'Shrikhand', cursive;
-$font_titre: 'Shrikhand', cursive;
+$font_logo_titre: 'Shrikhand', cursive;
 
 $font_weight_bold: bold;
 $font_weight_light: 300;
@@ -42,193 +40,194 @@ $border_rouge: 1px solid red;
 
 
 header {
-    box-shadow: 0 1vw 1vw #cfcfcf;
+    box-shadow: 0 0.75vw 0.75vw #cfcfcf;
     margin-bottom: 1vw;
     padding-bottom: 0.5vw;
-    font-family: $font_logo;
-
-    header h2.logo {
-        text-align: center;
+    
+    h2.logo {
+        font-family: $font_logo_titre;
         font-size: 7.5vw;
         padding-top: 2.8vw;
         padding-bottom: 1.6vw;
-
-        background-color: $white_background;
+        background-color: rgb(255, 255, 255);
     }
 }
 
 
+main {
 
+    aside {
+    
 
-  
-
-    // div.localisation {
-    //     background:#eaeaea;
-    //     font-family: $font_texte;
-    //     font-weight: 500;
-    //     font-size: 4.0vw;
-    //     padding: 3vw;
-        
-    //     .material-icons {
-    //         font-size: 5vw;
-    //         margin-right: 1.5vw;
-    //     }
-    // }
-
-    // section.presentations {
-
-    //     padding-top: 9.5vw;
-    //     padding-bottom: 14vw;
-    //     background: #f6f6f6 ;
-    //     // border: $border_noire;
-
-    //      h2:nth-child(1) {
-    //         font-family: $font_texte;
-    //         font-weight: $font_weight_bold;
-    //         font-size: 6.3vw;
-    //         padding-bottom: 10.2vw;
-    //         // border: $border_noire;
-    //     }
-
-    //      p:nth-child(2) {
-    //         font-family: $font_texte;
-    //         font-weight: $font_weight_light;
-    //         // padding-left: 1vw;
-    //         // padding-right: 1vw;
-    //         font-size: 4.5vw;
-    //         color: #656565;
-    //         // border: $border_noire;
-    //         margin-bottom: 7.5vw;
+        section.geolocalisation {
+            background:#eaeaea;
+            font-family: $font_texte;
+            // font-weight: 400;
+            font-size: 2.7vw;
+            padding: 3vw;
             
-    //     }
+            .material-icons {
+                font-size: 5vw;
+                margin-right: 3vw;
+            }
+        }
 
-    //      p:nth-child(3) {
-    //         border-radius: 10vw;
-    //         background-color: $couleur_primaire;
-    //         padding: 4vw;
-    //         background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
-    //         box-shadow: 3px 5px 7px rgb(192, 192, 192);
-    //         color: red;
-    //         margin-left: auto;
-    //         margin-right: auto;
-    //         width: 60%;
-    //         color: white;
-    //         font-size: 4vw;
-    //         font-family: $font_texte;
-    //         font-weight: $font_weight_medium
+        section.presentations {
 
-    //     }
-    // }
+            padding-top: 9.5vw;
+            padding-bottom: 14vw;
+            background: #f6f6f6 ;
+            // border: $border_noire;
 
-    // section.explication {
-    //     padding-top: 12.8vw;
-    //     padding-bottom: 11vw;
-    //     counter-reset: item;
-        
+            h2:nth-child(1) {
+                font-family: $font_texte;
+                font-weight: $font_weight_bold;
+                font-size: 6.3vw;
+                padding-bottom: 10.2vw;
+                // border: $border_noire;
+            }
 
-    //     h2:nth-child(1) {
-    //         font-family: $font_texte;
-    //         font-weight: $font_weight_bold;
-    //         font-size: 6.3vw;
-    //         padding-left: 5vw;
-    //         text-align: left; 
-    //         padding-bottom: 6.8vw;           
-    //     }
+            p:nth-child(2) {
+                font-family: $font_texte;
+                font-weight: $font_weight_light;
+                // padding-left: 1vw;
+                // padding-right: 1vw;
+                font-size: 4.5vw;
+                color: #656565;
+                // border: $border_noire;
+                margin-bottom: 7.5vw;
+                
+            }
 
-    //     div.explication-application {
-    //         background: #f6f6f6;
-    //         max-width: 85%;
-    //         margin: auto;
-    //         border-radius: 5vw;
-    //         padding: 4vw;
-    //         margin-bottom: 6vw;
-    //         box-shadow: 5px 7px 7px rgb(230, 230, 230);
-    //         font-family: $font_texte;
-    //         font-size: 4vw;
-    //         font-weight: $font_weight_medium;
+            p:nth-child(3) {
+                border-radius: 10vw;
+                background-color: $couleur_primaire;
+                padding: 4vw;
+                background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                box-shadow: 3px 5px 7px rgb(192, 192, 192);
+                color: red;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                color: white;
+                font-size: 4vw;
+                font-family: $font_texte;
+                font-weight: $font_weight_medium
+            }
+        }
 
-    //         .icons-explication {
-    //             margin-right: 20px;
-    //             color: grey;
-    //             font-size: 20px;
-    //         }
+        section.mode-emploi {
+            padding-top: 12.8vw;
+            padding-bottom: 11vw;
+            counter-reset: item;
             
-    //     }
-    //     div.explication-application::before {
-    //         counter-increment: item;
-    //         content: counter(item) ;
-    //         background: grey;
-    //         padding: 1vw 2vw;
-    //         margin-right: 20px;
-    //         display: inline-block;
-    //         // position: relative;
-    //         border-radius: 50%;
-    //         font-family: $font_texte;
-    //         color: white;
-    //         font-size: 3.5vw;
-    //         font-weight: $font_weight_light;
-    //         background: $couleur_primaire;
-    //     }
-    // }
+            h2:nth-child(1) {
+                font-family: $font_texte;
+                font-weight: $font_weight_bold;
+                font-size: 6.3vw;
+                padding-left: 5vw;
+                text-align: left; 
+                padding-bottom: 6.8vw;           
+            }
 
-    // section.nos-restaurants {
-    //     // background: #333;
-    //     background: #f6f6f6 ;
-    //     padding-top: 15vw;
-    //     text-align: left;
+            div.mode-emploi-application {
+                background: #f6f6f6;
+                max-width: 85%;
+                margin: auto;
+                border-radius: 5vw;
+                padding: 4vw;
+                margin-bottom: 6vw;
+                box-shadow: 5px 7px 7px rgb(230, 230, 230);
+                font-family: $font_texte;
+                font-size: 4vw;
+                font-weight: $font_weight_medium;
 
-    //     h2 {
-    //         text-align: left;
-    //         margin-left: 5vw;
-    //         padding-bottom: 5vw;
-    //     }
+                .icons-mode-emploi {
+                    margin-right: 20px;
+                    color: grey;
+                    font-size: 20px;
+                }
+                
+            }
+            div.mode-emploi-application::before {
+                counter-increment: item;
+                content: counter(item) ;
+                background: grey;
+                padding: 1vw 2vw;
+                margin-right: 20px;
+                display: inline-block;
+                // position: relative;
+                border-radius: 50%;
+                font-family: $font_texte;
+                color: white;
+                font-size: 3.5vw;
+                font-weight: $font_weight_light;
+                background: $couleur_primaire;
+            }
+        }
+    }
+}
 
-    //     div.contenaires-image {
+    nav {
 
-    //         img {
-    //             display: block;
-    //             margin: auto;
-    //             border-radius: 4vw 4vw 0 0;
-    //             width: 85vw; 
-    //             height: auto;
-    //         }
-    //     }
+        .nos-restaurants {
+            // background: #333;
+            background: #f6f6f6 ;
+            padding-top: 15vw;
+            text-align: left;
 
-    //     div.contenaires-nom-ville {
-    //         padding: 5vw;
-    //         margin: auto;
-    //         background: white;
-    //         border-radius: 0 0 4vw 4vw;
-    //         width: 85vw;
-    //         margin-bottom: 5vw;
+            h2 {
+                text-align: left;
+                margin-left: 5vw;
+                padding-bottom: 5vw;
+            }
 
-    //         .ville {
-    //             font-weight: $font_weight_light;
-    //             padding-top: 5px;
-    //         }
-    //     }
-    // }
+                div.contenaires-image {
 
+                    img {
+                        display: block;
+                        margin: auto;
+                        border-radius: 4vw 4vw 0 0;
+                        width: 85vw; 
+                        height: auto;
+                    }
+                }
 
-    // footer {
-    //     text-align: left;
-    //     margin-top: 15vw;
-    //     background: #353535;
-    //     padding: 5vw 5vw 5vw 5vw;
-    //     color: white;
-    //     line-height: 1.8;
+                div.contenaires-nom-ville {
+                    padding: 5vw;
+                    margin: auto;
+                    background: white;
+                    border-radius: 0 0 4vw 4vw;
+                    width: 85vw;
+                    margin-bottom: 5vw;
 
-    //     h3 {
-    //         font-family: $font-logo ;
-    //         font-weight: $font_weight_medium;
-    //     }
+                    .ville {
+                        font-weight: $font_weight_light;
+                        padding-top: 5px;
+                    }
+                }
+    }
+}
 
-    //     .icons-footer {
-    //         font-size: 14px;
-    //         margin-right: 10px;
-    //     }
-    // }
+footer {
+    text-align: left;
+    margin-top: 15vw;
+    background: #353535;
+    padding: 5vw 5vw 5vw 5vw;
+    color: white;
+    line-height: 1.8;
 
+    h2 {
+        font-family: $font_logo_titre ;
+        font-weight: $font_weight_medium;
+    }
+
+    .icons-footer {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+    
 
 
 
