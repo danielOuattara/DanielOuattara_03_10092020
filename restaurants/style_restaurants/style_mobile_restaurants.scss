@@ -1,41 +1,47 @@
+@media all and (max-width: 768px) {
+
+    $couleur_primaire: #9356D7;
+    $couleur_secondaire: #FF79DA;
+    $couleur_tertiaire: #99E2D0;
+    $font_texte: 'Roboto', sans-serif;
+    $font_logo_titre: 'Shrikhand', cursive;
+
+    $font_weight_bold: bold;
+    $font_weight_light: 300;
+    $font_weight_medium: 500;
+
+    $border_noire: 1px solid black;
+    $border_vert: 1px solid green;
+    $border_rouge: 1px solid red;
 
 
-$couleur_primaire: #9356D7;
-$couleur_secondaire: #FF79DA;
-$couleur_tertiaire: #99E2D0;
-$font_logo: 'Shrikhand', cursive;
-$font_titre: 'Shrikhand', cursive;
-$font_texte: 'Shrikhand', cursive;
-
-
-// @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-/* media querry valable pour smartphone*/
+    // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+    /* media querry valable pour smartphone*/
 
 
 
-
-footer {
-    text-align: left;
-    margin-top: 15vw;
-    background: #353535;
-    padding: 5vw 5vw 5vw 5vw;
-    color: white;
-    line-height: 1.8;
-
-    h2 {
-        font-family: $font_logo_titre ;
-        font-weight: $font_weight_medium;
-    }
-
-    .icons-footer {
-        font-size: 3vw;
-        padding-right: 5vw;
-        width: 4vw;
-    }
-
-    .contact-email{
-        text-decoration: none;
+    footer {
+        text-align: left;
+        margin-top: 15vw;
+        background: #353535;
+        padding: 5vw 5vw 5vw 5vw;
         color: white;
+        line-height: 1.8;
+
+        h2 {
+            font-family: $font_logo_titre ;
+            font-weight: $font_weight_medium;
+        }
+
+        .icons-footer {
+            font-size: 3vw;
+            padding-right: 5vw;
+            width: 4vw;
+        }
+
+        .contact-email{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
-    

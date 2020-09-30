@@ -1,6 +1,25 @@
-/* media querry valable pour smartphone*/
-img {
-  width: 335px;
-  height: 174px;
+@media all and (max-width: 768px) {
+  /* media querry valable pour smartphone*/
+  footer {
+    text-align: left;
+    margin-top: 15vw;
+    background: #353535;
+    padding: 5vw 5vw 5vw 5vw;
+    color: white;
+    line-height: 1.8;
+  }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+  }
+  footer .icons-footer {
+    font-size: 3vw;
+    padding-right: 5vw;
+    width: 4vw;
+  }
+  footer .contact-email {
+    text-decoration: none;
+    color: white;
+  }
 }
 /*# sourceMappingURL=style_mobile_restaurants.css.map */

@@ -1,91 +1,75 @@
 
+@media screen and (min-width: 1200px) { 
+    // @font-face {
+    //     font-family:'Roboto';
+    //     src: url(./../../fonts/Roboto/Roboto-Regular.ttf);
+    // }
+    // @font-face {
+    //     font-family: 'Shrikhand';
+    //     src: url(./../../fonts/Shrikhand/Shrikhand-Regular.ttf);
+    // }
 
-// @font-face {
-//     font-family:'Roboto';
-//     src: url(./../../fonts/Roboto/Roboto-Regular.ttf);
-// }
-// @font-face {
-//     font-family: 'Shrikhand';
-//     src: url(./../../fonts/Shrikhand/Shrikhand-Regular.ttf);
-// }
-
-
-$couleur_primaire: #9356D7;
-$couleur_secondaire: #FF79DA;
-$couleur_tertiaire: #99E2D0;
-$font_texte: 'Roboto', sans-serif;
-$font_logo_titre: 'Shrikhand', cursive;
-
-$font_weight_bold: bold;
-$font_weight_light: 300;
-$font_weight_medium: 500;
-
-$border_noire: 1px solid black;
-$border_vert: 1px solid green;
-$border_rouge: 1px solid red;
+    // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+    /* media querry valable pour smartphone*/
 
 
-// @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-/* media querry valable pour smartphone*/
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    // font-family: $font_texte;
-    // margin: auto;
-    // // text-align: center;
-}
-
-header {
-    margin-bottom: 1vw;
-    padding-bottom: 0.5vw;
-    text-align: center;
-
-    .fa-arrow-left {
-        font-size: 5vw;
-        float: left;
-        margin-left: 5.5vw;
-        margin-top: 5.5vw;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        // font-family: $font_texte;
+        // margin: auto;
+        // // text-align: center;
     }
+
+    header {
+        margin-bottom: 1vw;
+        padding-bottom: 0.5vw;
+        text-align: center;
+
+        .fa-arrow-left {
+            font-size: 5vw;
+            float: left;
+            margin-left: 5.5vw;
+            margin-top: 5.5vw;
+        }
+        
+        h2.logo {
+            font-family: $font_logo_titre;
+            font-size: 7.5vw;
+            padding-top: 2.8vw;
+            padding-bottom: 1.6vw;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    main {}
     
-    h2.logo {
-        font-family: $font_logo_titre;
-        font-size: 7.5vw;
-        padding-top: 2.8vw;
-        padding-bottom: 1.6vw;
-        background-color: rgb(255, 255, 255);
+    footer {
+        text-align: left;
+        margin-top: 15vw;
+        background: #353535;
+        padding: 5vw 5vw 5vw 5vw;
+        color: white;
+        line-height: 1.8;
+
+        h2 {
+            font-family: $font_logo_titre ;
+            font-weight: $font_weight_medium;
+        }
+
+        .icons-footer {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .contact-mail:hover {
+            cursor: pointer;
+
+        }
+
     }
 }
-
-main {}
-   
-footer {
-    text-align: left;
-    margin-top: 15vw;
-    background: #353535;
-    padding: 5vw 5vw 5vw 5vw;
-    color: white;
-    line-height: 1.8;
-
-    h2 {
-        font-family: $font_logo_titre ;
-        font-weight: $font_weight_medium;
-    }
-
-    .icons-footer {
-        font-size: 14px;
-        margin-right: 10px;
-    }
-
-    .contact-mail:hover {
-        cursor: pointer;
-
-    }
-
-}
-
 
     
 

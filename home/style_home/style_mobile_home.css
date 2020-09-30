@@ -1,202 +1,179 @@
-/* media querry valable pour smartphone*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  margin: auto;
-}
-
-header {
-  -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
-          box-shadow: 0 0.75vw 0.75vw #cfcfcf;
-  margin-bottom: 1vw;
-  padding-bottom: 0.5vw;
-  text-align: center;
-}
-
-header h2.logo {
-  font-family: "Shrikhand", cursive;
-  font-size: 7.5vw;
-  padding-top: 2.8vw;
-  padding-bottom: 1.6vw;
-  background-color: white;
-}
-
-main aside section.geolocalisation {
-  background: #eaeaea;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.7vw;
-  padding: 3vw;
-  text-align: center;
-}
-
-main aside section.geolocalisation .material-icons {
-  font-size: 5vw;
-  margin-right: 3vw;
-}
-
-main aside section.presentations {
-  padding-top: 9.5vw;
-  padding-bottom: 14vw;
-  background: #f6f6f6;
-  text-align: center;
-}
-
-main aside section.presentations h2:nth-child(1) {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 6.3vw;
-  padding-bottom: 10.2vw;
-}
-
-main aside section.presentations p:nth-child(2) {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 4.5vw;
-  color: #656565;
-  margin-bottom: 7.5vw;
-}
-
-main aside section.presentations p:nth-child(3) {
-  border-radius: 10vw;
-  background-color: #9356D7;
-  padding: 4vw;
-  background: linear-gradient(175deg, #FF79DA, #9356D7);
-  -webkit-box-shadow: 3px 5px 7px silver;
-          box-shadow: 3px 5px 7px silver;
-  color: red;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  color: white;
-  font-size: 4vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-main aside section.mode-emploi {
-  padding-top: 12.8vw;
-  padding-bottom: 11vw;
-  counter-reset: item;
-}
-
-main aside section.mode-emploi h2:nth-child(1) {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 6.3vw;
-  padding-left: 5vw;
-  text-align: left;
-  padding-bottom: 6.8vw;
-}
-
-main aside section.mode-emploi div.mode-emploi-application {
-  background: #f6f6f6;
-  max-width: 85%;
-  margin: auto;
-  border-radius: 5vw;
-  padding: 4vw;
-  margin-bottom: 6vw;
-  -webkit-box-shadow: 5px 7px 7px #e6e6e6;
-          box-shadow: 5px 7px 7px #e6e6e6;
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  font-weight: 500;
-}
-
-main aside section.mode-emploi div.mode-emploi-application .icons-mode-emploi {
-  margin-right: 20px;
-  color: grey;
-  font-size: 20px;
-}
-
-main aside section.mode-emploi div.mode-emploi-application::before {
-  counter-increment: item;
-  content: counter(item);
-  background: grey;
-  padding: 1vw 2vw;
-  margin-right: 20px;
-  display: inline-block;
-  border-radius: 50%;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  font-size: 3.5vw;
-  font-weight: 300;
-  background: #9356D7;
-}
-
-main nav.nos-restaurants {
-  background: #f6f6f6;
-  padding-top: 15vw;
-  text-align: left;
-}
-
-main nav.nos-restaurants h2 {
-  text-align: left;
-  margin-left: 5vw;
-  padding-bottom: 5vw;
-}
-
-main nav.nos-restaurants div.contenaires-image img {
-  display: block;
-  margin: auto;
-  border-radius: 4vw 4vw 0 0;
-  width: 85vw;
-  height: auto;
-}
-
-main nav.nos-restaurants div.contenaires-nom-ville {
-  padding: 5vw;
-  margin: auto;
-  background: white;
-  border-radius: 0 0 4vw 4vw;
-  width: 85vw;
-  margin-bottom: 5vw;
-}
-
-main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o {
-  font-size: 6vw;
-  float: right;
-  position: relative;
-  bottom: 3vw;
-}
-
-main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:hover {
-  cursor: pointer;
-}
-
-main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:active {
-  background-color: #9356D7;
-}
-
-main nav.nos-restaurants div.contenaires-nom-ville .ville {
-  font-weight: 300;
-  padding-top: 5px;
-}
-
-footer {
-  text-align: left;
-  margin-top: 15vw;
-  background: #353535;
-  padding: 5vw 5vw 5vw 5vw;
-  color: white;
-  line-height: 1.8;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 500;
-}
-
-footer .icons-footer {
-  font-size: 3vw;
-  padding-right: 5vw;
-  width: 4vw;
-}
-
-footer .contact-email {
-  text-decoration: none;
-  color: white;
+@media all and (max-width: 768px) {
+  /* media querry valable pour smartphone*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+  }
+  header {
+    -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+            box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+    margin-bottom: 1vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+  }
+  header h2.logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 7.5vw;
+    padding-top: 2.8vw;
+    padding-bottom: 1.6vw;
+    background-color: white;
+  }
+  main aside section.geolocalisation {
+    background: #eaeaea;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.7vw;
+    padding: 3vw;
+    text-align: center;
+  }
+  main aside section.geolocalisation .material-icons {
+    font-size: 5vw;
+    margin-right: 3vw;
+  }
+  main aside section.presentations {
+    padding-top: 9.5vw;
+    padding-bottom: 14vw;
+    background: #f6f6f6;
+    text-align: center;
+  }
+  main aside section.presentations h2:nth-child(1) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 6.3vw;
+    padding-bottom: 10.2vw;
+  }
+  main aside section.presentations p:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 4.5vw;
+    color: #656565;
+    margin-bottom: 7.5vw;
+  }
+  main aside section.presentations p:nth-child(3) {
+    border-radius: 10vw;
+    background-color: #9356D7;
+    padding: 4vw;
+    background: linear-gradient(175deg, #FF79DA, #9356D7);
+    -webkit-box-shadow: 3px 5px 7px silver;
+            box-shadow: 3px 5px 7px silver;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    color: white;
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  main aside section.mode-emploi {
+    padding-top: 12.8vw;
+    padding-bottom: 11vw;
+    counter-reset: item;
+  }
+  main aside section.mode-emploi h2:nth-child(1) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 6.3vw;
+    padding-left: 5vw;
+    text-align: left;
+    padding-bottom: 6.8vw;
+  }
+  main aside section.mode-emploi div.mode-emploi-application {
+    background: #f6f6f6;
+    max-width: 85%;
+    margin: auto;
+    border-radius: 5vw;
+    padding: 4vw;
+    margin-bottom: 6vw;
+    -webkit-box-shadow: 5px 7px 7px #e6e6e6;
+            box-shadow: 5px 7px 7px #e6e6e6;
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  main aside section.mode-emploi div.mode-emploi-application .icons-mode-emploi {
+    margin-right: 20px;
+    color: grey;
+    font-size: 20px;
+  }
+  main aside section.mode-emploi div.mode-emploi-application::before {
+    counter-increment: item;
+    content: counter(item);
+    background: grey;
+    padding: 1vw 2vw;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 300;
+    background: #9356D7;
+  }
+  main nav.nos-restaurants {
+    background: #f6f6f6;
+    padding-top: 15vw;
+    text-align: left;
+  }
+  main nav.nos-restaurants h2 {
+    text-align: left;
+    margin-left: 5vw;
+    padding-bottom: 5vw;
+  }
+  main nav.nos-restaurants div.contenaires-image img {
+    display: block;
+    margin: auto;
+    border-radius: 4vw 4vw 0 0;
+    width: 85vw;
+    height: auto;
+  }
+  main nav.nos-restaurants div.contenaires-nom-ville {
+    padding: 5vw;
+    margin: auto;
+    background: white;
+    border-radius: 0 0 4vw 4vw;
+    width: 85vw;
+    margin-bottom: 5vw;
+  }
+  main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o {
+    font-size: 6vw;
+    float: right;
+    position: relative;
+    bottom: 3vw;
+  }
+  main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:hover {
+    cursor: pointer;
+  }
+  main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:active {
+    background-color: #9356D7;
+  }
+  main nav.nos-restaurants div.contenaires-nom-ville .ville {
+    font-weight: 300;
+    padding-top: 5px;
+  }
+  footer {
+    text-align: left;
+    margin-top: 15vw;
+    background: #353535;
+    padding: 5vw 5vw 5vw 5vw;
+    color: white;
+    line-height: 1.8;
+  }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+  }
+  footer .icons-footer {
+    font-size: 3vw;
+    padding-right: 5vw;
+    width: 4vw;
+  }
+  footer .contact-email {
+    text-decoration: none;
+    color: white;
+  }
 }
 /*# sourceMappingURL=style_mobile_home.css.map */

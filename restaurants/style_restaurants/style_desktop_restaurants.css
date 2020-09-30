@@ -1,52 +1,47 @@
-/* media querry valable pour smartphone*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-header {
-  margin-bottom: 1vw;
-  padding-bottom: 0.5vw;
-  text-align: center;
-}
-
-header .fa-arrow-left {
-  font-size: 5vw;
-  float: left;
-  margin-left: 5.5vw;
-  margin-top: 5.5vw;
-}
-
-header h2.logo {
-  font-family: "Shrikhand", cursive;
-  font-size: 7.5vw;
-  padding-top: 2.8vw;
-  padding-bottom: 1.6vw;
-  background-color: white;
-}
-
-footer {
-  text-align: left;
-  margin-top: 15vw;
-  background: #353535;
-  padding: 5vw 5vw 5vw 5vw;
-  color: white;
-  line-height: 1.8;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 500;
-}
-
-footer .icons-footer {
-  font-size: 14px;
-  margin-right: 10px;
-}
-
-footer .contact-mail:hover {
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  /* media querry valable pour smartphone*/
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header {
+    margin-bottom: 1vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+  }
+  header .fa-arrow-left {
+    font-size: 5vw;
+    float: left;
+    margin-left: 5.5vw;
+    margin-top: 5.5vw;
+  }
+  header h2.logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 7.5vw;
+    padding-top: 2.8vw;
+    padding-bottom: 1.6vw;
+    background-color: white;
+  }
+  footer {
+    text-align: left;
+    margin-top: 15vw;
+    background: #353535;
+    padding: 5vw 5vw 5vw 5vw;
+    color: white;
+    line-height: 1.8;
+  }
+  footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+  }
+  footer .icons-footer {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  footer .contact-mail:hover {
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style_desktop_restaurants.css.map */

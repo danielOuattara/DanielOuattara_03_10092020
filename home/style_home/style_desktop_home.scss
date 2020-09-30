@@ -1,1 +1,22 @@
-@media screen and (max-width: 1200px) {}
+@media all and (min-width: 1200px) {
+
+
+    header {
+        box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+        margin-bottom: 1vw;
+        padding-bottom: 0.5vw;
+        text-align: center;
+        
+        h2.logo {
+            font-family: $font_logo_titre;
+            font-size:5vw;
+            padding-top: 2.8vw;
+            padding-bottom: 1.6vw;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+
+
+
+}
