@@ -35,14 +35,14 @@ $border_rouge: 1px solid red;
     box-sizing: border-box;
     font-family: $font_texte;
     margin: auto;
-    text-align: center;
+    // // text-align: center;
 }
-
 
 header {
     box-shadow: 0 0.75vw 0.75vw #cfcfcf;
     margin-bottom: 1vw;
     padding-bottom: 0.5vw;
+    text-align: center;
     
     h2.logo {
         font-family: $font_logo_titre;
@@ -53,18 +53,16 @@ header {
     }
 }
 
-
 main {
-
     aside {
-    
-
         section.geolocalisation {
             background:#eaeaea;
             font-family: $font_texte;
             // font-weight: 400;
             font-size: 2.7vw;
             padding: 3vw;
+            text-align: center;
+
             
             .material-icons {
                 font-size: 5vw;
@@ -73,30 +71,24 @@ main {
         }
 
         section.presentations {
-
             padding-top: 9.5vw;
             padding-bottom: 14vw;
             background: #f6f6f6 ;
-            // border: $border_noire;
+            text-align: center;
 
             h2:nth-child(1) {
                 font-family: $font_texte;
                 font-weight: $font_weight_bold;
                 font-size: 6.3vw;
                 padding-bottom: 10.2vw;
-                // border: $border_noire;
             }
 
             p:nth-child(2) {
                 font-family: $font_texte;
                 font-weight: $font_weight_light;
-                // padding-left: 1vw;
-                // padding-right: 1vw;
                 font-size: 4.5vw;
                 color: #656565;
-                // border: $border_noire;
-                margin-bottom: 7.5vw;
-                
+                margin-bottom: 7.5vw;  
             }
 
             p:nth-child(3) {
@@ -147,8 +139,8 @@ main {
                     color: grey;
                     font-size: 20px;
                 }
-                
             }
+            
             div.mode-emploi-application::before {
                 counter-increment: item;
                 content: counter(item) ;
@@ -166,11 +158,8 @@ main {
             }
         }
     }
-}
 
-    nav {
-
-        .nos-restaurants {
+    nav.nos-restaurants {
             // background: #333;
             background: #f6f6f6 ;
             padding-top: 15vw;
@@ -201,6 +190,22 @@ main {
                     width: 85vw;
                     margin-bottom: 5vw;
 
+                    .fa-heart-o {
+                        font-size: 6vw;
+                        float: right;
+                        position: relative;
+                        bottom: 3vw;
+                    }
+
+                    .fa-heart-o:hover {
+                        cursor: pointer;
+                    }  
+
+                    .fa-heart-o:active {
+                        background-color: #9356D7;;
+                    }         
+
+
                     .ville {
                         font-weight: $font_weight_light;
                         padding-top: 5px;
@@ -223,8 +228,14 @@ footer {
     }
 
     .icons-footer {
-        font-size: 14px;
-        margin-right: 10px;
+        font-size: 3vw;
+        padding-right: 5vw;
+        width: 4vw;
+    }
+
+    .contact-email{
+        text-decoration: none;
+        color: white;
     }
 }
     

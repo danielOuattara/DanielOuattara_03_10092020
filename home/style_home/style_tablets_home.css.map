@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "style_desktop.scss"
+        "style_tablets_home.scss"
     ],
     "names": [],
-    "file": "style_desktop.css"
+    "file": "style_tablets_home.css"
 }

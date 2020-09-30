@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAWA,yCAAyC;AAKzC,AAAA,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAC,KAAK;CACf",
     "sources": [
-        "style_mobile.scss"
+        "style_mobile_restaurants.scss"
     ],
     "names": [],
-    "file": "style_mobile.css"
+    "file": "style_mobile_restaurants.css"
 }

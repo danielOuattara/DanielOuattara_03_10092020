@@ -6,13 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ca4bf7488.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style_home/style_mobile.css">
-    <link rel="stylesheet" href="./style_home/style_tablets.css">
-    <link rel="stylesheet" href="./style_home/style_desktop.css">
+    <link rel="stylesheet" href="./style_home/style_mobile_home.css">
+    <link rel="stylesheet" href="./style_home/style_tablets_home.css">
+    <link rel="stylesheet" href="./style_home/style_desktop_home.css">
     <title>ohmyfood - HOME</title>
 </head>
 <body>
-    
     <header>
         <h2 class="logo"> ohmyfood</h2>
     </header>
@@ -30,9 +29,7 @@
             </section>
     
             <section class="mode-emploi">
-    
                 <h2>Comment utiliser</h2>
-
                 <div class="mode-emploi-application choix-restaurant">
                     <i class='fas fa-mobile-alt icons-mode-emploi'></i>
                     <p>Choississez un restaurant</p>
@@ -46,74 +43,80 @@
             </section>
         </aside>
 
-        
-        <nav>
-            <h2>Nos Restaurants</h2>   
- 
-            <div class="la-platte-du-gout  restaurants-home">
+        <nav class="nos-restaurants">
+            <h2>Nos Restaurants</h2>
 
+            <div class="la-palette-du-gout  restaurants-home">
+                <div id="flag-la-palette-du-gout"></div>  <!--Flag; empty <div> --> 
                 <div class="contenaires-image">
-                    <p class="logo-nouveau">Nouveau</p>
-                    <a href="./../restaurant_01_la_palette_du_gout/index.html">
-                        <img id="img-la-palette-du-gout" src="./images_home/_01_la_palette_du_gout.jpg"  alt="image restaurant-1 la palette du gout"/>
+                    <a href="./../restaurants/restaurant_01_la_palette_du_gout/index_restaurants.html">
+                        <img id="img-la-palette-du-gout" src="./../restaurants/restaurant_01_la_palette_du_gout/images/la_palette_du_gout_home.jpg"  alt="image restaurant la palette du gout"/>
                     </a>
+                    <p class="logo-nouveau">Nouveau</p>
                 </div>
-
                 <div class="contenaires-nom-ville">
                     <h3>A la francaise</h3>
-                    <p class="logo-aime"></p>
+                    <p class="logo-aime"><i class="fa fa-heart-o"></i></p>
+                    <p class="logo-aime"><i class="fa fa-heart"></i></p>
+
                     <p class="ville">Paris</p>
                 </div>
-
             </div>
 
             <div class="la-note-enchantee  restaurants-home">
-                <div class="contenaires-image">
-                    <a href="./../restaurant_02_la_note_enchantee/index.html">
-                        <img id="img-la-note-enchantee" src="./images_home/_02_la_note_enchatee.jpg" alt="image restaurant la note enchantée"/>
-                    </a>
-                    <p class="logo-nouveau"></p>
-                </div>
+                <div id="flag-la-note-enchantee"></div>  <!--Flag; empty <div> --> 
 
+                <div class="contenaires-image">
+                    <a href="./../restaurants/restaurant_02_la_note_enchantee/index_restaurants.html">
+                        <img id="img-la-note-enchantee" src="./../restaurants/restaurant_02_la_note_enchantee/images/la_note_enchatee_home.jpg" alt="image restaurant la note enchantée"/>
+                    </a>
+                    <p class="logo-nouveau">Nouveau</p>
+                </div>
                 <div class="contenaires-nom-ville">
-                    <p class="logo-aime"></p>
                     <h3>A la francaise</h3>
+                    <p class="logo-aime"><i class="fa fa-heart-o"></i></p>
+                    <p class="logo-aime"><i class="fa fa-heart"></i></p>
                     <p class="ville">Paris</p>
                 </div>
             </div>
 
             <div class="a-la-francaise  restaurants-home">
+                <div id="flag-a-la-francaise"></div>  <!--Flag; empty <div> --> 
                 <div class="contenaires-image">
-                    <a href="./../restaurant_03_a_la_francaise/index.html"> 
-                        <img id="img-a-la-francaise" src="./images_home/_03_a_la_francaise.jpg" alt="image restaurant à la française"/>
+                    <a href="./../restaurants/restaurant_03_a_la_francaise/index_restaurants.html"> 
+                        <img id="img-a-la-francaise" src="./../restaurants/restaurant_03_a_la_francaise/images/a_la_francaise_home.jpg" alt="image restaurant à la française"/>
                     </a>
-                    <p class="logo-nouveau"></p>
+                    <!-- <p class="logo-nouveau"></p> -->
                 </div>
                 
                 <div class="contenaires-nom-ville">
-                    <p class="logo-aime"></p>
                     <h3>A la francaise</h3>
+                    <p class="logo-aime"><i class="fa fa-heart-o"></i></p>
+                    <p class="logo-aime"><i class="fa fa-heart"></i></p>
+
                     <p class="ville">Paris</p>
                 </div>
             </div>
 
             <div class="le-delice-des-sens restaurants-home ">
+                <div id="flag-le-delice-des-sens"></div>  <!--Flag; empty <div> --> 
 
                 <div class="contenaires-image">
-                    <a href="./../restaurant_04_le_delice_des_sens/index.html">
-                        <img id="img-delice-des-sens" src="./images_home/_04_le_delice_des_sens.jpg" alt="image restaurant le délice des sens"/>
+                    <a href="./../restaurants/restaurant_04_le_delice_des_sens/index_restaurants.html">
+                        <img id="img-delice-des-sens" src="./../restaurants/restaurant_04_le_delice_des_sens/images/le_delice_des_sens_home.jpg" alt="image restaurant le délice des sens"/>
                     </a>
-                    <p class="logo-nouveau"></p>
+                    <!-- <p class="logo-nouveau"></p> -->
                 </div>
 
                 <div class="contenaires-nom-ville">
-                    <p class="logo-aime"></p>
                     <h3>A la francaise</h3>
+                    <p class="logo-aime"><i class="fa fa-heart-o"></i></p>
+                    <p class="logo-aime"><i class="fa fa-heart"></i></p>
+
                     <p class="ville">Paris</p>
                 </div>
             </div>
         </nav>
-      
     </main>
 
     <footer>
@@ -121,17 +124,7 @@
         <p> <i class='fas fa-utensils icons-footer'></i>Suggérer un resataurant</p>
         <p> <i class='fas fa-hands-helping icons-footer'></i>Devenez notre partenaire</p>
         <p>Mentions Légal</p>
-        <p>Contact</p>
+        <p class="bloc-email"><a class="contact-email" href="infos@ohmyfood.com" target="_blank">Contact</a></p>
     </footer>
-
-
-
-
-
 </body>
 </html>
-
-
-
-<!-- =================================================== -->
-<!-- =================================================== -->

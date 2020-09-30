@@ -6,7 +6,6 @@
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   margin: auto;
-  text-align: center;
 }
 
 header {
@@ -14,6 +13,7 @@ header {
           box-shadow: 0 0.75vw 0.75vw #cfcfcf;
   margin-bottom: 1vw;
   padding-bottom: 0.5vw;
+  text-align: center;
 }
 
 header h2.logo {
@@ -29,6 +29,7 @@ main aside section.geolocalisation {
   font-family: "Roboto", sans-serif;
   font-size: 2.7vw;
   padding: 3vw;
+  text-align: center;
 }
 
 main aside section.geolocalisation .material-icons {
@@ -40,6 +41,7 @@ main aside section.presentations {
   padding-top: 9.5vw;
   padding-bottom: 14vw;
   background: #f6f6f6;
+  text-align: center;
 }
 
 main aside section.presentations h2:nth-child(1) {
@@ -124,19 +126,19 @@ main aside section.mode-emploi div.mode-emploi-application::before {
   background: #9356D7;
 }
 
-nav .nos-restaurants {
+main nav.nos-restaurants {
   background: #f6f6f6;
   padding-top: 15vw;
   text-align: left;
 }
 
-nav .nos-restaurants h2 {
+main nav.nos-restaurants h2 {
   text-align: left;
   margin-left: 5vw;
   padding-bottom: 5vw;
 }
 
-nav .nos-restaurants div.contenaires-image img {
+main nav.nos-restaurants div.contenaires-image img {
   display: block;
   margin: auto;
   border-radius: 4vw 4vw 0 0;
@@ -144,7 +146,7 @@ nav .nos-restaurants div.contenaires-image img {
   height: auto;
 }
 
-nav .nos-restaurants div.contenaires-nom-ville {
+main nav.nos-restaurants div.contenaires-nom-ville {
   padding: 5vw;
   margin: auto;
   background: white;
@@ -153,7 +155,22 @@ nav .nos-restaurants div.contenaires-nom-ville {
   margin-bottom: 5vw;
 }
 
-nav .nos-restaurants div.contenaires-nom-ville .ville {
+main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o {
+  font-size: 6vw;
+  float: right;
+  position: relative;
+  bottom: 3vw;
+}
+
+main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:hover {
+  cursor: pointer;
+}
+
+main nav.nos-restaurants div.contenaires-nom-ville .fa-heart-o:active {
+  background-color: #9356D7;
+}
+
+main nav.nos-restaurants div.contenaires-nom-ville .ville {
   font-weight: 300;
   padding-top: 5px;
 }
@@ -173,7 +190,13 @@ footer h2 {
 }
 
 footer .icons-footer {
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 3vw;
+  padding-right: 5vw;
+  width: 4vw;
 }
-/*# sourceMappingURL=style_mobile.css.map */
+
+footer .contact-email {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style_mobile_home.css.map */
