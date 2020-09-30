@@ -14,7 +14,28 @@ $font_texte: 'Shrikhand', cursive;
 
 
 
-img {
-    width: 335px; 
-    height:174px;
+footer {
+    text-align: left;
+    margin-top: 15vw;
+    background: #353535;
+    padding: 5vw 5vw 5vw 5vw;
+    color: white;
+    line-height: 1.8;
+
+    h2 {
+        font-family: $font_logo_titre ;
+        font-weight: $font_weight_medium;
+    }
+
+    .icons-footer {
+        font-size: 3vw;
+        padding-right: 5vw;
+        width: 4vw;
+    }
+
+    .contact-email{
+        text-decoration: none;
+        color: white;
+    }
 }
+    
