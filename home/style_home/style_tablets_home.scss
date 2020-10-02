@@ -14,50 +14,296 @@ $border_rouge: 1px solid red;
 
 
 
-@media screen and (min-width: 768px) { 
+@media all and (min-width: 668px) { 
 
     body {
+        // background-color: #99E2D0;
+        display: flex;
+        flex-direction: column;
 
-        header {}
+        header {
+            box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+            margin-bottom: 1vw;
+            // padding-bottom: 0.5vw;
+            text-align: center;
+            width: 100%;
 
-        main {
-            aside {
-
-                section.geolocalisation {}
-                
-
-                section.presentations {}
-
-                section.mode-emploi {}
-                
+            h2.logo {
+                font-family: $font_logo_titre;
+                font-size: 5.5vw;
+                padding-top: 2.1vw;
+                padding-bottom: 1.1vw;
+                background-color: rgb(255, 255, 255);
             }
-
-            nav.nos-restaurants {}
         }
 
-        footer {}
+        main {
+            display: flex;
+            flex-direction: row;
+
+            aside {
+                flex-basis: 35%;
+                display: flex;
+                flex-direction: column;
+                border: $border_vert;
+
+                section.geolocalisation {
+                    background:#eaeaea;
+                    font-family: $font_texte;
+                    font-size: 1.75vw;
+                    padding: 1.5vw;
+                    text-align: center;
+
+                    h2 {
+                        font-weight: $font_weight_medium;
+                        font-size: 2vw;
+
+                        .material-icons {
+                            font-size: 2.25vw;
+                            margin-right: 2vw;
+                        }
+                    }
+                }
+            
+                section.presentations {
+                    padding: 4.5vw 2vw;
+                    background: #f6f6f6 ;
+                    text-align: center;
+
+                    h2:nth-child(1) {
+                        font-weight: $font_weight_bold;
+                        font-size: 2.5vw;
+                        padding-bottom: 5vw;
+                    }
+
+                    p:nth-child(2) {
+                        font-weight: $font_weight_light;
+                        font-size: 2vw;
+                        color: #656565;
+                        margin-bottom: 5.5vw;  
+                    }
+
+                    button {
+                        display: inline-block;
+                        font-size: 1.75vw;
+                        font-weight: $font_weight_medium;
+                        border-radius: 7vw;
+                        border: none;
+                        background-color: $couleur_primaire;
+                        padding: 1.5vw;
+                        background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                        box-shadow: 3px 5px 7px rgb(192, 192, 192);
+                        color: red;
+                        margin-left: auto;
+                        margin-right: auto;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+                section.utilisation {
+                    padding-top: 4vw;
+                    padding-bottom: 3vw;
+                    counter-reset: item;
+                    position: relative;
+
+                    h2:nth-child(1) {
+                        font-family: $font_texte;
+                        font-weight: $font_weight_bold;
+                        font-size: 2.5vw;
+                        padding-left: 3vw;
+                        text-align: left; 
+                        padding-bottom: 3.8vw;           
+                    }
+
+                    div.utilisation-application {
+                        background: #f6f6f6;
+                        width: 95%;
+                        margin: auto;
+                        border-radius: 2vw;
+                        border: 0.5vw solid rgba(0, 0, 0, 0.05);
+                        padding: 3vw 1vw 3vw 3vw;
+                        margin-bottom: 3vw;
+                        box-shadow: 5px 7px 7px rgb(230, 230, 230);
+                        font-family: $font_texte;
+                        font-size: 1.75vw;
+                        font-weight: $font_weight_medium;
+
+                        .icons-utilisation {
+                            margin: 0  1vw;
+                            color: grey;
+                            font-size: 2vw;
+                        }
+                    }
+                    
+                    div.utilisation-application::before {
+                        counter-increment: item;
+                        content: counter(item) ;
+                        background: grey;
+                        padding: 0.75vw 1.15vw;
+                        margin-right: 3vw;
+                        display: inline-block;
+                        border-radius: 50%;
+                        font-family: $font_texte;
+                        color: white;
+                        font-size: 1.35vw;
+                        font-weight: $font_weight_light;
+                        background: $couleur_primaire;  
+                        position: absolute;
+                        left: 0.5vw;
+                        // bottom: 0vw;
+                    }
+                }  
+            }
+
+            nav.nos-restaurants {
+                flex-basis: 65%;
+                background: #f6f6f5 ;
+                padding-top: 2vw;
+                border: $border_rouge;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                h2 {
+                    margin-left: 0vw;
+                    padding-bottom: 0vw;
+                    font-size: 2.5vw;
+                    width: 100%;
+                    border: $border_rouge;
+                    text-align: center;
+                    // flex: 1 1 auto;
+                }
+
+                div.restaurants-home {
+                    flex: 1 1 50%;
+
+                    div.contenaires-image {
+                        position: relative;
+
+                        a {
+
+                            img {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                border-radius: 1vw 1vw 0 0;
+                                // max-width: 100%; 
+                                max-width: 90%; 
+                                // max-width: 50%; 
+                                height: auto;
+                            }
+                        }
+
+                        .logo-nouveau {
+                            position: absolute;
+                            top: 1vw;
+                            right: 1vw;
+                            color: #008663;
+                            background: $couleur_tertiaire;
+                            padding: 1vw 2.25vw;
+                            border-radius: 0.75vw;
+                            transition: transform 200ms ease-in;
+                            transform:  scale();
+                            font-size: 1.25vw
+                        }
+                        .logo-nouveau:hover {
+                            transform: scale(1.15);
+                        }
+                    }
+
+                    div.contenaires-nom-et-ville {
+                        position: relative;
+                        padding: 2vw 5vw;
+                        margin: auto;
+                        background: white;
+                        border-radius: 0 0 1vw 1vw;
+                        max-width: 90%;
+                        margin-bottom: 3vw;
+
+                        h3 {
+                            font-size: 2vw;
+                        }
+
+                         p:nth-child(4) {
+                            font-size: 1.5vw;
+                        }
+
+                        .petit-coeur {
+                            position: absolute;
+                            top: 3vw;
+                            right: 5vw;
+                            font-size: 5vw;
+                            float: right;
+                        }
+
+                        .fa-heart {
+                            display: none;
+                            // color: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                        }
+
+                        .fa-heart-o {
+                            display: none;
+                            color: #9356D7;
+                        }
+
+                        .fa-heart-o:hover {
+                            cursor: pointer;
+                        }  
+
+                        .fa-heart-o:active .fa-heart-o {
+                                display: none;
+                            }
+
+                        .fa-heart-o:active .fa-heart-o {
+                                display: none;
+                        }       
+
+                        .ville {
+                            font-weight: $font_weight_light;
+                            padding-top: 2vw;
+                        }
+                    }
+
+                }
+
+                    
+            }
+        }
+
+        footer {
+            // padding: 5vw 5vw 8vw 5vw;
+            // flex-basis: 100%;
+            // padding: 0.25vw;
+            color: white;
+            background: #353535;
+            display: flex;
+            flex-direction: row;
+
+            h2 {
+                font-family: $font_logo_titre ;
+                font-weight: $font_weight_medium;
+                font-size: 3vw;
+                padding: 1vw 3vw;
+            }
+
+            p {
+                font-size: 1.75vw;
+                margin-right: 2vw;
+                padding-top: 2.5vw;
+
+                .icons-footer {
+                    font-size: 1.25vw;
+                    padding-right: 2.25vw;
+                    width: 2vw;
+                }
+
+                .contact-email {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

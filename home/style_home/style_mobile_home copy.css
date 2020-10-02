@@ -7,7 +7,111 @@
   font-family: "Roboto", sans-serif;
 }
 
-body main aside section.utilisation div.utilisation-application::before {
+body header {
+  -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+          box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+  margin-bottom: 1vw;
+  padding-bottom: 0.5vw;
+  text-align: center;
+  width: 100%;
+}
+
+body header h2.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 7.5vw;
+  padding-top: 2.8vw;
+  padding-bottom: 1.6vw;
+  background-color: white;
+}
+
+body main aside section.geolocalisation {
+  background: #eaeaea;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.7vw;
+  padding: 3vw;
+  text-align: center;
+}
+
+body main aside section.geolocalisation .material-icons {
+  font-size: 5vw;
+  margin-right: 3vw;
+}
+
+body main aside section.presentations {
+  padding-top: 9.5vw;
+  padding-bottom: 14vw;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+body main aside section.presentations h2:nth-child(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6.3vw;
+  padding-bottom: 10.2vw;
+}
+
+body main aside section.presentations p:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 4.5vw;
+  color: #656565;
+  margin-bottom: 7.5vw;
+}
+
+body main aside section.presentations p:nth-child(3) {
+  font-size: 4vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-radius: 10vw;
+  background-color: #9356D7;
+  padding: 4vw;
+  background: linear-gradient(175deg, #FF79DA, #9356D7);
+  -webkit-box-shadow: 3px 5px 7px silver;
+          box-shadow: 3px 5px 7px silver;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: white;
+}
+
+body main aside section.mode-emploi {
+  padding-top: 12.8vw;
+  padding-bottom: 11vw;
+  counter-reset: item;
+}
+
+body main aside section.mode-emploi h2:nth-child(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6.3vw;
+  padding-left: 5vw;
+  text-align: left;
+  padding-bottom: 6.8vw;
+}
+
+body main aside section.mode-emploi div.mode-emploi-application {
+  background: #f6f6f6;
+  width: 85%;
+  margin: auto;
+  border-radius: 5vw;
+  padding: 4vw;
+  margin-bottom: 6vw;
+  -webkit-box-shadow: 5px 7px 7px #e6e6e6;
+          box-shadow: 5px 7px 7px #e6e6e6;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+body main aside section.mode-emploi div.mode-emploi-application .icons-mode-emploi {
+  margin-right: 5vw;
+  color: grey;
+  font-size: 5vw;
+}
+
+body main aside section.mode-emploi div.mode-emploi-application::before {
   counter-increment: item;
   content: counter(item);
   background: grey;
