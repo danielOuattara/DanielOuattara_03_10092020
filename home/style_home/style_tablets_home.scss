@@ -14,7 +14,7 @@ $border_rouge: 1px solid red;
 
 
 
-@media all and (min-width: 668px) { 
+@media all and (min-width: 469px) { 
 
     body {
         // background-color: #99E2D0;
@@ -168,7 +168,7 @@ $border_rouge: 1px solid red;
 
                 h2 {
                     margin-left: 0vw;
-                    padding-bottom: 0vw;
+                    padding-bottom: 1vw;
                     font-size: 2.5vw;
                     width: 100%;
                     border: $border_rouge;
@@ -215,12 +215,12 @@ $border_rouge: 1px solid red;
 
                     div.contenaires-nom-et-ville {
                         position: relative;
-                        padding: 2vw 5vw;
+                        // padding: 2vw 5vw;
                         margin: auto;
                         background: white;
                         border-radius: 0 0 1vw 1vw;
                         max-width: 90%;
-                        margin-bottom: 3vw;
+                        margin-bottom: 2vw;
 
                         h3 {
                             font-size: 2vw;

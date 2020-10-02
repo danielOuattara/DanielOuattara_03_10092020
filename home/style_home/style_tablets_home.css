@@ -1,4 +1,4 @@
-@media all and (min-width: 668px) {
+@media all and (min-width: 469px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -158,7 +158,7 @@
   }
   body main nav.nos-restaurants h2 {
     margin-left: 0vw;
-    padding-bottom: 0vw;
+    padding-bottom: 1vw;
     font-size: 2.5vw;
     width: 100%;
     border: 1px solid red;
@@ -202,12 +202,11 @@
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville {
     position: relative;
-    padding: 2vw 5vw;
     margin: auto;
     background: white;
     border-radius: 0 0 1vw 1vw;
     max-width: 90%;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
     font-size: 2vw;

@@ -7,7 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media all and (max-width: 668px) {
+@media all and (max-width: 468px) {
   body header {
     -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
             box-shadow: 0 0.75vw 0.75vw #cfcfcf;
@@ -172,25 +172,23 @@
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville .petit-coeur {
     position: absolute;
-    top: 3vw;
+    top: 4vw;
     right: 5vw;
     font-size: 5vw;
-    float: right;
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart {
-    display: none;
-  }
-  body main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart-o {
-    display: none;
     color: #9356D7;
+    display: none;
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart-o:hover {
     cursor: pointer;
+    color: #9356D7;
   }
-  body main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart-o:active .fa-heart-o {
-    display: none;
+  .fa-heart-o:active
+body main nav.nos-restaurants div.contenaires-nom-et-ville.fa-heart {
+    display: inline-block;
   }
-  body main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart-o:active .fa-heart-o {
+  body main nav.nos-restaurants div.contenaires-nom-et-ville.fa-heart-o {
     display: none;
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville .ville {

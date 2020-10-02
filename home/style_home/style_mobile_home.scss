@@ -32,7 +32,7 @@
     font-family: $font_texte;
 }
 
-@media all and (max-width: 668px) { 
+on goin@media all and (max-width: 468px) { 
 
     body {
 
@@ -220,33 +220,29 @@
 
                         .petit-coeur {
                             position: absolute;
-                            top: 3vw;
+                            top: 4vw;
                             right: 5vw;
                             font-size: 5vw;
-                            float: right;
                         }
 
                         .fa-heart {
-                            display: none;
-                            // color: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
-                        }
-
-                        .fa-heart-o {
-                            display: none;
                             color: #9356D7;
+                            display: none; 
                         }
 
                         .fa-heart-o:hover {
                             cursor: pointer;
+                            color: #9356D7;
                         }  
 
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
+                        .fa-heart-o:active 
+                            &.fa-heart {
+                                display: inline-block;
                             }
-
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
-                        }       
+                            &.fa-heart-o {
+                                display:none;
+                            }
+      
 
                         .ville {
                             font-weight: $font_weight_light;
