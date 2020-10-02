@@ -22,14 +22,20 @@
         $border_vert: 1px solid green;
         $border_rouge: 1px solid red; 
 
+
+
+
     // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
     /* media querry valable pour smartphone*/
+
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: $font_texte;
+        // margin: auto;
+        // // text-align: center;
     }
 
     body {
@@ -40,7 +46,7 @@
             padding-bottom: 0.5vw;
             text-align: center;
             width: 100%;
-
+            
             h2.logo {
                 font-family: $font_logo_titre;
                 font-size: 7.5vw;
@@ -52,48 +58,46 @@
 
         main {
             aside {
-
                 section.geolocalisation {
                     background:#eaeaea;
                     font-family: $font_texte;
+                    // font-weight: 400;
                     font-size: 2.7vw;
                     padding: 3vw;
                     text-align: center;
 
-                    h2 {
-                        font-weight: $font_weight_medium;
-                    }
-                    
                     .material-icons {
                         font-size: 5vw;
                         margin-right: 3vw;
                     }
                 }
-            
+
                 section.presentations {
-                    padding: 9.5vw 3vw 14vw;
+                    padding-top: 9.5vw;
+                    padding-bottom: 14vw;
                     background: #f6f6f6 ;
                     text-align: center;
 
                     h2:nth-child(1) {
+                        font-family: $font_texte;
                         font-weight: $font_weight_bold;
                         font-size: 6.3vw;
                         padding-bottom: 10.2vw;
                     }
 
                     p:nth-child(2) {
+                        font-family: $font_texte;
                         font-weight: $font_weight_light;
                         font-size: 4.5vw;
                         color: #656565;
                         margin-bottom: 7.5vw;  
                     }
 
-                    button {
-                        display: inline-block;
+                    p:nth-child(3) {
                         font-size: 4vw;
+                        font-family: $font_texte;
                         font-weight: $font_weight_medium;
-                        border-radius: 7vw;
-                        border: none;
+                        border-radius: 10vw;
                         background-color: $couleur_primaire;
                         padding: 4vw;
                         background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
@@ -103,16 +107,14 @@
                         margin-right: auto;
                         width: 60%;
                         color: white;
-                        cursor: pointer;
                     }
                 }
 
-                section.utilisation {
+                section.mode-emploi {
                     padding-top: 12.8vw;
                     padding-bottom: 11vw;
                     counter-reset: item;
-                    position: relative;
-
+                    
                     h2:nth-child(1) {
                         font-family: $font_texte;
                         font-weight: $font_weight_bold;
@@ -122,26 +124,26 @@
                         padding-bottom: 6.8vw;           
                     }
 
-                    div.utilisation-application {
+                    div.mode-emploi-application {
                         background: #f6f6f6;
-                        width: 90%;
+                        width: 85%;
                         margin: auto;
-                        border-radius: 3vw;
-                        padding: 4vw 10vw;
+                        border-radius: 5vw;
+                        padding: 4vw;
                         margin-bottom: 6vw;
                         box-shadow: 5px 7px 7px rgb(230, 230, 230);
                         font-family: $font_texte;
                         font-size: 4vw;
                         font-weight: $font_weight_medium;
 
-                        .icons-utilisation {
-                            margin: 0  5vw;
+                        .icons-mode-emploi {
+                            margin-right: 5vw;
                             color: grey;
                             font-size: 5vw;
                         }
                     }
                     
-                    div.utilisation-application::before {
+                    div.mode-emploi-application::before {
                         counter-increment: item;
                         content: counter(item) ;
                         background: grey;
@@ -154,113 +156,75 @@
                         color: white;
                         font-size: 3.5vw;
                         font-weight: $font_weight_light;
-                        background: $couleur_primaire;  
-                        position: absolute;
-                        left: 5vw;
+                        background: $couleur_primaire;
                     }
-                }  
+                }
             }
 
             nav.nos-restaurants {
-                background: #f6f6f5 ;
-                padding-top: 15vw;
-                text-align: left;
+                    // background: #333;
+                    background: #f6f6f6 ;
+                    padding-top: 15vw;
+                    text-align: left;
 
-                h2 {
-                    margin-left: 5vw;
-                    padding-bottom: 5vw;
-                }
+                    h2 {
+                        text-align: left;
+                        margin-left: 5vw;
+                        padding-bottom: 5vw;
+                    }
 
-                    div.contenaires-image {
-                        position: relative;
-
-                        a {
+                        div.contenaires-image {
 
                             img {
                                 display: block;
-                                margin-left: auto;
-                                margin-right: auto;
+                                margin: auto;
                                 border-radius: 4vw 4vw 0 0;
-                                width: 85vw; 
-                                // max-width: 50%; 
+                                max-width: 85vw; 
                                 height: auto;
                             }
                         }
 
-                        .logo-nouveau {
-                            position: absolute;
-                            top: 4vw;
-                            right: 10vw;
-                            color: #008663;
-                            background: $couleur_tertiaire;
-                            padding: 1.25vw 3vw;
-                            border-radius: 0.75vw;
-                            transition: transform 200ms ease-in;
-                            transform:  scale();
-                            font-size: 2.5vw
-                        }
-                        .logo-nouveau:hover {
-                            transform: scale(1.15);
-                        }
-                    }
+                        div.contenaires-nom-ville {
+                            padding: 5vw;
+                            margin: auto;
+                            background: white;
+                            border-radius: 0 0 4vw 4vw;
+                            width: 85vw;
+                            margin-bottom: 5vw;
 
-                    div.contenaires-nom-et-ville {
-                        position: relative;
-                        padding: 2vw 5vw;
-                        margin: auto;
-                        background: white;
-                        border-radius: 0 0 4vw 4vw;
-                        width: 85vw;
-                        margin-bottom: 5vw;
-
-                        h3, p:nth-child(4) {
-                            font-size: 4vw;
-                        }
-
-                        .petit-coeur {
-                            position: absolute;
-                            top: 3vw;
-                            right: 5vw;
-                            font-size: 5vw;
-                            float: right;
-                        }
-
-                        .fa-heart {
-                            display: none;
-                            // color: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
-                        }
-
-                        .fa-heart-o {
-                            display: none;
-                            color: #9356D7;
-                        }
-
-                        .fa-heart-o:hover {
-                            cursor: pointer;
-                        }  
-
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
+                            .fa-heart-o {
+                                font-size: 6vw;
+                                float: right;
+                                position: relative;
+                                bottom: 3vw;
                             }
 
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
-                        }       
+                            .fa-heart-o:hover {
+                                cursor: pointer;
+                            }  
 
-                        .ville {
-                            font-weight: $font_weight_light;
-                            padding-top: 2vw;
+                            .fa-heart-o:active {
+                                background-color: #9356D7;;
+                            }         
+
+
+                            .ville {
+                                font-weight: $font_weight_light;
+                                padding-top: 2vw;
+                            }
                         }
-                    }
-           }  
+            }
         }
 
         footer {
+
+            // text-align: left;
             align-items: flex-start;
             background: #353535;
-            padding: 5vw 5vw 5vw 5vw;
+            // padding: 5vw 5vw 5vw 5vw;
             color: white;
             line-height: 1.8;
+            flex: 1
 
             h2 {
                 font-family: $font_logo_titre ;
@@ -273,7 +237,7 @@
                 width: 4vw;
             }
 
-            .contact-email {
+            .contact-email{
                 text-decoration: none;
                 color: white;
             }

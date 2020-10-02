@@ -1,0 +1,46 @@
+@media screen and (min-width: 1200px) {
+  body header {
+    -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+            box-shadow: 0 0.75vw 0.75vw #cfcfcf;
+    margin-bottom: 1vw;
+    padding-bottom: 0.5vw;
+    text-align: center;
+  }
+  body header h2.logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 5vw;
+    padding-top: 2.8vw;
+    padding-bottom: 1.6vw;
+    background-color: white;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer {
+    padding: 0.25vw;
+    color: white;
+    line-height: 1.8;
+    width: 100%;
+  }
+  body footer .icons-footer {
+    font-size: 1.25vw;
+    padding-right: 2.25vw;
+    width: 2vw;
+  }
+}
+/*# sourceMappingURL=style_desktop_home copy.css.map */
