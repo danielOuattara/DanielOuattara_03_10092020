@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) {
+
 
     $couleur_primaire: #9356D7;
     $couleur_secondaire: #FF79DA;
@@ -13,35 +13,149 @@
     $border_noire: 1px solid black;
     $border_vert: 1px solid green;
     $border_rouge: 1px solid red;
+    
 
+@media all and (max-width: 668px) {
 
     // @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
     /* media querry valable pour smartphone*/
 
-
-
-    footer {
-        text-align: left;
-        margin-top: 15vw;
-        background: #353535;
-        padding: 5vw 5vw 5vw 5vw;
-        color: white;
-        line-height: 1.8;
-
-        h2 {
-            font-family: $font_logo_titre ;
-            font-weight: $font_weight_medium;
-        }
-
-        .icons-footer {
-            font-size: 3vw;
-            padding-right: 5vw;
-            width: 4vw;
-        }
-
-        .contact-email{
-            text-decoration: none;
-            color: white;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: $font_texte;
     }
+
+    body {
+
+        header {
+            // margin-bottom: 1vw;
+            // padding-bottom: 0.5vw;
+            text-align: center;
+            border: $border_rouge;
+            
+            a {
+                // display: inline-block;
+
+                .fa-arrow-left {
+                    font-size: 5vw;
+                    float: left;
+                    margin-left: 5.5vw;
+                    margin-top: 4vw;
+                }
+            }
+            
+            h2.logo {
+                font-family: $font_logo_titre;
+                font-size: 6.5vw;
+                padding: 2vw 0;
+                // background-color: rgb(255, 255, 255);
+            }
+        }
+
+
+        main {
+            background: #f6f6f5;
+
+            section div {
+                background: #fff;
+                width: 92%;
+                margin: auto;
+                margin-bottom: 3vw;
+                border-radius: 3vw;
+                padding: 2.5vw;
+
+                p:nth-child(2) {
+                    font-weight: $font_weight_light;
+                    padding-top: 1vw;
+                }
+                p:nth-child(3) {
+                    float: right;
+                }
+            }
+
+            section#affiche {
+                div.bloc-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h2 {
+                    font-family: $font_logo_titre;
+                    border-radius: 10vw 10vw 0 0;
+                    border: $border_rouge;
+                    padding-top: 5vw;
+                }
+            }
+
+            section:not(.affiche) {
+                h2 {
+                    font-weight: $font_weight_light;
+                    padding: 5vw 0 3vw 6vw;
+                    font-size: 4vw;
+                    margin-bottom: 3vw;
+
+                    span {
+                        padding-bottom: 1vw;
+                        border-bottom: 1vw solid #99E2D0;
+                    }
+                }
+            }
+
+
+            // section.entrees {}
+
+            // section.plats {}
+
+            // section.dessert {}
+
+            section.commander {
+                button {
+                    display: inline-block;
+                    font-size: 4vw;
+                    font-weight: $font_weight_medium;
+                    border-radius: 8vw;
+                    border: none;
+                    background-color: $couleur_primaire;
+                    padding:  3.5vw 7vw;
+                    background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                    box-shadow: 3px 5px 7px rgb(192, 192, 192);
+                    color: red;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+
+        footer {
+            text-align: left;
+            margin-top: 15vw;
+            background: #353535;
+            padding: 5vw 5vw 5vw 5vw;
+            color: white;
+            line-height: 1.8;
+
+            h2 {
+                font-family: $font_logo_titre ;
+                font-weight: $font_weight_medium;
+            }
+
+            .icons-footer {
+                font-size: 3vw;
+                padding-right: 5vw;
+                width: 4vw;
+            }
+
+            .contact-email{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }  
 }

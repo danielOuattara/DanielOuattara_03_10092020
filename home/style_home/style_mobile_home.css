@@ -7,7 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media all and (max-width: 468px) {
+@media all and (max-width: 668px) {
   body header {
     -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
             box-shadow: 0 0.75vw 0.75vw #cfcfcf;
