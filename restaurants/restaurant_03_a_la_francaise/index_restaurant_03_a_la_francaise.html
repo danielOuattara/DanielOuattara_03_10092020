@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./../style_restaurants/style_mobile_restaurants.css">
-    <link rel="stylesheet" href="./../style_restaurants/style_tablets_restaurants.css">
-    <link rel="stylesheet" href="./../style_restaurants/style_desktop_restaurants.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2ca4bf7488.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./../style_restaurants/style_mobile_restaurants.css">
+        <link rel="stylesheet" href="./../style_restaurants/style_tablets_restaurants.css">
+        <link rel="stylesheet" href="./../style_restaurants/style_desktop_restaurants.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2ca4bf7488.js" crossorigin="anonymous"></script>
 
-    <title>Restaurant &agrave; La Française</title>
-</head>
+        <title>Restaurant &agrave; La Française</title>
+    </head>
     <body>
 
         <header>
-            <a href="./../../home/index_home.html#flag-a-la-francaise"><i class='fas fa-arrow-left'></i></a>
-            <h2 class="logo">ohmyfood</h2>
+            <h2 class="logo">
+                <a href="./../../home/index_home.html#flag-a-la-francaise">
+                    <i class='fas fa-arrow-left'></i></a>
+                ohmyfood
+            </h2>
         </header>
 
-        <main>
+        <section id="bloc-image"> 
+            <img src="./images/a_la_francaise.jpg" alt="image à la française">
+        </section>
 
-            <section id="affiche">
-                <div class="bloc-image"> <img src="./images/a_la_francaise.jpg" alt="image à la française"></div>
-                <h2>&Agrave; La Française</h2>
+        <main>
+            <section class="affiche">
+                <h2>&Agrave; La Française  
+                    <i class="fa fa-heart-o  petit-coeur"></i>
+                    <i class="fa fa-heart petit-coeur"></i>
+                </h2>
             </section>
 
-            <section class="entrees">
+            <section class="entrees elements-menus">
                 <h2><span>ENTR</span>&Eacute;ES</h2>
-
                 <div>
                     <h3>Carpaccio De Calamars Aux Agrumes</h3>
                     <p>Au zeste d'orange</p>
@@ -49,8 +56,8 @@
                 </div>
             </section>
 
-            <section class="plats">
-                <h2> <span>PLATS</span> PRINCIPAL</h2>
+            <section class="plats elements-menus">
+                <h2> <span>PLATS</span></h2>
 
                 <div>
                     <h3>Escalopes</h3>
@@ -72,8 +79,8 @@
 
             </section>
 
-            <section class="desserts">
-                <h2><span>DESS</span>ERT</h2>
+            <section class="desserts elements-menus">
+                <h2><span>DESS</span>ERTS</h2>
 
                 <div>
                     <h3>Glace Florale</h3>
@@ -104,7 +111,7 @@
             <h2>ohmyfood</h2>
             <p> <i class='fas fa-utensils icons-footer'></i>Suggérer un resataurant</p>
             <p> <i class='fas fa-hands-helping icons-footer'></i>Devenez notre partenaire</p>
-            <p>Mentions Légal</p>
+            <p>Mentions Légales</p>
             <p class="bloc-email"><a class="contact-email" href="infos@ohmyfood.com" target="_blank">Contact</a></p>
         </footer>
 
