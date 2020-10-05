@@ -55,16 +55,14 @@
     /* section entrees, plats, desserts */
     padding-bottom: 6vw;
   }
-  body main section {
+  body main section.elements-menus h2 {
     /* titres entrées, plats, desserts */
-  }
-  body main section h2 {
     font-weight: 300;
     padding: 0 0 3vw 6vw;
     font-size: 4.5vw;
     margin-bottom: 2.75vw;
   }
-  body main section h2 span {
+  body main section.elements-menus h2 span {
     /* mots demi-soulignés */
     padding-bottom: 1vw;
     border-bottom: 1vw solid #99E2D0;

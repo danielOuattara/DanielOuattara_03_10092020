@@ -1,4 +1,4 @@
-@media all and (min-width: 669px) {
+@media screen and (min-width: 669px) and (max-width: 1267px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9,15 +9,16 @@
             flex-direction: column;
   }
   body header {
-    -webkit-box-shadow: 0 0.75vw 0.75vw #cfcfcf;
-            box-shadow: 0 0.75vw 0.75vw #cfcfcf;
-    margin-bottom: 1vw;
+    -webkit-box-shadow: 0 0.25vw 2.5vw #cfcfcf;
+            box-shadow: 0 0.25vw 2.5vw #cfcfcf;
+    margin-bottom: 2.5vw;
     text-align: center;
     width: 100%;
   }
   body header h2.logo {
     font-family: "Shrikhand", cursive;
-    font-size: 5.5vw;
+    font-weight: 500;
+    font-size: 4vw;
     padding-top: 2.1vw;
     padding-bottom: 1.1vw;
     background-color: white;
@@ -41,47 +42,47 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 1px solid green;
   }
   body main aside section.geolocalisation {
     background: #eaeaea;
     font-family: "Roboto", sans-serif;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     padding: 1.5vw;
     text-align: center;
   }
   body main aside section.geolocalisation h2 {
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    cursor: pointer;
   }
   body main aside section.geolocalisation h2 .material-icons {
-    font-size: 2.25vw;
+    font-size: 2vw;
     margin-right: 2vw;
   }
   body main aside section.presentations {
-    padding: 4.5vw 2vw;
+    padding: 3vw 2vw;
     background: #f6f6f6;
     text-align: center;
   }
   body main aside section.presentations h2:nth-child(1) {
-    font-weight: bold;
-    font-size: 2.5vw;
-    padding-bottom: 5vw;
+    font-weight: 500;
+    font-size: 2vw;
+    padding-bottom: 2vw;
   }
   body main aside section.presentations p:nth-child(2) {
     font-weight: 300;
-    font-size: 2vw;
+    font-size: 1.75vw;
     color: #656565;
-    margin-bottom: 5.5vw;
+    padding-bottom: 4vw;
   }
   body main aside section.presentations button {
     display: inline-block;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     font-weight: 500;
     border-radius: 7vw;
     border: none;
     background-color: #9356D7;
-    padding: 1.5vw;
+    padding: 1.5vw 2vw;
     background: linear-gradient(175deg, #FF79DA, #9356D7);
     -webkit-box-shadow: 3px 5px 7px silver;
             box-shadow: 3px 5px 7px silver;
@@ -92,37 +93,50 @@
     cursor: pointer;
   }
   body main aside section.utilisation {
-    padding-top: 4vw;
-    padding-bottom: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
     counter-reset: item;
     position: relative;
   }
   body main aside section.utilisation h2:nth-child(1) {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 2.5vw;
     padding-left: 3vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    padding-left: 8vw;
     text-align: left;
-    padding-bottom: 3.8vw;
+    padding-bottom: 3vw;
   }
   body main aside section.utilisation div.utilisation-application {
     background: #f6f6f6;
-    width: 95%;
+    width: 90%;
     margin: auto;
-    border-radius: 2vw;
-    border: 0.5vw solid rgba(0, 0, 0, 0.05);
-    padding: 3vw 1vw 3vw 3vw;
-    margin-bottom: 3vw;
-    -webkit-box-shadow: 5px 7px 7px #e6e6e6;
-            box-shadow: 5px 7px 7px #e6e6e6;
+    border-radius: 1vw;
+    padding: 2vw 1vw 2vw 3vw;
+    margin-bottom: 2vw;
+    -webkit-box-shadow: 0 1vw 1.5vw #e6e6e6;
+            box-shadow: 0 1vw 1.5vw #e6e6e6;
     font-family: "Roboto", sans-serif;
-    font-size: 1.75vw;
     font-weight: 500;
+    font-size: 1.5vw;
   }
   body main aside section.utilisation div.utilisation-application .icons-utilisation {
     margin: 0  1vw;
     color: grey;
     font-size: 2vw;
+  }
+  body main aside section.utilisation div.utilisation-application .fa-mobile-alt, body main aside section.utilisation div.utilisation-application .fa-desktop {
+    display: none;
+  }
+  body main aside section.utilisation div.utilisation-application .fa-store, body main aside section.utilisation div.utilisation-application .fa-list-ul {
+    font-size: 1.5vw;
+  }
+  body main aside section.utilisation div.utilisation-application .fa-store {
+    color: #9356D7;
+    word-spacing: 2%;
+  }
+  body main aside section.utilisation div.utilisation-application:nth-of-type(3) {
+    background: #f7edfe;
   }
   body main aside section.utilisation div.utilisation-application::before {
     counter-increment: item;
@@ -145,7 +159,6 @@
         flex-basis: 65%;
     background: #f6f6f5;
     padding-top: 2vw;
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,11 +170,9 @@
         flex-wrap: wrap;
   }
   body main nav.nos-restaurants h2 {
-    margin-left: 0vw;
-    padding-bottom: 1vw;
+    padding-bottom: 3vw;
     font-size: 2.5vw;
     width: 100%;
-    border: 1px solid red;
     text-align: center;
   }
   body main nav.nos-restaurants div.restaurants-home {
@@ -176,8 +187,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1vw 1vw 0 0;
-    max-width: 90%;
+    border-radius: 1.5vw 1.5vw 0 0;
+    max-width: 95%;
     height: auto;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau {
@@ -194,7 +205,7 @@
     transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
     -webkit-transform: scale();
             transform: scale();
-    font-size: 1.25vw;
+    font-size: 1.5vw;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau:hover {
     -webkit-transform: scale(1.15);
@@ -202,17 +213,23 @@
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville {
     position: relative;
+    padding: 1vw 3vw;
     margin: auto;
     background: white;
-    border-radius: 0 0 1vw 1vw;
-    max-width: 90%;
-    margin-bottom: 2vw;
+    border-radius: 0 0 1.5vw 1.5vw;
+    max-width: 95%;
+    margin-bottom: 3vw;
+    -webkit-box-shadow: 0 1vw 1.5vw #e6e6e6;
+            box-shadow: 0 1vw 1.5vw #e6e6e6;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
-    font-size: 2vw;
+    font-size: 1.75vw;
+    font-weight: 500;
+    padding: 0.25vw;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {
     font-size: 1.5vw;
+    padding: 0.25vw;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .petit-coeur {
     position: absolute;
@@ -255,13 +272,13 @@
   body footer h2 {
     font-family: "Shrikhand", cursive;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding: 1vw 3vw;
   }
   body footer p {
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     margin-right: 2vw;
-    padding-top: 2.5vw;
+    padding-top: 2vw;
   }
   body footer p .icons-footer {
     font-size: 1.25vw;

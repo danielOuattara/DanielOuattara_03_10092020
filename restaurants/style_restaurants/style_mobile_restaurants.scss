@@ -85,10 +85,7 @@
             section.elements-menus { /* section entrees, plats, desserts */
                 padding-bottom: 6vw;
 
-            }
-
-            section:not(.affiche, .commander) { /* titres entrées, plats, desserts */
-                h2 {  
+                h2 {    /* titres entrées, plats, desserts */
                     font-weight: $font_weight_light;
                     padding: 0 0 3vw 6vw;
                     font-size: 4.5vw;

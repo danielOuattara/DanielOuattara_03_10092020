@@ -1,1 +1,175 @@
-/* No CSS *//*# sourceMappingURL=style_tablets_restaurants.css.map */
+@charset "UTF-8";
+@media screen and (min-width: 669px) and (max-width: 1267px) {
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header {
+    text-align: center;
+    -webkit-box-shadow: 0 0.25vw 2.5vw #cfcfcf;
+            box-shadow: 0 0.25vw 2.5vw #cfcfcf;
+  }
+  body header h2.logo {
+    font-family: "Shrikhand", cursive;
+    font-size: 3vw;
+    padding: 1.5vw 0 1vw 0;
+    font-weight: 500;
+  }
+  body header h2.logo a i.fa-arrow-left {
+    font-size: 2.5vw;
+    position: relative;
+    left: -37vw;
+  }
+  body section.bloc-image img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+  }
+  body main {
+    background: #f6f6f5;
+    padding-right: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main section.affiche {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  body main section.affiche h2 {
+    /* titre du restaurant */
+    font-family: "Shrikhand", cursive;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2.5vw;
+    font-size: 2.5vw;
+    position: relative;
+  }
+  body main section.affiche h2 i.petit-coeur {
+    font-size: 3vw;
+    position: absolute;
+    right: 9vw;
+    top: 2vw;
+  }
+  body main section.elements-menus {
+    /* section entrees, plats, desserts */
+    padding: 3vw 1.5vw;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body main section.elements-menus h2 {
+    /* titres entrées, plats, desserts */
+    font-weight: 300;
+    padding: 0 0 3vw 6vw;
+    font-size: 2vw;
+    margin-bottom: 1.25vw;
+  }
+  body main section.elements-menus h2 span {
+    /* mots demi-soulignés */
+    padding-bottom: 1vw;
+    border-bottom: 0.5vw solid #99E2D0;
+  }
+  body main section div {
+    /*  blocs des entrées, plats, desserts + accompagnement + prix */
+    background: #fff;
+    width: 105%;
+    margin: auto;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+    padding: 1.25vw;
+    -webkit-box-shadow: 0 0.25vw 1vw #cfcfcf;
+            box-shadow: 0 0.25vw 1vw #cfcfcf;
+  }
+  body main section div h3 {
+    font-size: 1.55vw;
+    font-weight: 500;
+  }
+  body main section div p:nth-child(2) {
+    /* accompagnement de chaque assiette */
+    font-weight: 300;
+    padding-top: 0.5vw;
+    font-size: 1.3vw;
+  }
+  body main section div p:nth-child(3) {
+    /* les tarifs*/
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: -3.5vw;
+    right: 0vw;
+    font-size: 1.25vw;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  body main section.commander {
+    padding-bottom: 7vw;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  body main section.commander button {
+    font-size: 1.75vw;
+    font-weight: 500;
+    border-radius: 4vw;
+    border: none;
+    padding: 1.25vw 5vw;
+    background: linear-gradient(175deg, #FF79DA, #9356D7);
+    -webkit-box-shadow: 3px 5px 7px silver;
+            box-shadow: 3px 5px 7px silver;
+    color: white;
+    cursor: pointer;
+  }
+  body footer {
+    background: #353535;
+    padding: 1.5vw 2vw;
+    color: white;
+    line-height: 1.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer h2 {
+    font-family: "Shrikhand", cursive;
+    font-weight: 500;
+    font-size: 2vw;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body footer p {
+    font-size: 1.5vw;
+    padding: 0 2vw;
+  }
+  body footer p .icons-footer {
+    font-size: 1.25vw;
+    padding-right: 3vw;
+    width: 1vw;
+  }
+  body footer p .contact-email {
+    text-decoration: none;
+    color: white;
+  }
+}
+/*# sourceMappingURL=style_tablets_restaurants.css.map */
