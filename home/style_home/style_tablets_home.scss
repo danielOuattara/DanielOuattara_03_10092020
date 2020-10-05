@@ -1,19 +1,4 @@
-$couleur_primaire: #9356D7;
-$couleur_secondaire: #FF79DA;
-$couleur_tertiaire: #99E2D0;
-$font_texte: 'Roboto', sans-serif;
-$font_logo_titre: 'Shrikhand', cursive;
-
-$font_weight_bold: bold;
-$font_weight_light: 300;
-$font_weight_medium: 500;
-
-$border_noire: 1px solid black;
-$border_vert: 1px solid green;
-$border_rouge: 1px solid red; 
-
-
-
+@import './../../global_style/_global-variables';  
 
 @media screen and (min-width: 669px) and (max-width: 1267px)  {
 
@@ -147,7 +132,7 @@ $border_rouge: 1px solid red;
 
                         .fa-store { 
                             color: $couleur_primaire;
-                            word-spacing: 2%;
+                            // word-spacing: 2%;
                         }
                     }
 
@@ -217,8 +202,8 @@ $border_rouge: 1px solid red;
                             background: $couleur_tertiaire;
                             padding: 1vw 2.25vw;
                             border-radius: 0.75vw;
-                            transition: transform 200ms ease-in;
-                            transform:  scale();
+                            // transition: transform 200ms ease-in;
+                            // transform:  scale();
                             font-size: 1.5vw
                         }
                         .logo-nouveau:hover {

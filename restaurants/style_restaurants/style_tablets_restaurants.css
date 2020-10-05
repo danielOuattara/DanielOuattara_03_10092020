@@ -1,4 +1,12 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 @media screen and (min-width: 669px) and (max-width: 1267px) {
   * {
     margin: 0;
@@ -23,9 +31,9 @@
   }
   body header h2.logo {
     font-family: "Shrikhand", cursive;
+    font-weight: 400;
     font-size: 3vw;
     padding: 1.5vw 0 1vw 0;
-    font-weight: 500;
   }
   body header h2.logo a i.fa-arrow-left {
     font-size: 2.5vw;
@@ -57,6 +65,7 @@
   body main section.affiche h2 {
     /* titre du restaurant */
     font-family: "Shrikhand", cursive;
+    font-weight: 400;
     padding-top: 2vw;
     padding-bottom: 2vw;
     padding-left: 2.5vw;
@@ -152,7 +161,7 @@
   }
   body footer h2 {
     font-family: "Shrikhand", cursive;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 2vw;
     -webkit-box-flex: 1;
         -ms-flex: 1;

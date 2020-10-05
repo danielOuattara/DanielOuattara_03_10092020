@@ -1,23 +1,6 @@
-$couleur_primaire: #9356D7;
-$couleur_secondaire: #FF79DA;
-$couleur_tertiaire: #99E2D0;
-$font_texte: 'Roboto', sans-serif;
-$font_logo_titre: 'Shrikhand', cursive;
+@import './../../global_style/_global-variables';  
 
-$font_weight_bold: bold;
-$font_weight_light: 300;
-$font_weight_medium: 500;
-
-$border_noire: 1px solid black;
-$border_vert: 1px solid green;
-$border_rouge: 1px solid red;
-$border_orange: 1px solid orange;
-$border_violet: 1px solid violet;
-
-
-
-
- @media screen and (min-width: 669px) and (max-width: 1267px)  {
+@media screen and (min-width: 669px) and (max-width: 1267px)  {
 
     * {
         margin: 0;
@@ -39,9 +22,9 @@ $border_violet: 1px solid violet;
 
             h2.logo {
                 font-family: $font_logo_titre;
+                font-weight: $font_weight_regular;
                 font-size: 3vw;
                 padding: 1.5vw 0 1vw 0;
-                font-weight: $font_weight_medium;
 
                 a {
                     i.fa-arrow-left {
@@ -74,6 +57,7 @@ $border_violet: 1px solid violet;
 
                 h2 {  /* titre du restaurant */
                     font-family: $font_logo_titre;
+                    font-weight: $font_weight_regular;
                     padding-top: 2vw;
                     padding-bottom: 2vw;
                     padding-left: 2.5vw;
@@ -170,7 +154,7 @@ $border_violet: 1px solid violet;
 
             h2 {
                 font-family: $font_logo_titre ;
-                font-weight: $font_weight_medium;
+                font-weight: $font_weight_regular;
                 font-size: 2vw;
                 flex: 1;
             }

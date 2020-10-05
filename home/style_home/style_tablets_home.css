@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 @media screen and (min-width: 669px) and (max-width: 1267px) {
   body {
     display: -webkit-box;
@@ -133,7 +141,6 @@
   }
   body main aside section.utilisation div.utilisation-application .fa-store {
     color: #9356D7;
-    word-spacing: 2%;
   }
   body main aside section.utilisation div.utilisation-application:nth-of-type(3) {
     background: #f7edfe;
@@ -199,12 +206,6 @@
     background: #99E2D0;
     padding: 1vw 2.25vw;
     border-radius: 0.75vw;
-    -webkit-transition: -webkit-transform 200ms ease-in;
-    transition: -webkit-transform 200ms ease-in;
-    transition: transform 200ms ease-in;
-    transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-    -webkit-transform: scale();
-            transform: scale();
     font-size: 1.5vw;
   }
   body main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau:hover {

@@ -1,4 +1,3 @@
-/* media querry valable pour smartphone*/
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +111,6 @@
   }
   body main aside section.utilisation div.utilisation-application .fa-store {
     color: #9356D7;
-    word-spacing: 2%;
   }
   body main aside section.utilisation div.utilisation-application:nth-of-type(3) {
     background: #f7edfe;
@@ -161,12 +159,6 @@
     background: #99E2D0;
     padding: 1.75vw 4vw;
     border-radius: 0.75vw;
-    -webkit-transition: -webkit-transform 200ms ease-in;
-    transition: -webkit-transform 200ms ease-in;
-    transition: transform 200ms ease-in;
-    transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-    -webkit-transform: scale();
-            transform: scale();
     font-size: 4vw;
   }
   body main nav.nos-restaurants div.contenaires-image .logo-nouveau:hover {

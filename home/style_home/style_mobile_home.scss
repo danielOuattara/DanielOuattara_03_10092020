@@ -1,37 +1,4 @@
-
-// @font-face {
-//     font-family:'Roboto';
-//     src: url(./../../fonts/Roboto/Roboto-Regular.ttf);
-// }
-// @font-face {
-//     font-family: 'Shrikhand';
-//     src: url(./../../fonts/Shrikhand/Shrikhand-Regular.ttf);
-// }
-
-    $couleur_primaire: #9356D7;
-    $couleur_secondaire: #FF79DA;
-    $couleur_tertiaire: #99E2D0;
-    $font_texte: 'Roboto', sans-serif;
-    $font_logo_titre: 'Shrikhand', cursive;
-
-    $font_weight_bold: bold;
-    $font_weight_light: 300;
-    $font_weight_400: 400;
-    $font_weight_medium: 500;
-
-    $border_noire: 1px solid black;
-    $border_vert: 1px solid green;
-    $border_rouge: 1px solid red; 
-
-// @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-/* media querry valable pour smartphone*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font_texte;
-}
+@import './../../global_style/_global-variables';  
 
 @media all and (max-width: 668px) { 
 
@@ -97,7 +64,7 @@
                     button {   // Explorer nos restaurants 
                         display: inline-block;
                         font-size: 4.25vw;
-                        font-weight: $font_weight_400;
+                        font-weight: $font_weight_regular;
                         border-radius: 7vw;
                         border: none;
                         background-color: $couleur_primaire;
@@ -155,7 +122,6 @@
 
                         .fa-store { 
                             color: $couleur_primaire;
-                            word-spacing: 2%;
                         }
                     }
 
@@ -216,8 +182,8 @@
                             background: $couleur_tertiaire;
                             padding: 1.75vw 4vw;
                             border-radius: 0.75vw;
-                            transition: transform 200ms ease-in;
-                            transform:  scale();
+                            // transition: transform 200ms ease-in;
+                            // // transform:  scale();
                             font-size: 4vw;
                         }
                         .logo-nouveau:hover {

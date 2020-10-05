@@ -1,16 +1,4 @@
-$couleur_primaire: #9356D7;
-$couleur_secondaire: #FF79DA;
-$couleur_tertiaire: #99E2D0;
-$font_texte: 'Roboto', sans-serif;
-$font_logo_titre: 'Shrikhand', cursive;
-
-$font_weight_bold: bold;
-$font_weight_light: 300;
-$font_weight_medium: 500;
-
-$border_noire: 1px solid black;
-$border_vert: 1px solid green;
-$border_rouge: 1px solid red; 
+@import './../../global_style/_global-variables';  
 
 
 @media all and (min-width: 1268px) { 
@@ -136,7 +124,6 @@ $border_rouge: 1px solid red;
 
                         .fa-store { 
                             color: $couleur_primaire;
-                            word-spacing: 2%;
                         }
                     }
                     
@@ -184,26 +171,15 @@ $border_rouge: 1px solid red;
 
                     div.contenaires-image {
                         position: relative;
-                        // flex-basis: 30%;
-                        // border: $border_vert;
                         box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
                         border-radius: 2rem 0 0 2rem;
-
-
-
                         a {
 
                             img {
                                 display: block;
-                                // margin-left: auto;
-                                // margin-right: auto;
                                 border-radius: 1rem 0 0 1rem;
-                                // max-width: 100%; 
-                                // max-width: 90%; 
-                                // max-width: 50%; 
                                 width: 25rem;
                                 height: auto;
-
                             }
                         }
 
@@ -215,8 +191,8 @@ $border_rouge: 1px solid red;
                             background: $couleur_tertiaire;
                             padding: 0.5rem 1rem;
                             border-radius: 0.5vw;
-                            transition: transform 200ms ease-in;
-                            transform:  scale();
+                            // transition: transform 200ms ease-in;
+                            // transform:  scale;
                             font-size: 0.75rem
                         }
                         .logo-nouveau:hover {
@@ -225,23 +201,12 @@ $border_rouge: 1px solid red;
                     }
 
                     div.contenaires-nom-et-ville {
-                        // position: relative;
-                        // float: right;
                         padding: 1.5rem 2.5rem;
                         width: 20rem;
-                        // margin: auto;
-                        // flex-basis: 70%;
-                        // flex: 1 1 50%;
                         background: white;
-                        // border-radius: 0 0 0.5rem 0.5rem;
                         border-radius: unset;
-                        // max-width: 90%;
-                        // margin-bottom: 3vw;
-                        // border: $border_rouge;
                         box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
                         border-radius: 0 1rem 1rem 0;
-
-
 
                         h3 {
                             font-size: 1.5rem;
@@ -261,7 +226,6 @@ $border_rouge: 1px solid red;
 
                         .fa-heart {
                             display: none;
-                            // color: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
                         }
 
                         .fa-heart-o {
@@ -286,10 +250,7 @@ $border_rouge: 1px solid red;
                             padding-top: 2vw;
                         }
                     }
-
-                }
-
-                    
+                }     
             }
         }
 
