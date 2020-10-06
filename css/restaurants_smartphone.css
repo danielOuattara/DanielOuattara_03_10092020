@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -77,8 +76,7 @@
     margin-bottom: 4vw;
     border-radius: 4vw;
     padding: 3.5vw;
-    -webkit-box-shadow: 0 0.5vw 2vw #cfcfcf;
-            box-shadow: 0 0.5vw 2vw #cfcfcf;
+    box-shadow: 0 0.5vw 2vw #cfcfcf;
   }
   body main section div h3 {
     font-size: 4.75vw;
@@ -101,12 +99,8 @@
   body main section.commander {
     padding-top: 1vw;
     padding-bottom: 20vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   body main section.commander button {
     font-size: 4.5vw;
@@ -115,8 +109,7 @@
     border: none;
     padding: 4vw 10vw;
     background: linear-gradient(175deg, #FF79DA, #9356D7);
-    -webkit-box-shadow: 3px 5px 7px silver;
-            box-shadow: 3px 5px 7px silver;
+    box-shadow: 3px 5px 7px silver;
     color: white;
     cursor: pointer;
     margin-top: 5vw;
@@ -147,4 +140,3 @@
     color: white;
   }
 }
-/*# sourceMappingURL=style_mobile_restaurants.css.map */

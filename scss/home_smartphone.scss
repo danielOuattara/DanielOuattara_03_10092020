@@ -1,79 +1,76 @@
-@import './../../global_style/_global-variables';  
+@import './global-variables';  
 
-
-@media all and (min-width: 1268px) { 
+@media all and (max-width: 668px) { 
 
     body {
-        display: flex;
-        flex-direction: column;
 
         header {
-            box-shadow: 0 1rem 1.5rem #cfcfcf;
-            margin-bottom: 1rem;
+            box-shadow: 0 0.25vw 1.5vw rgba(0, 0, 0, 0.337);
             text-align: center;
+            position: relative;
+            z-index: 1;
 
             h2.logo {
                 font-family: $font_logo_titre;
-                font-size: 2.5rem;
-                padding-top: 2rem;
+                font-weight: $font_weight_medium;
+                font-size: 8vw;
+                padding-top: 3.2vw;
+                padding-bottom: 2vw;
                 background-color: rgb(255, 255, 255);
             }
         }
 
         main {
-            display: flex;
-            flex-direction: row;
-
             aside {
-                flex-basis: 30%;
 
                 section.geolocalisation {
                     background:#eaeaea;
                     font-family: $font_texte;
-                    font-weight: $font_weight_medium;
-                    padding: 1rem;
+                    padding: 3.7vw;
                     text-align: center;
 
-                    h2 {  
+                    h2 {  // nom ville géolocalisée
                         font-weight: $font_weight_medium;
-                        font-size: 1rem;
+                        font-size: 4.15vw;
                         cursor: pointer;
-                        
-                        .material-icons {
-                            font-size: 1.25rem;
-                            margin-right: 1rem;
-                        }
+
+                    }
+                    
+                    .material-icons {
+                        font-size: 5vw;
+                        margin-right: 3vw;
                     }
                 }
             
                 section.presentations {
-                    padding: 2.5rem 1.5rem;
+                    padding: 10vw 3vw 14vw;
                     background: #f6f6f6 ;
                     text-align: center;
 
-                    h2:nth-child(1) {  // Réservez votre menu
+                    h2:nth-child(1) {  // Réservez votre menu 
                         font-weight: $font_weight_bold;
-                        font-size: 1.5rem;
-                        padding-bottom: 3rem;
+                        font-size: 6.75vw;
+                        padding-bottom: 10.2vw;
                     }
 
-                    p:nth-child(2) {
+                    p:nth-child(2) {   // Phrase accroche
                         font-weight: $font_weight_light;
-                        font-size: 1.25rem;
+                        font-size: 5vw;
                         color: #656565;
-                        padding-bottom: 4rem;  
+                        margin-bottom: 8vw; 
+                        width: 95%; 
                     }
 
-                    button {
+                    button {   // Explorer nos restaurants 
                         display: inline-block;
-                        font-size: 1.25rem;
-                        font-weight: $font_weight_medium;
-                        border-radius: 10rem;
+                        font-size: 4.25vw;
+                        font-weight: $font_weight_regular;
+                        border-radius: 7vw;
                         border: none;
                         background-color: $couleur_primaire;
-                        padding: 1rem 2rem;
+                        padding:  4.5vw 7vw;
                         background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
-                        box-shadow: 3px 5px 7px rgb(192, 192, 192);
+                        box-shadow: 0.25vw 1vw 2vw rgb(192, 192, 192);
                         color: red;
                         margin-left: auto;
                         margin-right: auto;
@@ -83,117 +80,111 @@
                 }
 
                 section.utilisation {
-                    padding-top: 3rem;
-                    padding-bottom: 2rem;
+                    padding-top: 12.8vw;
+                    padding-bottom: 11vw;
                     counter-reset: item;
                     position: relative;
 
-                    h2:nth-child(1) {  // Comment utiliser
+                    h2:nth-child(1) {   // Comment utiliser
                         font-family: $font_texte;
                         font-weight: $font_weight_bold;
-                        font-size: 1.5rem;
-                        padding-left: 6rem;
-                        padding-bottom: 3.8vw;   
+                        font-size: 6.5vw;
+                        padding-left: 5vw;
+                        text-align: left; 
+                        padding-bottom: 6.8vw;           
                     }
 
                     div.utilisation-application {
                         background: #f6f6f6;
                         width: 85%;
                         margin: auto;
-                        border-radius: 1rem;
-                        padding: 2rem  1rem;
-                        margin-bottom: 2rem;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
+                        border-radius: 5vw;
+                        padding: 7.25vw 6vw;
+                        margin-bottom: 6vw;
+                        box-shadow: 0vw 1.5vw 3vw rgb(230, 230, 230);
                         font-family: $font_texte;
-                        font-size: 1.15rem;
+                        font-size: 4.5vw;
                         font-weight: $font_weight_medium;
 
                         .icons-utilisation {
-                            margin: 0  2rem;
+                            margin: 0 7vw 0 3vw ;
                             color: grey;
-                            font-size: 1.25rem;
+                            font-size: 5vw;
                         }
 
-                        .fa-mobile-alt, .fa-tablet-alt {
+                        .fa-tablet-alt, .fa-desktop {
                             display: none;
                         } 
 
                         .fa-store, .fa-list-ul {
-                            font-size: 1rem;
+                            font-size: 4.5vw;
                         }
 
                         .fa-store { 
                             color: $couleur_primaire;
                         }
                     }
+
+                    div.utilisation-application:nth-of-type(3) {
+                        background: #f7edfe;
+                    }
                     
                     div.utilisation-application::before {
                         counter-increment: item;
                         content: counter(item) ;
                         background: grey;
-                        padding: 0.5rem 0.75rem;
-                        margin-right: 0.5rem;
+                        padding: 1vw 2.25vw;
+                        margin-right: 5vw;
                         display: inline-block;
                         border-radius: 50%;
                         font-family: $font_texte;
                         color: white;
-                        font-size: 0.75rem;
-                        font-weight: $font_weight_light;
+                        font-size: 3.75vw;
+                        font-weight: $font_weight_medium;
                         background: $couleur_primaire;  
                         position: absolute;
-                        left: 1rem;
+                        left: 2.5vw;
                     }
                 }  
             }
 
             nav.nos-restaurants {
-                flex-basis: 70%;
                 background: #f6f6f5 ;
-                padding-top: 3.5rem;
+                padding: 15vw 0 12vw 0;
+                text-align: left;
 
-                display: flex;
-                flex-direction: column;
-
-                h2 {
-                    padding-bottom: 2rem;
-                    padding-left: 4rem;
-                    font-size: 1.75rem;
-                    width: 100%;
-
+                h2 {    // Nos Restaurants
+                    margin-left: 5vw;
+                    padding-bottom: 5vw;
                 }
-
-                div.restaurants-home {
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 2rem;
-                    padding-left: 3rem;
-                
 
                     div.contenaires-image {
                         position: relative;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-                        border-radius: 2rem 0 0 2rem;
+
                         a {
 
                             img {
                                 display: block;
-                                border-radius: 1rem 0 0 1rem;
-                                width: 25rem;
+                                margin-left: auto;
+                                margin-right: auto;
+                                border-radius: 3vw 3vw 0 0;
+                                max-width: 90%; 
+                                // max-width: 50%; 
                                 height: auto;
                             }
                         }
 
                         .logo-nouveau {
                             position: absolute;
-                            top: 0.5rem;
-                            right: 0.5rem;
+                            top: 4vw;
+                            right: 8vw;
                             color: #008663;
                             background: $couleur_tertiaire;
-                            padding: 0.5rem 1rem;
-                            border-radius: 0.5vw;
+                            padding: 1.75vw 4vw;
+                            border-radius: 0.75vw;
                             // transition: transform 200ms ease-in;
-                            // transform:  scale;
-                            font-size: 0.75rem
+                            // // transform:  scale();
+                            font-size: 4vw;
                         }
                         .logo-nouveau:hover {
                             transform: scale(1.15);
@@ -201,86 +192,86 @@
                     }
 
                     div.contenaires-nom-et-ville {
-                        padding: 1.5rem 2.5rem;
-                        width: 20rem;
+                        position: relative;
+                        margin: auto;
                         background: white;
-                        border-radius: unset;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-                        border-radius: 0 1rem 1rem 0;
+                        border-radius: 0 0 4vw 4vw;
+                        max-width: 90%;
+                        margin-bottom: 4.5vw;
+                        box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.124);
+
 
                         h3 {
-                            font-size: 1.5rem;
+                            font-size: 4.5vw;
+                            padding: 3vw 0vw  0vw 4vw;
+
                         }
 
-                         p:nth-child(4) {
-                            font-size: 1rem;
+                        p:nth-child(4) {
+                            font-size: 4.5vw;
+                            padding: 1vw 0vw  5vw 4vw;
+
                         }
 
                         .petit-coeur {
                             position: absolute;
-                            top: 1rem;
-                            right: 2rem;
-                            font-size: 2rem;
-                            float: right;
+                            top: 6vw;
+                            right: 6vw;
+                            font-size: 6vw;
                         }
 
                         .fa-heart {
-                            display: none;
-                        }
-
-                        .fa-heart-o {
-                            display: none;
                             color: #9356D7;
+                            display: none; 
                         }
 
                         .fa-heart-o:hover {
                             cursor: pointer;
+                            color: #9356D7;
                         }  
 
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
+                        .fa-heart-o:active 
+                            &.fa-heart {
+                                display: inline-block;
                             }
-
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
-                        }       
+                            &.fa-heart-o {
+                                display:none;
+                            }
+      
 
                         .ville {
                             font-weight: $font_weight_light;
                             padding-top: 2vw;
                         }
                     }
-                }     
-            }
+            }  
         }
 
         footer {
-            flex-basis: 100%;
-            color: white;
             background: #353535;
-            display: flex;
-            flex-direction: row;
+            padding: 6vw 5vw 7vw 5vw;
+            color: white;
+            line-height: 1.8;
 
             h2 {
                 font-family: $font_logo_titre ;
                 font-weight: $font_weight_medium;
-                font-size: 1.5rem;
-                padding: 1rem 1.5rem;
-                flex: 1;
+                font-size: 4.75vw;
+                // padding: 2vw;
             }
-
+            
             p {
-                font-size: 1rem;
-                margin-right: 1rem;
-                padding-top: 1.5rem;
-                padding-right: 2rem;
+                font-size: 4.25vw;
+                margin-right: 2vw;
+                // padding-top: 2vw;
 
                 .icons-footer {
-                    font-size: 0.75rem;
-                    padding-right: 1.25rem;
-                    width: 1rem;
+                    font-size: 3.15vw;
+                    padding-right: 6vw;
+                    padding-left: 1vw;
+                    width: 4vw;
                 }
-
+    
                 .contact-email {
                     text-decoration: none;
                     color: white;
@@ -289,3 +280,12 @@
         }
     }
 }
+        
+
+
+
+
+
+
+
+

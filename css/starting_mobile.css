@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* media querry valable pour smartphone*/
@@ -16,22 +15,13 @@ body {
     margin: auto;
     width: 96%;
     height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #3f3f3f;
   }
   header {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     padding: 40% 0;
   }
   #logo-site {
@@ -42,4 +32,3 @@ body {
     text-decoration: none;
   }
 }
-/*# sourceMappingURL=style_mobile.css.map */

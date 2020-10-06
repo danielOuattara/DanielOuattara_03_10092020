@@ -1,15 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 @media all and (max-width: 668px) {
   body header {
-    -webkit-box-shadow: 0 0.25vw 1.5vw rgba(0, 0, 0, 0.337);
-            box-shadow: 0 0.25vw 1.5vw rgba(0, 0, 0, 0.337);
+    box-shadow: 0 0.25vw 1.5vw rgba(0, 0, 0, 0.337);
     text-align: center;
     position: relative;
     z-index: 1;
@@ -63,8 +61,7 @@
     background-color: #9356D7;
     padding: 4.5vw 7vw;
     background: linear-gradient(175deg, #FF79DA, #9356D7);
-    -webkit-box-shadow: 0.25vw 1vw 2vw silver;
-            box-shadow: 0.25vw 1vw 2vw silver;
+    box-shadow: 0.25vw 1vw 2vw silver;
     color: red;
     margin-left: auto;
     margin-right: auto;
@@ -92,8 +89,7 @@
     border-radius: 5vw;
     padding: 7.25vw 6vw;
     margin-bottom: 6vw;
-    -webkit-box-shadow: 0vw 1.5vw 3vw #e6e6e6;
-            box-shadow: 0vw 1.5vw 3vw #e6e6e6;
+    box-shadow: 0vw 1.5vw 3vw #e6e6e6;
     font-family: "Roboto", sans-serif;
     font-size: 4.5vw;
     font-weight: 500;
@@ -162,8 +158,7 @@
     font-size: 4vw;
   }
   body main nav.nos-restaurants div.contenaires-image .logo-nouveau:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    transform: scale(1.15);
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville {
     position: relative;
@@ -172,8 +167,7 @@
     border-radius: 0 0 4vw 4vw;
     max-width: 90%;
     margin-bottom: 4.5vw;
-    -webkit-box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.124);
-            box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.124);
+    box-shadow: 0 1.5vw 3vw rgba(0, 0, 0, 0.124);
   }
   body main nav.nos-restaurants div.contenaires-nom-et-ville h3 {
     font-size: 4.5vw;
@@ -234,4 +228,3 @@ body main nav.nos-restaurants div.contenaires-nom-et-ville.fa-heart {
     color: white;
   }
 }
-/*# sourceMappingURL=style_mobile_home.css.map */
