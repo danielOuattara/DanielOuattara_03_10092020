@@ -15,10 +15,40 @@
                 padding: 4vw 0 1.5vw 0;
 
                 a {
+                    text-decoration: none;
                     i.fa-arrow-left {
+                        display: inline-block;
                         font-size: 5vw;
                         position: relative;
                         left: -19vw;
+                        padding: 3vw;
+                        z-index: 1;
+                        color: black;
+
+                        
+                        &::after {
+                            content: "";
+                            border-radius: 40%;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            color: #fff;
+                            background-color: lighten($couleur_primaire, 35);
+                            box-shadow: 0 1vw 1.5vw rgb(153, 153, 153);
+
+                            opacity: 0;
+                            z-index: -1;
+                            transition: opacity 250ms;
+                        }
+
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+
+                            }
+                        }
                     }
                 }
             }
@@ -123,6 +153,32 @@
                     color: white;
                     cursor: pointer;
                     margin-top: 5vw;
+                    position: relative;
+                    z-index: 1;
+
+                    &::after {
+                        content: "";
+                        border-radius: 8vw;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: linear-gradient( 175deg,lighten($couleur_secondaire, 5), lighten($couleur_primaire, 5));
+                        background-color: $couleur_primaire;
+                        box-shadow: 0 1vw 1.5vw rgb(153, 153, 153);
+
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 250ms;
+                    }
+
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+
+                        }
+                    }
                 }
             }
         }
