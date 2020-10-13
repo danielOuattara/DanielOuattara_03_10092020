@@ -16,10 +16,35 @@
     font-size: 8vw;
     padding: 4vw 0 1.5vw 0;
   }
+  body header h2.logo a {
+    text-decoration: none;
+  }
   body header h2.logo a i.fa-arrow-left {
+    display: inline-block;
     font-size: 5vw;
     position: relative;
     left: -19vw;
+    padding: 3vw;
+    z-index: 1;
+    color: black;
+  }
+  body header h2.logo a i.fa-arrow-left::after {
+    content: "";
+    border-radius: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #efe6f9;
+    box-shadow: 0 1vw 1.5vw #999999;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+  body header h2.logo a i.fa-arrow-left:hover::after {
+    opacity: 1;
   }
   body section.bloc-image {
     position: absolute;
@@ -70,7 +95,7 @@
   }
   body main section div {
     /*  blocs des entrées, plats, desserts + accompagnement + prix */
-    background: #fff;
+    background: #852020;
     width: 95%;
     margin: auto;
     margin-bottom: 4vw;
@@ -113,6 +138,26 @@
     color: white;
     cursor: pointer;
     margin-top: 5vw;
+    position: relative;
+    z-index: 1;
+  }
+  body main section.commander button::after {
+    content: "";
+    border-radius: 8vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(175deg, #ff93e1, #a06bdc);
+    background-color: #9356D7;
+    box-shadow: 0 1vw 1.5vw #999999;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+  body main section.commander button:hover::after {
+    opacity: 1;
   }
   body footer {
     background: #353535;

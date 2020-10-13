@@ -105,9 +105,29 @@
     border: none;
     padding: 1rem 4rem;
     background: linear-gradient(175deg, #FF79DA, #9356D7);
-    box-shadow: 3px 5px 7px silver;
+    box-shadow: 0 5px 7px silver;
     color: white;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  body main section.commander button::after {
+    content: "";
+    border-radius: 4vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(175deg, #ff93e1, #a06bdc);
+    background-color: #9356D7;
+    box-shadow: 0 5px 7px #999999;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+  body main section.commander button:hover::after {
+    opacity: 1;
   }
   body footer {
     background: #353535;
