@@ -67,10 +67,14 @@
     margin-right: auto;
     color: white;
     cursor: pointer;
+    transition: opacity 300ms;
+  }
+  body main aside section.presentations button:hover {
+    opacity: 0.85;
+    box-shadow: 0.25vw 1vw 2vw #919191;
   }
   body main aside section.utilisation {
-    padding-top: 12.8vw;
-    padding-bottom: 11vw;
+    padding: 12.8vw 0 11vw 0;
     counter-reset: item;
     position: relative;
   }
