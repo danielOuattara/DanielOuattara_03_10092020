@@ -60,6 +60,7 @@
                 padding: 1rem 1rem 1rem 1rem;
                 display: flex;
                 flex-direction: row;
+                opacity: 0;
 
                 h2 {   /* titres entrées, plats, desserts */
                     font-weight: $font_weight_light;
@@ -74,7 +75,28 @@
                         border-bottom: 0.25rem solid #99E2D0;
                     }
                 }
+            }
 
+            .entrees {
+                animation: deroule-menus 500ms forwards 500ms;
+            }
+
+            .plats {
+                animation: deroule-menus 500ms forwards 1000ms;
+            }
+
+            .desserts {
+                animation: deroule-menus 500ms forwards 1500ms;
+            }
+
+            @keyframes deroule-menus {
+                0%{ 
+                    opacity: 0;
+                }
+
+                100%{
+                    opacity: 1;
+                }
             }
 
             section div {   /*  blocs des entrées, plats, desserts + accompagnement + prix */
@@ -84,6 +106,21 @@
                 border-radius: 0.75rem;
                 padding: 0.5rem 1.5rem;
                 box-shadow: 0 0.25rem 1rem #cfcfcf;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0.5vw 2vw #bababa;
+
+                    p:nth-child(2) {
+                        overflow: hidden;
+                    }
+
+                    p:nth-child(3) {
+                        transform:  translateX(-15vw) ;
+                    }
+                    p:nth-child(4) {
+                        transform:  translateX(-30vw) ;
+                    }
+                }
 
                 h3 {
                     font-size: 1.25rem;
@@ -94,6 +131,10 @@
                     font-weight: $font_weight_light;
                     padding-top: 1rem;
                     font-size: 1rem;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: visible;
+                    width: 70%;
                 }
 
                 p:nth-child(3) {  /* les tarifs*/
@@ -104,6 +145,31 @@
                     right: 0;
                     font-size: 1.25rem;
                     color: rgba(0, 0, 0, 0.5);
+                }
+
+                p:nth-child(4) {
+                    display: block;
+                    position: absolute;
+                    // z-index: 1 ;
+                    top: 0vw;
+                    // right: -5vw;
+                    right: -30vw;
+                    border-radius: 0 4vw 4vw 0;
+                    width: 19%;
+                    padding: 3.5vw;
+                    background-color:$couleur_tertiaire;
+                    color:  $couleur_tertiaire;
+                    transition: transform 600ms;
+                    height: 18vw;
+
+                    i.fa-check-circle {
+                        display: inline-block;
+                        position: absolute;
+                        font-size: 5vw;
+                        top: 4vw;
+                        right: -2vw;
+                        z-index: 1;
+                    }
                 }
             }
 

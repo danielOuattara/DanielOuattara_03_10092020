@@ -1,6 +1,16 @@
 @import './global-variables';  
 
 
+@keyframes deroule-menus {
+    0%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 @media all and (max-width: 668px) {
 
     body {
@@ -93,6 +103,7 @@
 
             section.elements-menus { /* section entrees, plats, desserts */
                 padding-bottom: 6vw;
+                opacity: 0;
 
                 h2 {    /* titres entrées, plats, desserts */
                     font-weight: $font_weight_light;
@@ -107,6 +118,18 @@
                 }
             }
 
+            .entrees {
+                animation: deroule-menus 500ms forwards 500ms;
+            }
+
+            .plats {
+                animation: deroule-menus 500ms forwards 1000ms;
+            }
+
+            .desserts {
+                animation: deroule-menus 500ms forwards 1500ms;
+            }
+
             section div {   /*  blocs des entrées, plats, desserts + accompagnement + prix */
                 background: #fff;
                 width: 95%;
@@ -115,6 +138,22 @@
                 border-radius: 4vw;
                 padding: 3.5vw;
                 box-shadow: 0 0.5vw 2vw #cfcfcf;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0.5vw 2vw #bababa;
+
+                    p:nth-child(2) {
+                        overflow: hidden;
+                    }
+
+                    p:nth-child(3) {
+                        transform:  translateX(-15vw) ;
+                    }
+                    p:nth-child(4) {
+                        transform:  translateX(-30vw) ;
+                    }
+                }
 
                 h3 {
                     font-size: 4.75vw;
@@ -124,15 +163,46 @@
                     font-weight: $font_weight_light;
                     padding-top: 1vw;
                     font-size: 3.75vw;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: visible;
+                    width: 70%;
                 }
+
+
 
                 p:nth-child(3) {  /* les tarifs*/
                     font-weight: $font_weight_bold;
                     float: right;
                     position: relative;
                     top: -4vw;
-                    right: 3vw;
+                    right: 2vw;
                     font-size: 4vw;
+                }
+
+                p:nth-child(4) {
+                    display: block;
+                    position: absolute;
+                    // z-index: 1 ;
+                    top: 0vw;
+                    // right: -5vw;
+                    right: -30vw;
+                    border-radius: 0 4vw 4vw 0;
+                    width: 19%;
+                    padding: 3.5vw;
+                    background-color:$couleur_tertiaire;
+                    color:  $couleur_tertiaire;
+                    transition: transform 600ms;
+                    height: 18vw;
+
+                    i.fa-check-circle {
+                        display: inline-block;
+                        position: absolute;
+                        font-size: 5vw;
+                        top: 4vw;
+                        right: -2vw;
+                        z-index: 1;
+                    }
                 }
             }
 

@@ -50,6 +50,7 @@
     padding: 1rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: row;
+    opacity: 0;
   }
   body main section.elements-menus h2 {
     /* titres entrées, plats, desserts */
@@ -65,6 +66,23 @@
     padding-bottom: 0.5rem;
     border-bottom: 0.25rem solid #99E2D0;
   }
+  body main .entrees {
+    animation: deroule-menus 500ms forwards 500ms;
+  }
+  body main .plats {
+    animation: deroule-menus 500ms forwards 1000ms;
+  }
+  body main .desserts {
+    animation: deroule-menus 500ms forwards 1500ms;
+  }
+  @keyframes deroule-menus {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   body main section div {
     /*  blocs des entrées, plats, desserts + accompagnement + prix */
     background: #fff;
@@ -73,6 +91,19 @@
     border-radius: 0.75rem;
     padding: 0.5rem 1.5rem;
     box-shadow: 0 0.25rem 1rem #cfcfcf;
+  }
+  body main section div:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5vw 2vw #bababa;
+  }
+  body main section div:hover p:nth-child(2) {
+    overflow: hidden;
+  }
+  body main section div:hover p:nth-child(3) {
+    transform: translateX(-15vw);
+  }
+  body main section div:hover p:nth-child(4) {
+    transform: translateX(-30vw);
   }
   body main section div h3 {
     font-size: 1.25rem;
@@ -83,6 +114,10 @@
     font-weight: 300;
     padding-top: 1rem;
     font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: visible;
+    width: 70%;
   }
   body main section div p:nth-child(3) {
     /* les tarifs*/
@@ -93,6 +128,27 @@
     right: 0;
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.5);
+  }
+  body main section div p:nth-child(4) {
+    display: block;
+    position: absolute;
+    top: 0vw;
+    right: -30vw;
+    border-radius: 0 4vw 4vw 0;
+    width: 19%;
+    padding: 3.5vw;
+    background-color: #99E2D0;
+    color: #99E2D0;
+    transition: transform 600ms;
+    height: 18vw;
+  }
+  body main section div p:nth-child(4) i.fa-check-circle {
+    display: inline-block;
+    position: absolute;
+    font-size: 5vw;
+    top: 4vw;
+    right: -2vw;
+    z-index: 1;
   }
   body main section.commander {
     padding: 7rem 0;
