@@ -2,7 +2,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+@keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
+@keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -16,9 +96,9 @@
 }
 
 .container__title {
-  font-size: 10vw;
+  font-size: 8vw;
   color: #fff;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   font-family: "Shrikhand", cursive;
   animation: centrage-texte 2000ms 7000ms  forwards;
   opacity: 0;
@@ -102,7 +182,7 @@
 .container__messages {
   text-align: center;
   font-size: 5vw;
-  color: white;
+  color: #fff;
   margin-bottom: 10vh;
 }
 
@@ -123,7 +203,7 @@
   color: #fff;
   font-size: 7vw;
   opacity: 0;
-  padding: 3vw;
+  padding: 3.75vw 4vw;
   border-radius: 50%;
   animation: continuer 3s 6500ms infinite;
   position: relative;
@@ -139,7 +219,6 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(175deg, #ff93e1, #a06bdc);
-  background-color: #9356D7;
   box-shadow: 0 1vw 1vw #444444;
   opacity: 0;
   z-index: -1;
@@ -148,46 +227,4 @@
 
 .container__messages--continuer a i.fa-arrow-right:hover::after {
   opacity: 1;
-}
-
-@keyframes centrage-texte {
-  0% {
-  }
-  100% {
-    transform: translateY(20vh) scale(1.2);
-    opacity: 1;
-  }
-}
-
-@keyframes animate-rings {
-  0% {
-    transform: translateZ(75px);
-  }
-  50% {
-    transform: translateZ(-75px);
-  }
-  90% {
-    transform: translateZ(75px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes chargement-texte {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes continuer {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
 }

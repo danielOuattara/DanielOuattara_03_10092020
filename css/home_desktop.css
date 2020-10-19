@@ -1,268 +1,152 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
 @media all and (min-width: 1268px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  body header {
+  header {
     box-shadow: 0 1rem 1.5rem #cfcfcf;
     margin-bottom: 1rem;
-    text-align: center;
   }
-  body header h2.logo {
-    font-family: "Shrikhand", cursive;
+  header h2.logo {
     font-size: 2.5rem;
     padding-top: 2rem;
-    background-color: white;
   }
-  body main {
-    display: flex;
+  main {
     flex-direction: row;
   }
-  body main aside {
-    flex-basis: 30%;
-  }
-  body main aside section.geolocalisation {
-    background: #eaeaea;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+  main aside section.geolocalisation {
     padding: 1rem;
-    text-align: center;
   }
-  body main aside section.geolocalisation h2 {
-    font-weight: 500;
+  main aside section.geolocalisation h2 {
     font-size: 1rem;
-    cursor: pointer;
   }
-  body main aside section.geolocalisation h2 .material-icons {
+  main aside section.geolocalisation h2 .material-icons {
     font-size: 1.25rem;
     margin-right: 1rem;
   }
-  body main aside section.presentations {
+  main aside section.presentations {
     padding: 2.5rem 1.5rem;
-    background: #f6f6f6;
-    text-align: center;
   }
-  body main aside section.presentations h2:nth-child(1) {
-    font-weight: bold;
+  main aside section.presentations h2:nth-child(1) {
     font-size: 1.5rem;
     padding-bottom: 3rem;
   }
-  body main aside section.presentations p:nth-child(2) {
-    font-weight: 300;
+  main aside section.presentations p:nth-child(2) {
     font-size: 1.25rem;
-    color: #656565;
     padding-bottom: 4rem;
   }
-  body main aside section.presentations button {
-    display: inline-block;
+  main aside section.presentations button {
     font-size: 1.25rem;
-    font-weight: 500;
     border-radius: 10rem;
-    border: none;
-    background-color: #9356D7;
     padding: 1rem 2rem;
-    background: linear-gradient(175deg, #FF79DA, #9356D7);
-    box-shadow: 0 5px 7px silver;
-    color: red;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    /* next 2: animation design */
-    z-index: 1;
+    box-shadow: 0 5px 7px #888;
   }
-  body main aside section.presentations button::after {
-    content: "";
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(175deg, #ff93e1, #a06bdc);
-    background-color: #9356D7;
-    box-shadow: 0 5px 7px #999999;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+  main aside section.presentations button::after {
+    box-shadow: 0 5px 7px #666;
   }
-  body main aside section.presentations button:hover::after {
-    opacity: 1;
+  main aside section.utilisation {
+    padding: 3rem 0 2rem;
   }
-  body main aside section.utilisation {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    counter-reset: item;
-    position: relative;
-  }
-  body main aside section.utilisation h2:nth-child(1) {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
+  main aside section.utilisation h2:nth-child(1) {
     font-size: 1.5rem;
     padding-left: 6rem;
     padding-bottom: 3.8vw;
   }
-  body main aside section.utilisation div.utilisation-application {
-    background: #f6f6f6;
+  main aside section.utilisation div.utilisation-application {
     width: 85%;
-    margin: auto;
     border-radius: 1rem;
     padding: 2rem  1rem;
     margin-bottom: 2rem;
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-    font-family: "Roboto", sans-serif;
+    box-shadow: 0 0.5rem 0.75rem #888;
     font-size: 1.15rem;
-    font-weight: 500;
   }
-  body main aside section.utilisation div.utilisation-application .icons-utilisation {
+  main aside section.utilisation div.utilisation-application p .icons-utilisation {
     margin: 0  2rem;
-    color: grey;
-    font-size: 1.25rem;
-  }
-  body main aside section.utilisation div.utilisation-application .fa-mobile-alt, body main aside section.utilisation div.utilisation-application .fa-tablet-alt {
-    display: none;
-  }
-  body main aside section.utilisation div.utilisation-application .fa-store, body main aside section.utilisation div.utilisation-application .fa-list-ul {
     font-size: 1rem;
   }
-  body main aside section.utilisation div.utilisation-application .fa-store {
-    color: #9356D7;
+  main aside section.utilisation div.utilisation-application p .fa-mobile-alt, main aside section.utilisation div.utilisation-application p .fa-tablet-alt {
+    display: none;
   }
-  body main aside section.utilisation div.utilisation-application::before {
-    counter-increment: item;
-    content: counter(item);
-    background: grey;
+  main aside section.utilisation div.utilisation-application p .fa-desktop {
+    display: inline-block;
+  }
+  main aside section.utilisation div.utilisation-application::before {
     padding: 0.5rem 0.75rem;
     margin-right: 0.5rem;
-    display: inline-block;
-    border-radius: 50%;
-    font-family: "Roboto", sans-serif;
-    color: white;
     font-size: 0.75rem;
-    font-weight: 300;
-    background: #9356D7;
-    position: absolute;
     left: 1rem;
   }
-  body main nav.nos-restaurants {
-    flex-basis: 70%;
-    background: #f6f6f5;
-    padding-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
+  main aside section.utilisation div.utilisation-application::after {
+    border-radius: 1rem;
+    box-shadow: 0 3px 7px #b3b3b3;
   }
-  body main nav.nos-restaurants h2 {
-    padding-bottom: 2rem;
+  main nav.nos-restaurants {
+    padding-top: 3.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main nav.nos-restaurants h2 {
+    padding: 2rem 0 4rem;
     padding-left: 4rem;
     font-size: 1.75rem;
-    width: 100%;
+    flex-basis: 100%;
   }
-  body main nav.nos-restaurants div.restaurants-home {
+  main nav.nos-restaurants div.restaurants-home {
+    border: 1px solid green;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
-    padding-left: 3rem;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-image {
-    position: relative;
+  main nav.nos-restaurants div.restaurants-home div.contenaires-image {
     box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-    border-radius: 2rem 0 0 2rem;
+    border-radius: 1rem 0 0 1rem;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-image a img {
+  main nav.nos-restaurants div.restaurants-home div.contenaires-image a img {
     display: block;
     border-radius: 1rem 0 0 1rem;
-    width: 25rem;
+    max-width: 20%;
     height: auto;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau {
+  main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    color: #008663;
-    background: #99E2D0;
     padding: 0.5rem 1rem;
     border-radius: 0.5vw;
     font-size: 0.75rem;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau:hover {
-    transform: scale(1.15);
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville {
-    padding: 1.5rem 2.5rem;
-    width: 20rem;
-    background: white;
-    border-radius: unset;
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
+  main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville {
+    padding: 1.5rem 1.5rem;
+    max-width: 25rem;
+    box-shadow: 0 0.5rem 0.75rem #4d4d4d;
     border-radius: 0 1rem 1rem 0;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
+  main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
     font-size: 1.5rem;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {
+  main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {
     font-size: 1rem;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .petit-coeur {
-    position: absolute;
+  main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .petit-coeur {
     top: 1rem;
     right: 2rem;
     font-size: 2rem;
-    float: right;
   }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .fa-heart {
-    display: none;
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .fa-heart-o {
-    display: none;
-    color: #9356D7;
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .fa-heart-o:hover {
-    cursor: pointer;
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .fa-heart-o:active .fa-heart-o {
-    display: none;
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .fa-heart-o:active .fa-heart-o {
-    display: none;
-  }
-  body main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .ville {
-    font-weight: 300;
-    padding-top: 2vw;
-  }
-  body footer {
-    flex-basis: 100%;
-    color: white;
-    background: #353535;
+  footer {
     display: flex;
     flex-direction: row;
   }
-  body footer h2 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 500;
+  footer h2 {
     font-size: 1.5rem;
     padding: 1rem 1.5rem;
     flex: 1;
   }
-  body footer p {
+  footer p {
     font-size: 1rem;
     margin-right: 1rem;
     padding-top: 1.5rem;
     padding-right: 2rem;
   }
-  body footer p .icons-footer {
+  footer p .icons-footer {
     font-size: 0.75rem;
     padding-right: 1.25rem;
     width: 1rem;
-  }
-  body footer p .contact-email {
-    text-decoration: none;
-    color: white;
   }
 }

@@ -1,0 +1,21 @@
+
+// Called in initial animation
+@mixin span-design($top, $left, $bottom, $right, $delay-value) {
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+    animation-delay:$delay-value;
+}
+
+
+@mixin tablet-rules {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+@mixin desktop-rules {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

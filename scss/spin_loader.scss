@@ -1,13 +1,10 @@
-@import './../scss/global-variables';
+@import './base/html-base';
 
+@import './utils/variables';  
+@import './utils/animation';
 
-@mixin span-design($top, $left, $bottom, $right, $delay-value) {
-    top: $top;
-    left: $left;
-    bottom: $bottom;
-    right: $right;
-    animation-delay:$delay-value;
-}
+@import './utils/mixins';
+
 
 .container {
     display: flex;
@@ -19,10 +16,9 @@
     font-family: $font_texte;
 
     &__title {
-
-        font-size: 10vw;
+        font-size: 8vw;
         color: #fff;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         font-family: $font-logo-titre;
         animation: centrage-texte 2000ms 7000ms  forwards;
         opacity: 0;
@@ -78,7 +74,7 @@
     &__messages {
         text-align: center;
         font-size: 5vw;
-        color: white;
+        color: #fff;
         margin-bottom: 10vh;
     
         &--chargement {
@@ -98,7 +94,7 @@
                     color: #fff;
                     font-size: 7vw;
                     opacity: 0;
-                    padding: 3vw;
+                    padding: 3.75vw 4vw;
                     border-radius: 50%;
                     animation: continuer 3s 6500ms infinite;
                     position: relative;
@@ -113,7 +109,6 @@
                         bottom: 0;
                         left: 0;
                         background: linear-gradient( 175deg,lighten($couleur_secondaire, 5), lighten($couleur_primaire, 5));
-                        background-color: $couleur_primaire;
                         box-shadow: 0 1vw 1vw rgb(68, 68, 68);
                         opacity: 0;
                         z-index: -1;
@@ -125,64 +120,9 @@
                             opacity: 1;
                         }
                     }
-
-
-
-
-
-
-
-
-
-
-
-
                 }
             }
         }
     }
 }
 
-
-@keyframes centrage-texte{
-    0%{ 
-    }
-    100% {
-        transform: translateY(20vh) scale(1.2);
-        opacity: 1;
-    }
-}
-
-@keyframes animate-rings {
-    0%{
-        transform: translateZ(75px);
-    }
-    50% {
-        transform: translateZ(-75px);
-    }
-    90% {
-        transform: translateZ(75px);
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes chargement-texte {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes continuer {
-    0%, 100%{
-        opacity: 1
-    }
-    50%{
-        opacity: 0;
-    }
-
-}

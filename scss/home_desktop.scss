@@ -1,317 +1,228 @@
-@import './global-variables';  
+@import './utils/variables'; 
+
 
 
 @media all and (min-width: 1268px) { 
 
-    body {
-        display: flex;
-        flex-direction: column;
 
-        header {
-            box-shadow: 0 1rem 1.5rem #cfcfcf;
-            margin-bottom: 1rem;
-            text-align: center;
+    header {
+        box-shadow: 0 1rem 1.5rem #cfcfcf;
+        margin-bottom: 1rem;
 
-            h2.logo {
-                font-family: $font_logo_titre;
-                font-size: 2.5rem;
-                padding-top: 2rem;
-                background-color: rgb(255, 255, 255);
-            }
+        h2.logo {
+            font-size: 2.5rem;
+            padding-top: 2rem;
         }
+    }
 
-        main {
-            display: flex;
-            flex-direction: row;
+    main {
+        flex-direction: row;
 
-            aside {
-                flex-basis: 30%;
+        aside {
+            // flex-basis: 30%;
 
-                section.geolocalisation {
-                    background:#eaeaea;
-                    font-family: $font_texte;
-                    font-weight: $font_weight_medium;
-                    padding: 1rem;
-                    text-align: center;
+            section.geolocalisation {
+                padding: 1rem;
 
-                    h2 {  
-                        font-weight: $font_weight_medium;
-                        font-size: 1rem;
-                        cursor: pointer;
-                        
-                        .material-icons {
-                            font-size: 1.25rem;
-                            margin-right: 1rem;
-                        }
+                h2 {  
+                    font-size: 1rem;
+                    
+                    .material-icons {
+                        font-size: 1.25rem;
+                        margin-right: 1rem;
                     }
                 }
-            
-                section.presentations {
-                    padding: 2.5rem 1.5rem;
-                    background: #f6f6f6 ;
-                    text-align: center;
+            }
+        
+            section.presentations {
+                padding: 2.5rem 1.5rem;
 
-                    h2:nth-child(1) {  // Réservez votre menu
-                        font-weight: $font_weight_bold;
-                        font-size: 1.5rem;
-                        padding-bottom: 3rem;
-                    }
-
-                    p:nth-child(2) {
-                        font-weight: $font_weight_light;
-                        font-size: 1.25rem;
-                        color: #656565;
-                        padding-bottom: 4rem;  
-                    }
-
-                    button {
-                        display: inline-block;
-                        font-size: 1.25rem;
-                        font-weight: $font_weight_medium;
-                        border-radius: 10rem;
-                        border: none;
-                        background-color: $couleur_primaire;
-                        padding: 1rem 2rem;
-                        background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
-                        box-shadow: 0 5px 7px rgb(192, 192, 192);
-                        color: red;
-                        margin-left: auto;
-                        margin-right: auto;
-                        color: white;
-                        cursor: pointer;
-
-                        position: relative; /* next 2: animation design */
-                        z-index: 1;
-
-                        &::after {
-                            content: "";
-                            border-radius: 10rem;
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            background: linear-gradient( 175deg,lighten($couleur_secondaire, 5), lighten($couleur_primaire, 5));
-                            background-color: $couleur_primaire;
-                            box-shadow: 0 5px 7px rgb(153, 153, 153);
-
-                            opacity: 0;
-                            z-index: -1;
-                            transition: opacity 250ms;
-                        }
-
-                        &:hover {
-                            &::after {
-                                opacity: 1;
-
-                            }
-                        }
-                    }
+                h2:nth-child(1) {  // Réservez votre menu
+                    font-size: 1.5rem;
+                    padding-bottom: 3rem;
                 }
 
-                section.utilisation {
-                    padding-top: 3rem;
-                    padding-bottom: 2rem;
-                    counter-reset: item;
-                    position: relative;
+                p:nth-child(2) {
+                    font-size: 1.25rem;
+                    padding-bottom: 4rem;  
+                }
 
-                    h2:nth-child(1) {  // Comment utiliser
-                        font-family: $font_texte;
-                        font-weight: $font_weight_bold;
-                        font-size: 1.5rem;
-                        padding-left: 6rem;
-                        padding-bottom: 3.8vw;   
+                button {
+                    font-size: 1.25rem;
+                    border-radius: 10rem;
+                    padding: 1rem 2rem;
+                    box-shadow: 0 5px 7px $shadow-color;
+
+                    &::after {
+                        box-shadow: 0 5px 7px $shadow-color-medium;
                     }
+                }
+            }
 
-                    div.utilisation-application {
-                        background: #f6f6f6;
-                        width: 85%;
-                        margin: auto;
-                        border-radius: 1rem;
-                        padding: 2rem  1rem;
-                        margin-bottom: 2rem;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-                        font-family: $font_texte;
-                        font-size: 1.15rem;
-                        font-weight: $font_weight_medium;
+            section.utilisation {
+                padding: 3rem 0 2rem;
+
+                h2:nth-child(1) {  // Comment utiliser
+                    font-size: 1.5rem;
+                    padding-left: 6rem;
+                    padding-bottom: 3.8vw;   
+                }
+
+                div.utilisation-application {
+                    width: 85%;
+                    border-radius: 1rem;
+                    padding: 2rem  1rem;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 0.5rem 0.75rem $shadow-color;
+                    font-size: 1.15rem;
+
+                    p {
 
                         .icons-utilisation {
                             margin: 0  2rem;
-                            color: grey;
-                            font-size: 1.25rem;
+                            font-size: 1rem;
                         }
 
                         .fa-mobile-alt, .fa-tablet-alt {
                             display: none;
                         } 
 
-                        .fa-store, .fa-list-ul {
-                            font-size: 1rem;
-                        }
-
-                        .fa-store { 
-                            color: $couleur_primaire;
+                        .fa-desktop {
+                            display: inline-block;
                         }
                     }
-                    
-                    div.utilisation-application::before {
-                        counter-increment: item;
-                        content: counter(item) ;
-                        background: grey;
+
+                    &::before {
                         padding: 0.5rem 0.75rem;
                         margin-right: 0.5rem;
-                        display: inline-block;
-                        border-radius: 50%;
-                        font-family: $font_texte;
-                        color: white;
                         font-size: 0.75rem;
-                        font-weight: $font_weight_light;
-                        background: $couleur_primaire;  
-                        position: absolute;
                         left: 1rem;
                     }
-                }  
-            }
 
-            nav.nos-restaurants {
-                flex-basis: 70%;
-                background: #f6f6f5 ;
-                padding-top: 3.5rem;
-
-                display: flex;
-                flex-direction: column;
-
-                h2 {
-                    padding-bottom: 2rem;
-                    padding-left: 4rem;
-                    font-size: 1.75rem;
-                    width: 100%;
-
+                    &::after {
+                        border-radius: 1rem;
+                        box-shadow: 0 3px 7px #b3b3b3;
+                        // opacity: 0;
+                        // z-index: -1;
+                        // transition: opacity 250ms;
+                    }
                 }
-
-                div.restaurants-home {
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 2rem;
-                    padding-left: 3rem;
-                
-
-                    div.contenaires-image {
-                        position: relative;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-                        border-radius: 2rem 0 0 2rem;
-                        a {
-
-                            img {
-                                display: block;
-                                border-radius: 1rem 0 0 1rem;
-                                width: 25rem;
-                                height: auto;
-                            }
-                        }
-
-                        .logo-nouveau {
-                            position: absolute;
-                            top: 0.5rem;
-                            right: 0.5rem;
-                            color: #008663;
-                            background: $couleur_tertiaire;
-                            padding: 0.5rem 1rem;
-                            border-radius: 0.5vw;
-                            // transition: transform 200ms ease-in;
-                            // transform:  scale;
-                            font-size: 0.75rem
-                        }
-                        .logo-nouveau:hover {
-                            transform: scale(1.15);
-                        }
-                    }
-
-                    div.contenaires-nom-et-ville {
-                        padding: 1.5rem 2.5rem;
-                        width: 20rem;
-                        background: white;
-                        border-radius: unset;
-                        box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
-                        border-radius: 0 1rem 1rem 0;
-
-                        h3 {
-                            font-size: 1.5rem;
-                        }
-
-                         p:nth-child(4) {
-                            font-size: 1rem;
-                        }
-
-                        .petit-coeur {
-                            position: absolute;
-                            top: 1rem;
-                            right: 2rem;
-                            font-size: 2rem;
-                            float: right;
-                        }
-
-                        .fa-heart {
-                            display: none;
-                        }
-
-                        .fa-heart-o {
-                            display: none;
-                            color: #9356D7;
-                        }
-
-                        .fa-heart-o:hover {
-                            cursor: pointer;
-                        }  
-
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
-                            }
-
-                        .fa-heart-o:active .fa-heart-o {
-                                display: none;
-                        }       
-
-                        .ville {
-                            font-weight: $font_weight_light;
-                            padding-top: 2vw;
-                        }
-                    }
-                }     
             }
         }
 
-        footer {
-            flex-basis: 100%;
-            color: white;
-            background: #353535;
-            display: flex;
-            flex-direction: row;
+        nav.nos-restaurants {
+            // flex-basis: 70%;
+            // background: #f6f6f5 ;
+            padding-top: 3.5rem;
+
+            // display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
 
             h2 {
-                font-family: $font_logo_titre ;
-                font-weight: $font_weight_medium;
-                font-size: 1.5rem;
-                padding: 1rem 1.5rem;
-                flex: 1;
+                padding: 2rem 0 4rem;
+                // padding-bottom: 2rem;
+                padding-left: 4rem;
+                font-size: 1.75rem;
+                flex-basis: 100%;
             }
 
-            p {
-                font-size: 1rem;
-                margin-right: 1rem;
-                padding-top: 1.5rem;
-                padding-right: 2rem;
+            div.restaurants-home {
+                border: 1px solid green;
+                margin-bottom: 2rem;
+                padding-left: 2rem;
+                // flex: 1 1 80%;
 
-                .icons-footer {
-                    font-size: 0.75rem;
-                    padding-right: 1.25rem;
-                    width: 1rem;
+                display: flex;
+                flex-direction: row;
+            
+
+                div.contenaires-image {
+                    // position: relative;
+                    // flex: 1 1 50%;
+                    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
+                    border-radius: 1rem 0 0 1rem;
+                    a {
+
+                        img {
+                            display: block;
+                            border-radius: 1rem 0 0 1rem;
+                            max-width: 20%;
+                            height: auto;
+                        }
+                    }
+
+                    .logo-nouveau {
+                        position: absolute;
+                        top: 0.5rem;
+                        right: 0.5rem;
+                        // color: #008663;
+                        // background: $couleur_tertiaire;
+                        padding: 0.5rem 1rem;
+                        border-radius: 0.5vw;
+                        // transition: transform 200ms ease-in;
+                        // transform:  scale;
+                        font-size: 0.75rem
+                    }
+                    // .logo-nouveau:hover {
+                    //     transform: scale(1.15);
+                    // }
                 }
 
-                .contact-email {
-                    text-decoration: none;
-                    color: white;
+                div.contenaires-nom-et-ville {
+                    padding: 1.5rem 1.5rem;
+                    // flex: 1 1 50%;
+                    max-width: 25rem;
+                    // background: white;
+                    box-shadow: 0 0.5rem 0.75rem #4d4d4d;
+                    border-radius: 0 1rem 1rem 0;
+                    // max-width: 50%;
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                        p:nth-child(4) {
+                        font-size: 1rem;
+                    }
+
+                    .petit-coeur {
+                        // position: absolute;
+                        top: 1rem;
+                        right: 2rem;
+                        font-size: 2rem;
+                        // float: right;
+                    }
                 }
+            }     
+        }
+    }
+
+    footer {
+        // flex-basis: 100%;
+        // color: white;
+        // background: #353535;
+        display: flex;
+        flex-direction: row;
+
+        h2 {
+            // font-family: $font_logo_titre ;
+            // font-weight: $font_weight_medium;
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+            flex: 1;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-right: 1rem;
+            padding-top: 1.5rem;
+            padding-right: 2rem;
+
+            .icons-footer {
+                font-size: 0.75rem;
+                padding-right: 1.25rem;
+                width: 1rem;
             }
         }
     }
