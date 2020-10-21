@@ -1,4 +1,4 @@
-@import './utils/variables'; 
+@import './../utils/variables'; 
 
 
 
@@ -68,16 +68,16 @@
 
                 div.utilisation-application {
                     border-radius: 1rem;
-                    padding: 2rem  1rem;
+                    padding: 3rem  1rem;
                     margin-bottom: 2rem;
                     box-shadow: 0 0.5rem 0.75rem $shadow-color;
-                    font-size: 1.15rem;
+                    font-size: 1.25rem;
 
                     p {
 
                         .icons-utilisation {
                             margin: 0  2rem;
-                            font-size: 1rem;
+                            font-size: 2rem;
                         }
 
                         .fa-mobile-alt, .fa-tablet-alt {
@@ -94,7 +94,7 @@
                         margin-right: 0.5rem;
                         font-size: 0.75rem;
                         left: -1.25rem;
-                        top: 1.75rem;
+                        top: 3rem;
                     }
 
                     &::after {

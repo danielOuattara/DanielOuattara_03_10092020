@@ -5,36 +5,12 @@
   box-sizing: border-box;
 }
 
-@-webkit-keyframes centrage-texte {
-  0% {
-  }
-  100% {
-    transform: translateY(20vh) scale(1.2);
-    opacity: 1;
-  }
-}
-
 @keyframes centrage-texte {
   0% {
   }
   100% {
     transform: translateY(20vh) scale(1.2);
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes animate-rings {
-  0% {
-    transform: translateZ(75px);
-  }
-  50% {
-    transform: translateZ(-75px);
-  }
-  90% {
-    transform: translateZ(75px);
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -53,15 +29,6 @@
   }
 }
 
-@-webkit-keyframes chargement-texte {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 @keyframes chargement-texte {
   0%, 100% {
     opacity: 0;
@@ -71,39 +38,12 @@
   }
 }
 
-@-webkit-keyframes continuer {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-
 @keyframes continuer {
   0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
-  }
-}
-
-@-webkit-keyframes apparition-home {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -125,18 +65,6 @@
   }
 }
 
-@-webkit-keyframes zooming {
-  5% {
-    transform: scale(0.9);
-  }
-  10% {
-    transform: scale(1.1);
-  }
-  15%, 100%, 0% {
-    transform: scale(1);
-  }
-}
-
 @keyframes zooming {
   5% {
     transform: scale(0.9);
@@ -149,25 +77,7 @@
   }
 }
 
-@-webkit-keyframes coeur-remplissage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes coeur-remplissage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes deroule-menus {
   0% {
     opacity: 0;
   }
@@ -277,8 +187,7 @@ body main section.affiche h2 .fa-heart {
 }
 
 body main section.affiche h2 .fa-heart:hover {
-  -webkit-animation: coeur-remplissage 550ms ease-out forwards;
-          animation: coeur-remplissage 550ms ease-out forwards;
+  animation: coeur-remplissage 550ms ease-out forwards;
 }
 
 body main section.affiche h2 .fa-heart-o {
@@ -307,18 +216,15 @@ body main section.elements-menus h2 span {
 }
 
 body main .entrees {
-  -webkit-animation: deroule-menus 500ms forwards 500ms;
-          animation: deroule-menus 500ms forwards 500ms;
+  animation: deroule-menus 500ms forwards 500ms;
 }
 
 body main .plats {
-  -webkit-animation: deroule-menus 500ms forwards 1000ms;
-          animation: deroule-menus 500ms forwards 1000ms;
+  animation: deroule-menus 500ms forwards 1000ms;
 }
 
 body main .desserts {
-  -webkit-animation: deroule-menus 500ms forwards 1500ms;
-          animation: deroule-menus 500ms forwards 1500ms;
+  animation: deroule-menus 500ms forwards 1500ms;
 }
 
 body main section div {
@@ -352,7 +258,7 @@ body main section div:hover p:nth-child(3) {
 
 body main section div:hover p:nth-child(4) {
   opacity: 1;
-  transform: translateX(-30vw);
+  transform: translateX(-29.5vw);
 }
 
 body main section div:hover .fa-check-circle {

@@ -1,9 +1,9 @@
-@import './base/html-base';
+@import './../base/html-base';
 
-@import './utils/variables';  
-@import './utils/animation';
+@import './../utils/variables';  
+@import './../utils/animation';
 
-@import './utils/mixins';
+@import './../utils/mixins';
 
 @media screen and (min-width: 668px) {
 

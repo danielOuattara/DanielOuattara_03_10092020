@@ -1,6 +1,6 @@
-@import './base/html-base';
-@import './utils/variables';  
-@import'./utils/animation';
+@import './../base/html-base';
+@import './../utils/variables';  
+@import'./../utils/animation';
   
 
     body {
@@ -161,7 +161,7 @@
                     }
                     p:nth-child(4) {  // animation boite verte
                         opacity: 1;
-                        transform:  translateX(-30vw) ;
+                        transform:  translateX(-29.5vw) ;
                     }
 
                     .fa-check-circle {

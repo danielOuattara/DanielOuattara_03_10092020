@@ -48,14 +48,14 @@
   }
   main aside section.utilisation div.utilisation-application {
     border-radius: 1rem;
-    padding: 2rem  1rem;
+    padding: 3rem  1rem;
     margin-bottom: 2rem;
     box-shadow: 0 0.5rem 0.75rem #858585;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
   main aside section.utilisation div.utilisation-application p .icons-utilisation {
     margin: 0  2rem;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   main aside section.utilisation div.utilisation-application p .fa-mobile-alt, main aside section.utilisation div.utilisation-application p .fa-tablet-alt {
     display: none;
@@ -68,7 +68,7 @@
     margin-right: 0.5rem;
     font-size: 0.75rem;
     left: -1.25rem;
-    top: 1.75rem;
+    top: 3rem;
   }
   main aside section.utilisation div.utilisation-application::after {
     border-radius: 1rem;
