@@ -3,15 +3,14 @@
 @media screen and (min-width: 668px) {
 
     header {
-        box-shadow: 0 0.25vw 2.5vw #cfcfcf;
-        margin-bottom: 0.5vw;
+        box-shadow: 0 0.25vw .5vw $shadow-color;
+        margin-bottom: 0.45vw;
         width: 100%;
 
-        h2.logo {
+        h1.logo {
             font-size: 3.5vw;
             padding-top: 1.5vw;
             padding-bottom: 1vw;
-            background-color: rgb(255, 255, 255);
         }
     }
 
@@ -26,8 +25,6 @@
 
             section.geolocalisation {
                 padding: 1.5vw;
-                // text-align: center;
-                // z-index: auto;
 
                 h2 {  // nom ville géolocalisée
                     font-size: 1.5vw;
@@ -39,7 +36,7 @@
                 }
 
                 &::after {
-                    box-shadow: 0vw 0.25rem 0.5rem#cfcfcf;
+                    box-shadow: 0vw 0.25rem 0.5rem $shadow-color;
                 }
             }
         
@@ -61,7 +58,7 @@
                     font-size: 1.5vw;
                     border-radius: 7vw;
                     padding: 1.5vw 2vw;
-                    background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                    // background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
                     box-shadow: 0 5px 7px $shadow-color;
 
                     &::after {
@@ -85,7 +82,6 @@
                     margin-bottom: 2rem;
                     box-shadow: 0 3px 7px #dcdcdc;
                     font-size: 0.85rem;
-                    // font-weight: $font_weight_medium;
                 
                     p {
                         .icons-utilisation {
@@ -108,15 +104,12 @@
                         margin-left: 0.5rem;
                         font-size: 1rem;
                         left: -1rem;
-                        top: 1.4rem;
+                        top: 1.75rem;
                     }
 
                     &::after {
                         border-radius: 1rem;
                         box-shadow: 0 3px 7px #b3b3b3;
-                        // opacity: 0;
-                        // z-index: -1;
-                        // transition: opacity 250ms;
                     }
 
                 }
@@ -126,6 +119,7 @@
         nav.nos-restaurants {
             flex-basis: 65%;
             padding-top: 2vw;
+            padding: 5vw 0 3vw 0;
 
             display: flex;
             flex-direction: row;
@@ -134,12 +128,14 @@
             h2 {  // Nos restautants
                 padding-bottom: 3vw;
                 font-size: 2.5vw;
-                width: 100%;
+                flex-basis: 100%;
                 text-align: center;
             }
 
             div.restaurants-home {
                 flex: 1 1 50%;
+                // border: 1px solid red;
+                padding: 1vw;
 
                 div.contenaires-image {
                     a {
@@ -169,7 +165,7 @@
 
                     h3 {  // nom restaurant
                         font-size: 1.75vw;
-                        font-weight: $font_weight_medium;
+                        // font-weight: $font_weight_medium;
                         padding: 0.25vw;
                     }
 
@@ -192,13 +188,10 @@
 
     footer {
         padding: unset;
-        
         display: flex;
         flex-direction: row;
 
         h2 {
-            // font-family: $font_logo_titre ;
-            // font-weight: $font_weight_medium;
             font-size: 2.5vw;
             padding: 1.5vw 3vw;
             flex: 1;

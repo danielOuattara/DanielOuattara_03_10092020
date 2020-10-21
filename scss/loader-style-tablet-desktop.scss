@@ -1,0 +1,49 @@
+@import './base/html-base';
+
+@import './utils/variables';  
+@import './utils/animation';
+
+@import './utils/mixins';
+
+@media screen and (min-width: 668px) {
+
+    .container {
+        overflow: hidden;
+
+        &__title {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 5vh;
+            font-family: $font-logo-titre;
+        }
+
+        &__rings {
+            position: relative;
+            margin-bottom: 5rem ;
+        } 
+        
+        &__messages {
+            text-align: center;
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 5rem;
+        
+            &--chargement {
+                margin-bottom: 5rem;
+                font-size: 2rem;
+            }
+        
+            &--continuer {
+                a {
+                    text-decoration: none;
+                    position: relative;
+        
+                    i.fa-arrow-right {
+                        font-size: 3rem;
+                        padding: 0.75rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

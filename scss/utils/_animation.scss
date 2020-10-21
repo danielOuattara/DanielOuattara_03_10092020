@@ -90,3 +90,16 @@
 
     }
 }
+
+
+// Animation utilisée dans le corps des restaurant
+
+@keyframes deroule-menus {
+    0%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

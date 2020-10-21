@@ -3,7 +3,177 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+@-webkit-keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes deroule-menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes deroule-menus {
@@ -15,231 +185,307 @@
   }
 }
 
-@media all and (max-width: 668px) {
-  body header {
-    text-align: center;
-  }
-  body header h2.logo {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    font-size: 8vw;
-    padding: 4vw 0 1.5vw 0;
-  }
-  body header h2.logo a {
-    text-decoration: none;
-  }
-  body header h2.logo a i.fa-arrow-left {
-    display: inline-block;
-    font-size: 5vw;
-    position: relative;
-    left: -19vw;
-    padding: 3vw;
-    z-index: 1;
-    color: black;
-  }
-  body header h2.logo a i.fa-arrow-left::after {
-    content: "";
-    border-radius: 40%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    background-color: #efe6f9;
-    box-shadow: 0 1vw 1.5vw #999999;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
-  }
-  body header h2.logo a i.fa-arrow-left:hover::after {
-    opacity: 1;
-  }
-  body section.bloc-image {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-  }
-  body section.bloc-image img {
-    display: block;
-    max-width: 106%;
-    height: auto;
-  }
-  body main {
-    margin-top: 58vw;
-    background: #f6f6f5;
-    border-radius: 11vw 11vw 0 0;
-  }
-  body main section.affiche h2 {
-    /* titre du restaurant */
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    padding-top: 8.5vw;
-    padding-bottom: 4.5vw;
-    padding-left: 5vw;
-    font-size: 7.5vw;
-    position: relative;
-  }
-  body main section.affiche h2 i.petit-coeur {
-    font-size: 6vw;
-    position: absolute;
-    right: 9vw;
-    top: 11vw;
-  }
-  body main section.elements-menus {
-    /* section entrees, plats, desserts */
-    padding-bottom: 6vw;
-    opacity: 0;
-  }
-  body main section.elements-menus h2 {
-    /* titres entrées, plats, desserts */
-    font-weight: 300;
-    padding: 0 0 3vw 6vw;
-    font-size: 4.5vw;
-    margin-bottom: 2.75vw;
-  }
-  body main section.elements-menus h2 span {
-    /* mots demi-soulignés */
-    padding-bottom: 1vw;
-    border-bottom: 1vw solid #99E2D0;
-  }
-  body main .entrees {
-    animation: deroule-menus 500ms forwards 500ms;
-  }
-  body main .plats {
-    animation: deroule-menus 500ms forwards 1000ms;
-  }
-  body main .desserts {
-    animation: deroule-menus 500ms forwards 1500ms;
-  }
-  body main section div {
-    /*  blocs des entrées, plats, desserts + accompagnement + prix */
-    background: #fff;
-    width: 95%;
-    margin: auto;
-    margin-bottom: 4vw;
-    border-radius: 4vw;
-    padding: 3.5vw;
-    box-shadow: 0 0.5vw 2vw #cfcfcf;
-    position: relative;
-  }
-  body main section div:hover {
-    cursor: pointer;
-    box-shadow: 0 0.5vw 2vw #bababa;
-  }
-  body main section div:hover p:nth-child(2) {
-    overflow: hidden;
-  }
-  body main section div:hover p:nth-child(3) {
-    transform: translateX(-15vw);
-  }
-  body main section div:hover p:nth-child(4) {
-    transform: translateX(-30vw);
-  }
-  body main section div h3 {
-    font-size: 4.75vw;
-  }
-  body main section div p:nth-child(2) {
-    /* accompagnement de chaque assiette */
-    font-weight: 300;
-    padding-top: 1vw;
-    font-size: 3.75vw;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: visible;
-    width: 70%;
-  }
-  body main section div p:nth-child(3) {
-    /* les tarifs*/
-    font-weight: bold;
-    float: right;
-    position: relative;
-    top: -4vw;
-    right: 2vw;
-    font-size: 4vw;
-  }
-  body main section div p:nth-child(4) {
-    display: block;
-    position: absolute;
-    top: 0vw;
-    right: -30vw;
-    border-radius: 0 4vw 4vw 0;
-    width: 19%;
-    padding: 3.5vw;
-    background-color: #99E2D0;
-    color: #99E2D0;
-    transition: transform 600ms;
-    height: 18vw;
-  }
-  body main section div p:nth-child(4) i.fa-check-circle {
-    display: inline-block;
-    position: absolute;
-    font-size: 5vw;
-    top: 4vw;
-    right: -2vw;
-    z-index: 1;
-  }
-  body main section.commander {
-    padding-top: 1vw;
-    padding-bottom: 20vw;
-    display: flex;
-    justify-content: center;
-  }
-  body main section.commander button {
-    font-size: 4.5vw;
-    font-weight: 500;
-    border-radius: 8vw;
-    border: none;
-    padding: 4vw 10vw;
-    background: linear-gradient(175deg, #FF79DA, #9356D7);
-    box-shadow: 3px 5px 7px silver;
-    color: white;
-    cursor: pointer;
-    margin-top: 5vw;
-    position: relative;
-    z-index: 1;
-  }
-  body main section.commander button::after {
-    content: "";
-    border-radius: 8vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(175deg, #ff93e1, #a06bdc);
-    background-color: #9356D7;
-    box-shadow: 0 1vw 1.5vw #999999;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
-  }
-  body main section.commander button:hover::after {
-    opacity: 1;
-  }
-  body footer {
-    background: #353535;
-    padding: 5.5vw 0 7.5vw 5vw;
-    color: white;
-    line-height: 1.6;
-  }
-  body footer h2 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    font-size: 5vw;
-    padding-bottom: 4vw;
-  }
-  body footer p {
-    font-size: 4.25vw;
-    margin-right: 2vw;
-  }
-  body footer p .icons-footer {
-    font-size: 3.5vw;
-    padding-right: 6vw;
-    width: 4vw;
-  }
-  body footer p .contact-email {
-    text-decoration: none;
-    color: white;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+body header {
+  text-align: center;
+}
+
+body header h1.logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 8vw;
+  padding: 2vw 0 1.5vw 0;
+}
+
+body header h1.logo a {
+  text-decoration: none;
+}
+
+body header h1.logo a i.fa-arrow-left {
+  display: inline-block;
+  font-size: 5vw;
+  position: relative;
+  left: -19vw;
+  padding: 2.5vw 2.75vw;
+  z-index: 1;
+  color: #000;
+}
+
+body header h1.logo a i.fa-arrow-left::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c8a8eb;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+body header h1.logo a i.fa-arrow-left:hover::after {
+  opacity: 1;
+}
+
+body section.bloc-image {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+body section.bloc-image img {
+  display: block;
+  max-width: 106%;
+  height: auto;
+}
+
+body main {
+  margin-top: 58vw;
+  background: #f6f6f5;
+  border-radius: 11vw 11vw 0 0;
+}
+
+body main section.affiche h2 {
+  /* titre du restaurant */
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  padding: 8.5vw 0 4.5vw 5vw;
+  font-size: 7.5vw;
+  position: relative;
+}
+
+body main section.affiche h2 i.petit-coeur {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 6vw;
+  position: absolute;
+  right: 9vw;
+  top: 11vw;
+}
+
+body main section.affiche h2 .fa-heart {
+  z-index: 1;
+  opacity: 0;
+  color: #9356D7;
+}
+
+body main section.affiche h2 .fa-heart:hover {
+  -webkit-animation: coeur-remplissage 550ms ease-out forwards;
+          animation: coeur-remplissage 550ms ease-out forwards;
+}
+
+body main section.affiche h2 .fa-heart-o {
+  z-index: 1;
+  color: grey;
+}
+
+body main section.elements-menus {
+  /* section entrees, plats, desserts */
+  padding-bottom: 6vw;
+  opacity: 0;
+}
+
+body main section.elements-menus h2 {
+  /* titres entrées, plats, desserts */
+  font-weight: 300;
+  padding: 0 0 3vw 6vw;
+  font-size: 4.5vw;
+  margin-bottom: 2.75vw;
+}
+
+body main section.elements-menus h2 span {
+  /* mots demi-soulignés */
+  padding-bottom: 1vw;
+  border-bottom: 1vw solid #99E2D0;
+}
+
+body main .entrees {
+  -webkit-animation: deroule-menus 500ms forwards 500ms;
+          animation: deroule-menus 500ms forwards 500ms;
+}
+
+body main .plats {
+  -webkit-animation: deroule-menus 500ms forwards 1000ms;
+          animation: deroule-menus 500ms forwards 1000ms;
+}
+
+body main .desserts {
+  -webkit-animation: deroule-menus 500ms forwards 1500ms;
+          animation: deroule-menus 500ms forwards 1500ms;
+}
+
+body main section div {
+  /*  blocs des entrées, plats, desserts + accompagnement + prix */
+  background: #fff;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 4vw;
+  border-radius: 4vw;
+  padding: 4vw 3.5vw;
+  box-shadow: 0 0.5vw 2vw #cfcfcf;
+  position: relative;
+}
+
+body main section div:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5vw 2vw #858585;
+}
+
+body main section div:hover h3 {
+  overflow: hidden;
+}
+
+body main section div:hover p:nth-child(2) {
+  overflow: hidden;
+}
+
+body main section div:hover p:nth-child(3) {
+  transform: translateX(-17vw);
+}
+
+body main section div:hover p:nth-child(4) {
+  opacity: 1;
+  transform: translateX(-30vw);
+}
+
+body main section div:hover .fa-check-circle {
+  transform: rotateZ(360deg);
+}
+
+body main section div h3 {
+  font-size: 4.75vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: visible;
+  width: 60%;
+  transition: overflow 500ms;
+}
+
+body main section div p:nth-child(2) {
+  /* accompagnement de chaque assiette */
+  font-weight: 300;
+  padding-top: 1vw;
+  font-size: 3.75vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: visible;
+  width: 60%;
+}
+
+body main section div p:nth-child(3) {
+  /* les tarifs*/
+  font-weight: bold;
+  float: right;
+  position: relative;
+  top: -4vw;
+  right: 2vw;
+  font-size: 4vw;
+  transition: transform 600ms;
+}
+
+body main section div p:nth-child(4) {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0vw;
+  right: -30vw;
+  border-radius: 0 4vw 4vw 0;
+  width: 22%;
+  padding: 3.5vw;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  transition: transform 500ms;
+  height: 101%;
+}
+
+body main section div p:nth-child(4) i.fa-check-circle {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  font-size: 6vw;
+  top: 35%;
+  right: 35%;
+  z-index: 1;
+  height: 50%;
+  transform-origin: 50% 30%;
+  transition: transform 750ms;
+}
+
+body main section.commander {
+  padding-top: 1vw;
+  padding-bottom: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+body main section.commander button {
+  font-size: 4.5vw;
+  font-weight: 500;
+  border-radius: 8vw;
+  border: none;
+  padding: 4vw 10vw;
+  background: linear-gradient(175deg, #FF79DA, #9356D7);
+  box-shadow: 3px 5px 7px #858585;
+  color: white;
+  cursor: pointer;
+  margin-top: 5vw;
+  position: relative;
+  z-index: 1;
+}
+
+body main section.commander button::after {
+  content: "";
+  border-radius: 8vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(175deg, #ff93e1, #a06bdc);
+  box-shadow: 0 1vw 1.5vw #777;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+body main section.commander button:hover::after {
+  opacity: 1;
+}
+
+body footer {
+  background: #353535;
+  padding: 5.5vw 0 7.5vw 5vw;
+  color: white;
+  line-height: 1.6;
+}
+
+body footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 5vw;
+  padding-bottom: 4vw;
+}
+
+body footer p {
+  font-size: 4.25vw;
+  margin-right: 2vw;
+}
+
+body footer p .icons-footer {
+  font-size: 3.5vw;
+  padding-right: 6vw;
+  width: 4vw;
+}
+
+body footer p .contact-email {
+  text-decoration: none;
+  color: white;
 }

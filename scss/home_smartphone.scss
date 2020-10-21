@@ -11,17 +11,18 @@ body {
 }
 
     header {
-        box-shadow: 0 0.5vw 1.5vw $shadow-color;
         text-align: center;
         position: relative;
+        box-shadow: 0 0.5vw 1.5vw $shadow-color;
         margin-bottom: 1vw;
 
         h1.logo {
             font-family: $font_logo_titre;
             font-weight: $font_weight_medium;
-            font-size: 8vw;
             padding-top: 3.2vw;
             padding-bottom: 2vw;
+            font-size: 8vw;
+            background: #fff;
         }
     }
 
@@ -53,7 +54,7 @@ body {
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    background: linear-gradient( 175deg,lighten($couleur_secondaire, 30), lighten($couleur_primaire, 30));
+                    background: linear-gradient( 175deg, lighten($couleur_secondaire, 10), lighten($couleur_primaire, 20));
                     box-shadow: 0 0.75vw 1.5vw $shadow-color;
                     opacity: 0;
                     z-index: -1;
@@ -202,7 +203,7 @@ body {
                         bottom: 0;
                         left: 0;
                         background:#fafafa;
-                        box-shadow: 0vw 1.5vw 2vw #e6e6e6;
+                        box-shadow: 0vw 1vw 2vw #a0a0a0;
                         opacity: 0;
                         z-index: -1;
                         transition: opacity 250ms;
@@ -275,6 +276,7 @@ body {
                     h3 {
                         font-size: 4.5vw;
                         padding: 3vw 0vw  0vw 4vw;
+                        font-weight: $font_weight_medium;
 
                     }
 
@@ -306,8 +308,6 @@ body {
                     .fa-heart-o {
                         z-index: 1;
                         color: grey;
-    
-                    
                     }   
                     
                     .ville {
@@ -336,8 +336,6 @@ body {
 
             .icons-footer {
                 font-size: 3.15vw;
-                // padding-right: 6vw;
-                // padding-left: 1vw;
                 padding: 0 6vw 0 1vw;
                 width: 4vw;
             }

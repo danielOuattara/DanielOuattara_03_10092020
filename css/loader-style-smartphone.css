@@ -4,12 +4,36 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
 @keyframes centrage-texte {
   0% {
   }
   100% {
     transform: translateY(20vh) scale(1.2);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -28,6 +52,15 @@
   }
 }
 
+@-webkit-keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes chargement-texte {
   0%, 100% {
     opacity: 0;
@@ -37,12 +70,39 @@
   }
 }
 
+@-webkit-keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes continuer {
   0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -64,6 +124,18 @@
   }
 }
 
+@-webkit-keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
 @keyframes zooming {
   5% {
     transform: scale(0.9);
@@ -76,7 +148,34 @@
   }
 }
 
+@-webkit-keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes deroule-menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes deroule-menus {
   0% {
     opacity: 0;
   }
@@ -100,7 +199,8 @@
   color: #fff;
   margin-bottom: 5vh;
   font-family: "Shrikhand", cursive;
-  animation: centrage-texte 2000ms 7000ms  forwards;
+  -webkit-animation: centrage-texte 2000ms 7000ms  forwards;
+          animation: centrage-texte 2000ms 7000ms  forwards;
   opacity: 0;
 }
 
@@ -117,7 +217,8 @@
   position: absolute;
   display: block;
   border: 5px solid #fff;
-  box-shadow: 0 5px 0 #ccc, inset 0 5px 0 #ccc;
+  box-shadow: 0 5px 0 #ccc,
+ inset 0 5px 0 #ccc;
   box-sizing: border-box;
   border-radius: 50%;
   animation: animate-rings 3.5s ease-in-out 2 both alternate-reverse;
@@ -128,7 +229,8 @@
   left: 0;
   bottom: 0;
   right: 0;
-  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .container__rings span:nth-child(2) {
@@ -136,7 +238,8 @@
   left: 10px;
   bottom: 10px;
   right: 10px;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .container__rings span:nth-child(3) {
@@ -144,7 +247,8 @@
   left: 20px;
   bottom: 20px;
   right: 20px;
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .container__rings span:nth-child(4) {
@@ -152,7 +256,8 @@
   left: 30px;
   bottom: 30px;
   right: 30px;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .container__rings span:nth-child(5) {
@@ -160,7 +265,8 @@
   left: 40px;
   bottom: 40px;
   right: 40px;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .container__rings span:nth-child(6) {
@@ -168,7 +274,8 @@
   left: 50px;
   bottom: 50px;
   right: 50px;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .container__rings span:nth-child(7) {
@@ -176,7 +283,8 @@
   left: 60px;
   bottom: 60px;
   right: 60px;
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .container__messages {
@@ -190,7 +298,8 @@
   margin-bottom: 10vh;
   font-size: 4vw;
   opacity: 0;
-  animation: chargement-texte 2000ms 1500ms 3 backwards;
+  -webkit-animation: chargement-texte 2000ms 1500ms 3 backwards;
+          animation: chargement-texte 2000ms 1500ms 3 backwards;
 }
 
 .container__messages--continuer a {
@@ -205,7 +314,8 @@
   opacity: 0;
   padding: 3.75vw 4vw;
   border-radius: 50%;
-  animation: continuer 3s 6500ms infinite;
+  -webkit-animation: continuer 3s 6500ms infinite;
+          animation: continuer 3s 6500ms infinite;
   position: relative;
   z-index: 1;
 }

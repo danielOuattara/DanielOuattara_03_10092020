@@ -4,12 +4,36 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
 @keyframes centrage-texte {
   0% {
   }
   100% {
     transform: translateY(20vh) scale(1.2);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -28,6 +52,15 @@
   }
 }
 
+@-webkit-keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes chargement-texte {
   0%, 100% {
     opacity: 0;
@@ -37,12 +70,39 @@
   }
 }
 
+@-webkit-keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes continuer {
   0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -64,6 +124,18 @@
   }
 }
 
+@-webkit-keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
 @keyframes zooming {
   5% {
     transform: scale(0.9);
@@ -76,7 +148,34 @@
   }
 }
 
+@-webkit-keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes deroule-menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes deroule-menus {
   0% {
     opacity: 0;
   }
@@ -88,23 +187,25 @@
 body {
   font-family: "Roboto", sans-serif;
   opacity: 0;
-  animation: apparition-home 1000ms forwards;
+  -webkit-animation: apparition-home 1000ms forwards;
+          animation: apparition-home 1000ms forwards;
   background-color: #fff;
 }
 
 header {
-  box-shadow: 0 0.5vw 1.5vw #888;
   text-align: center;
   position: relative;
+  box-shadow: 0 0.5vw 1.5vw #858585;
   margin-bottom: 1vw;
 }
 
 header h1.logo {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
-  font-size: 8vw;
   padding-top: 3.2vw;
   padding-bottom: 2vw;
+  font-size: 8vw;
+  background: #fff;
 }
 
 main aside section.geolocalisation {
@@ -133,8 +234,8 @@ main aside section.geolocalisation::after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(175deg, white, #e2d2f4);
-  box-shadow: 0 0.75vw 1.5vw #888;
+  background: linear-gradient(175deg, #fface8, #c8a8eb);
+  box-shadow: 0 0.75vw 1.5vw #858585;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -172,7 +273,7 @@ main aside section.presentations button {
   border: none;
   padding: 4.5vw 7vw;
   background: linear-gradient(175deg, #FF79DA, #9356D7);
-  box-shadow: 0 0.5vw 1.5vw #888;
+  box-shadow: 0 0.5vw 1.5vw #858585;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -192,7 +293,7 @@ main aside section.presentations button::after {
   left: 0;
   background: linear-gradient(175deg, #ff93e1, #a06bdc);
   background-color: #9356D7;
-  box-shadow: 0 0.75vw 2vw #666;
+  box-shadow: 0 0.75vw 2vw #777;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -274,7 +375,7 @@ main aside section.utilisation div.utilisation-application::after {
   bottom: 0;
   left: 0;
   background: #fafafa;
-  box-shadow: 0vw 1.5vw 2vw #e6e6e6;
+  box-shadow: 0vw 1vw 2vw #a0a0a0;
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
@@ -322,7 +423,8 @@ main nav.nos-restaurants div.contenaires-image .logo-nouveau {
   padding: 1.75vw 4vw;
   border-radius: 0.75vw;
   font-size: 4vw;
-  animation: zooming 2s infinite;
+  -webkit-animation: zooming 2s infinite;
+          animation: zooming 2s infinite;
 }
 
 main nav.nos-restaurants div.contenaires-nom-et-ville {
@@ -338,6 +440,7 @@ main nav.nos-restaurants div.contenaires-nom-et-ville {
 main nav.nos-restaurants div.contenaires-nom-et-ville h3 {
   font-size: 4.5vw;
   padding: 3vw 0vw  0vw 4vw;
+  font-weight: 500;
 }
 
 main nav.nos-restaurants div.contenaires-nom-et-ville p:nth-child(4) {
@@ -361,7 +464,8 @@ main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart {
 }
 
 main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart:hover {
-  animation: coeur-remplissage 550ms ease-out forwards;
+  -webkit-animation: coeur-remplissage 550ms ease-out forwards;
+          animation: coeur-remplissage 550ms ease-out forwards;
 }
 
 main nav.nos-restaurants div.contenaires-nom-et-ville .fa-heart-o {

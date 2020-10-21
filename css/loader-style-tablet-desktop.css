@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes centrage-texte {
+  0% {
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes deroule-menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes deroule-menus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .container {
+    overflow: hidden;
+  }
+  .container__title {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 5vh;
+    font-family: "Shrikhand", cursive;
+  }
+  .container__rings {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .container__messages {
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 5rem;
+  }
+  .container__messages--chargement {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  .container__messages--continuer a {
+    text-decoration: none;
+    position: relative;
+  }
+  .container__messages--continuer a i.fa-arrow-right {
+    font-size: 3rem;
+    padding: 0.75rem 1rem;
+  }
+}

@@ -1,125 +1,88 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-@media screen and (min-width: 669px) and (max-width: 1267px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
+@media screen and (min-width: 669px) {
   body {
     display: flex;
     flex-direction: column;
   }
   body header {
-    text-align: center;
-    box-shadow: 0 0.25vw 2.5vw #cfcfcf;
+    box-shadow: 0 0.25rem 0.5rem #858585;
   }
-  body header h2.logo {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    font-size: 3vw;
-    padding: 1.5vw 0 1vw 0;
+  body header h1.logo {
+    font-size: 2rem;
+    padding: 1rem 0 0.5rem;
   }
-  body header h2.logo a i.fa-arrow-left {
-    font-size: 2.5vw;
+  body header h1.logo a i.fa-arrow-left {
+    font-size: 1.5rem;
+    left: -22rem;
+    padding: 0.9rem 1rem;
+  }
+  body section.bloc-image {
     position: relative;
-    left: -37vw;
+    margin-top: 0.5rem;
   }
   body section.bloc-image img {
     display: block;
-    max-width: 50%;
-    height: auto;
+    max-width: 35%;
   }
   body main {
-    background: #f6f6f5;
+    margin-top: 1rem;
     padding-right: 1vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: unset;
   }
   body main section.affiche {
     flex-basis: 100%;
   }
   body main section.affiche h2 {
     /* titre du restaurant */
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-left: 2.5vw;
+    padding: 2vw 0  2vw 2.5vw;
     font-size: 2.5vw;
-    position: relative;
   }
   body main section.affiche h2 i.petit-coeur {
     font-size: 3vw;
-    position: absolute;
     right: 9vw;
     top: 2vw;
   }
   body main section.elements-menus {
     /* section entrees, plats, desserts */
-    padding: 3vw 1.5vw;
+    padding: 1rem 1.25rem;
     flex: 1;
-    opacity: 0;
   }
   body main section.elements-menus h2 {
     /* titres entrées, plats, desserts */
-    font-weight: 300;
     padding: 0 0 3vw 6vw;
     font-size: 2vw;
     margin-bottom: 1.25vw;
   }
   body main section.elements-menus h2 span {
     /* mots demi-soulignés */
-    padding-bottom: 1vw;
-    border-bottom: 0.5vw solid #99E2D0;
-  }
-  body main .entrees {
-    animation: deroule-menus 500ms forwards 500ms;
-  }
-  body main .plats {
-    animation: deroule-menus 500ms forwards 1000ms;
-  }
-  body main .desserts {
-    animation: deroule-menus 500ms forwards 1500ms;
-  }
-  @keyframes deroule-menus {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    border-bottom-width: 0.5vw;
   }
   body main section div {
     /*  blocs des entrées, plats, desserts + accompagnement + prix */
-    background: #fff;
     width: 105%;
-    margin: auto;
-    margin-bottom: 2vw;
-    border-radius: 1vw;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
     padding: 1.25vw;
     box-shadow: 0 0.25vw 1vw #cfcfcf;
   }
   body main section div:hover {
     cursor: pointer;
-    box-shadow: 0 0.5vw 2vw #bababa;
+    box-shadow: 0 0.25rem 0.5rem #858585;
   }
   body main section div:hover p:nth-child(2) {
     overflow: hidden;
   }
   body main section div:hover p:nth-child(3) {
-    transform: translateX(-15vw);
+    transform: translateX(-4rem);
   }
   body main section div:hover p:nth-child(4) {
     transform: translateX(-30vw);
+  }
+  body main section div:hover p:nth-child(4) i.fa-check-circle {
+    transform: rotateZ(-360deg) 900ms 300ms;
   }
   body main section div h3 {
     font-size: 1.55vw;
@@ -127,94 +90,57 @@
   }
   body main section div p:nth-child(2) {
     /* accompagnement de chaque assiette */
-    font-weight: 300;
     padding-top: 0.5vw;
     font-size: 1.3vw;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: visible;
-    width: 70%;
   }
   body main section div p:nth-child(3) {
     /* les tarifs*/
-    font-weight: bold;
-    float: right;
-    position: relative;
-    top: -3.5vw;
+    top: -1rem;
     right: 0vw;
-    font-size: 1.25vw;
+    font-size: 0.85rem;
     color: rgba(0, 0, 0, 0.5);
   }
   body main section div p:nth-child(4) {
-    display: block;
-    position: absolute;
     top: 0vw;
     right: -30vw;
-    border-radius: 0 4vw 4vw 0;
-    width: 19%;
-    padding: 3.5vw;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1rem;
     background-color: #99E2D0;
     color: #99E2D0;
-    transition: transform 600ms;
-    height: 18vw;
   }
   body main section div p:nth-child(4) i.fa-check-circle {
-    display: inline-block;
-    position: absolute;
-    font-size: 5vw;
-    top: 4vw;
-    right: -2vw;
+    font-size: 1.5rem;
     z-index: 1;
   }
   body main section.commander {
-    padding-bottom: 7vw;
+    padding: 2rem 0 3rem;
     flex-basis: 100%;
     text-align: center;
   }
   body main section.commander button {
+    margin-top: 2rem;
     font-size: 1.75vw;
-    font-weight: 500;
     border-radius: 4vw;
-    border: none;
     padding: 1.25vw 5vw;
-    background: linear-gradient(175deg, #FF79DA, #9356D7);
     box-shadow: 0 5px 7px silver;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
   }
   body main section.commander button::after {
     content: "";
     border-radius: 4vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(175deg, #ff93e1, #a06bdc);
-    background-color: #9356D7;
-    box-shadow: 0 5px 7px #999999;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
+    box-shadow: 0 5px 7px #777;
   }
   body main section.commander button:hover::after {
     opacity: 1;
   }
   body footer {
-    background: #353535;
-    padding: 1.5vw 2vw;
-    color: white;
-    line-height: 1.6;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: row;
   }
   body footer h2 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
     font-size: 2vw;
     flex: 1;
+    padding: 0;
   }
   body footer p {
     font-size: 1.5vw;
@@ -224,9 +150,5 @@
     font-size: 1.25vw;
     padding-right: 3vw;
     width: 1vw;
-  }
-  body footer p .contact-email {
-    text-decoration: none;
-    color: white;
   }
 }

@@ -1,109 +1,75 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
 @media screen and (min-width: 1269px) {
   body header {
     text-align: center;
-    box-shadow: 0 0.25rem 2.5vw #cfcfcf;
-    padding: 1rem 0;
+    box-shadow: 0 0.25rem 0.5rem #858585;
+    padding: 0.5rem 0;
   }
-  body header h2.logo {
-    font-family: "Shrikhand", cursive;
+  body header h1.logo {
     font-size: 2.5rem;
-    font-weight: 400;
+    padding: 0;
   }
-  body header h2.logo a i.fa-arrow-left {
+  body header h1.logo a i.fa-arrow-left {
     font-size: 1.75rem;
     position: relative;
-    left: -40rem;
+    left: -36rem;
   }
   body section.bloc-image img {
-    display: block;
-    max-width: 30%;
-    height: auto;
+    max-width: 25%;
   }
   body main {
-    background: #f6f6f5;
     padding-right: 1vw;
   }
   body main section.affiche h2 {
     /* titre du restaurant */
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
     padding: 1.5rem 0 1.5rem 3rem;
     font-size: 2rem;
-    position: relative;
   }
   body main section.affiche h2 i.petit-coeur {
     font-size: 1.5rem;
-    position: absolute;
     left: 28rem;
     top: 2.5rem;
   }
   body main section.elements-menus {
     /* section: entrees, plats, desserts */
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
-    opacity: 0;
   }
   body main section.elements-menus h2 {
     /* titres entrées, plats, desserts */
-    font-weight: 300;
     padding: 0 2rem 1rem 2rem;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     width: 20%;
   }
   body main section.elements-menus h2 span {
     /* mots demi-soulignés */
     padding-bottom: 0.5rem;
     border-bottom: 0.25rem solid #99E2D0;
-  }
-  body main .entrees {
-    animation: deroule-menus 500ms forwards 500ms;
-  }
-  body main .plats {
-    animation: deroule-menus 500ms forwards 1000ms;
-  }
-  body main .desserts {
-    animation: deroule-menus 500ms forwards 1500ms;
-  }
-  @keyframes deroule-menus {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    border-bottom-width: 0.25rem;
   }
   body main section div {
     /*  blocs des entrées, plats, desserts + accompagnement + prix */
-    background: #fff;
-    width: 55%;
-    margin: 0 1rem 1rem 2rem;
+    width: 50%;
+    margin: 0 0.5rem 1rem 0.5rem;
     border-radius: 0.75rem;
     padding: 0.5rem 1.5rem;
-    box-shadow: 0 0.25rem 1rem #cfcfcf;
+    box-shadow: 0 0.25rem 0.5rem #858585;
   }
   body main section div:hover {
     cursor: pointer;
-    box-shadow: 0 0.5vw 2vw #bababa;
+    box-shadow: 0 0.5rem 1rem #777;
   }
   body main section div:hover p:nth-child(2) {
     overflow: hidden;
   }
   body main section div:hover p:nth-child(3) {
-    transform: translateX(-15vw);
+    transform: translateX(-5rem);
   }
   body main section div:hover p:nth-child(4) {
-    transform: translateX(-30vw);
+    transform: translateX(-4rem);
   }
   body main section div h3 {
     font-size: 1.25rem;
@@ -111,53 +77,39 @@
   }
   body main section div p:nth-child(2) {
     /* accompagnement de chaque assiette */
-    font-weight: 300;
     padding-top: 1rem;
     font-size: 1rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: visible;
-    width: 70%;
   }
   body main section div p:nth-child(3) {
     /* les tarifs*/
-    font-weight: bold;
-    float: right;
-    position: relative;
-    top: 0;
+    top: -1rem;
     right: 0;
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.5);
   }
   body main section div p:nth-child(4) {
-    display: block;
-    position: absolute;
     top: 0vw;
-    right: -30vw;
-    border-radius: 0 4vw 4vw 0;
+    right: -4rem;
+    border-radius: 0 0.75rem 0.75rem 0;
     width: 19%;
-    padding: 3.5vw;
+    padding: 3rem;
     background-color: #99E2D0;
     color: #99E2D0;
     transition: transform 600ms;
-    height: 18vw;
+    height: 100%;
   }
   body main section div p:nth-child(4) i.fa-check-circle {
-    display: inline-block;
-    position: absolute;
-    font-size: 5vw;
-    top: 4vw;
-    right: -2vw;
-    z-index: 1;
+    font-size: 2rem;
   }
   body main section.commander {
-    padding: 7rem 0;
+    padding: 1rem 0;
     text-align: center;
+    border: 1px solid blue;
   }
   body main section.commander button {
     font-size: 1.5rem;
     font-weight: 500;
-    border-radius: 4vw;
+    border-radius: 2rem;
     border: none;
     padding: 1rem 4rem;
     background: linear-gradient(175deg, #FF79DA, #9356D7);
@@ -186,31 +138,19 @@
     opacity: 1;
   }
   body footer {
-    background: #353535;
-    padding: 1rem 1rem;
-    color: white;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: row;
+    padding: 0.5rem 0;
   }
   body footer h2 {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
     font-size: 2rem;
-    padding-left: 4rem;
-    flex: 1;
+    padding: 0;
   }
   body footer p {
     font-size: 1rem;
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
   body footer p .icons-footer {
     font-size: 1rem;
     padding-right: 2rem;
-    width: 1rem;
-  }
-  body footer p .contact-email {
-    text-decoration: none;
-    color: white;
+    width: 0.5rem;
   }
 }

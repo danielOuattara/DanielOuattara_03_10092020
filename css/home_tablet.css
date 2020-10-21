@@ -1,14 +1,13 @@
 @media screen and (min-width: 668px) {
   header {
-    box-shadow: 0 0.25vw 2.5vw #cfcfcf;
-    margin-bottom: 0.5vw;
+    box-shadow: 0 0.25vw 0.5vw #858585;
+    margin-bottom: 0.45vw;
     width: 100%;
   }
-  header h2.logo {
+  header h1.logo {
     font-size: 3.5vw;
     padding-top: 1.5vw;
     padding-bottom: 1vw;
-    background-color: white;
   }
   main {
     display: flex;
@@ -30,7 +29,7 @@
     margin-right: 2vw;
   }
   main aside section.geolocalisation::after {
-    box-shadow: 0vw 0.25rem 0.5rem #cfcfcf;
+    box-shadow: 0vw 0.25rem 0.5rem #858585;
   }
   main aside section.presentations {
     padding: 3vw 2vw;
@@ -48,11 +47,10 @@
     font-size: 1.5vw;
     border-radius: 7vw;
     padding: 1.5vw 2vw;
-    background: linear-gradient(175deg, #FF79DA, #9356D7);
-    box-shadow: 0 5px 7px #888;
+    box-shadow: 0 5px 7px #858585;
   }
   main aside section.presentations button::after {
-    box-shadow: 0 3px 5px #666;
+    box-shadow: 0 3px 5px #777;
   }
   main aside section.utilisation {
     padding: 3vw 0 2vw 0;
@@ -85,7 +83,7 @@
     margin-left: 0.5rem;
     font-size: 1rem;
     left: -1rem;
-    top: 1.4rem;
+    top: 1.75rem;
   }
   main aside section.utilisation div.utilisation-application::after {
     border-radius: 1rem;
@@ -94,6 +92,7 @@
   main nav.nos-restaurants {
     flex-basis: 65%;
     padding-top: 2vw;
+    padding: 5vw 0 3vw 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -101,11 +100,12 @@
   main nav.nos-restaurants h2 {
     padding-bottom: 3vw;
     font-size: 2.5vw;
-    width: 100%;
+    flex-basis: 100%;
     text-align: center;
   }
   main nav.nos-restaurants div.restaurants-home {
     flex: 1 1 50%;
+    padding: 1vw;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-image a img {
     border-radius: 1.5vw 1.5vw 0 0;
@@ -127,7 +127,6 @@
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
     font-size: 1.75vw;
-    font-weight: 500;
     padding: 0.25vw;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {

@@ -1,4 +1,4 @@
-@import './global-variables';  
+@import './utils/variables';  
   
 
 @media screen and (min-width: 1269px) {
@@ -7,19 +7,18 @@
 
         header {
             text-align: center;
-            box-shadow: 0 0.25rem 2.5vw #cfcfcf;
-            padding: 1rem 0;
+            box-shadow: 0 0.25rem 0.5rem $shadow-color;
+            padding: 0.5rem 0;
 
-            h2.logo {
-                font-family: $font_logo_titre;
+            h1.logo {
                 font-size: 2.5rem;
-                font-weight: $font_weight_regular;
+                padding: 0;
 
                 a {
                     i.fa-arrow-left {
                         font-size: 1.75rem;
                         position: relative;
-                        left: -40rem;
+                        left: -36rem;
                     }
                 }
             }
@@ -28,28 +27,21 @@
         section.bloc-image {
 
             img {
-                display: block;
-                max-width: 30%;
-                height: auto;
+                max-width: 25%;
             }
         }
 
         main {
-            background: #f6f6f5;
             padding-right: 1vw;
 
             section.affiche {
 
                 h2 {  /* titre du restaurant */
-                    font-family: $font_logo_titre;
-                    font-weight: $font_weight_regular;
                     padding: 1.5rem 0 1.5rem 3rem;
                     font-size: 2rem;
-                    position: relative;
                         
                     i.petit-coeur {
                             font-size: 1.5rem;  
-                            position: absolute;  
                             left: 28rem; 
                             top: 2.5rem;                    
                     }
@@ -57,68 +49,45 @@
             }
 
             section.elements-menus { /* section: entrees, plats, desserts */
-                padding: 1rem 1rem 1rem 1rem;
+                padding: 1rem ;
                 display: flex;
                 flex-direction: row;
-                opacity: 0;
 
                 h2 {   /* titres entrées, plats, desserts */
-                    font-weight: $font_weight_light;
+                    // font-weight: $font_weight_light;
                     padding: 0 2rem 1rem 2rem;
                     font-size: 1.5rem;
                     margin-bottom: 1rem;
-                    margin-right: 2rem;
+                    margin-right: 3rem;
                     width: 20%;
 
                     span { /* mots demi-soulignés */
                         padding-bottom: 0.5rem;
                         border-bottom: 0.25rem solid #99E2D0;
+                        border-bottom-width: 0.25rem ;
                     }
                 }
             }
 
-            .entrees {
-                animation: deroule-menus 500ms forwards 500ms;
-            }
-
-            .plats {
-                animation: deroule-menus 500ms forwards 1000ms;
-            }
-
-            .desserts {
-                animation: deroule-menus 500ms forwards 1500ms;
-            }
-
-            @keyframes deroule-menus {
-                0%{ 
-                    opacity: 0;
-                }
-
-                100%{
-                    opacity: 1;
-                }
-            }
-
             section div {   /*  blocs des entrées, plats, desserts + accompagnement + prix */
-                background: #fff;
-                width:55%;
-                margin: 0 1rem 1rem 2rem;
+                width:50%;
+                margin: 0 0.5rem 1rem 0.5rem;
                 border-radius: 0.75rem;
                 padding: 0.5rem 1.5rem;
-                box-shadow: 0 0.25rem 1rem #cfcfcf;
+                box-shadow: 0 0.25rem 0.5rem $shadow-color;
                 &:hover {
                     cursor: pointer;
-                    box-shadow: 0 0.5vw 2vw #bababa;
+                    box-shadow: 0 0.5rem 1rem $shadow-color-medium;
 
                     p:nth-child(2) {
                         overflow: hidden;
                     }
 
                     p:nth-child(3) {
-                        transform:  translateX(-15vw) ;
+                        transform:  translateX(-5rem) ;
                     }
                     p:nth-child(4) {
-                        transform:  translateX(-30vw) ;
+                        transform:  translateX(-4rem) ;
                     }
                 }
 
@@ -128,59 +97,44 @@
                 }
 
                 p:nth-child(2) {  /* accompagnement de chaque assiette */
-                    font-weight: $font_weight_light;
                     padding-top: 1rem;
                     font-size: 1rem;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: visible;
-                    width: 70%;
                 }
 
                 p:nth-child(3) {  /* les tarifs*/
-                    font-weight: $font_weight_bold;
-                    float: right;
-                    position: relative;
-                    top: 0;
+                    top: -1rem;
                     right: 0;
                     font-size: 1.25rem;
                     color: rgba(0, 0, 0, 0.5);
                 }
 
                 p:nth-child(4) {
-                    display: block;
-                    position: absolute;
-                    // z-index: 1 ;
                     top: 0vw;
-                    // right: -5vw;
-                    right: -30vw;
-                    border-radius: 0 4vw 4vw 0;
+                    right: -4rem;
+                    border-radius: 0 0.75rem 0.75rem 0;
                     width: 19%;
-                    padding: 3.5vw;
+                    padding: 3rem;
                     background-color:$couleur_tertiaire;
                     color:  $couleur_tertiaire;
                     transition: transform 600ms;
-                    height: 18vw;
+                    height: 100%;
 
                     i.fa-check-circle {
-                        display: inline-block;
-                        position: absolute;
-                        font-size: 5vw;
-                        top: 4vw;
-                        right: -2vw;
-                        z-index: 1;
+  
+                        font-size: 2rem;
                     }
                 }
             }
 
             section.commander {
-                padding: 7rem 0;
+                padding: 1rem 0;
                 text-align: center;
+                border: 1px solid blue;
 
                 button {
                     font-size: 1.5rem;
                     font-weight: $font_weight_medium;
-                    border-radius: 4vw;
+                    border-radius: 2rem;
                     border: none;
                     padding:  1rem 4rem;
                     background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
@@ -218,35 +172,20 @@
         }
 
         footer {
-            background: #353535;
-            padding: 1rem 1rem;
-            color: white;
-            line-height: 1.6;
-
-            display: flex;
-            flex-direction: row;
-
+            padding: 0.5rem 0 ;
             h2 {
-                font-family: $font_logo_titre ;
-                font-weight: $font_weight_regular;
                 font-size: 2rem;
-                padding-left: 4rem;
-                flex: 1;
+                padding: 0;
             }
             
             p {
                 font-size: 1rem;
-                padding:  0 1rem;
+                padding:  0 0.75rem;
 
                 .icons-footer {
                     font-size: 1rem;
                     padding-right: 2rem;
-                    width: 1rem;
-                }
-    
-                .contact-email {
-                    text-decoration: none;
-                    color: white;
+                    width: 0.5rem;
                 }
             }
         }

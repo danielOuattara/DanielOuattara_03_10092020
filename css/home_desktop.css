@@ -1,13 +1,14 @@
 @media all and (min-width: 1268px) {
   header {
-    box-shadow: 0 1rem 1.5rem #cfcfcf;
-    margin-bottom: 1rem;
+    box-shadow: 0 0.35rem 0.45rem #858585;
+    margin-bottom: 0.5rem;
   }
-  header h2.logo {
+  header h1.logo {
     font-size: 2.5rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
   main {
+    display: flex;
     flex-direction: row;
   }
   main aside section.geolocalisation {
@@ -25,20 +26,17 @@
   }
   main aside section.presentations h2:nth-child(1) {
     font-size: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   main aside section.presentations p:nth-child(2) {
     font-size: 1.25rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   main aside section.presentations button {
     font-size: 1.25rem;
     border-radius: 10rem;
     padding: 1rem 2rem;
-    box-shadow: 0 5px 7px #888;
-  }
-  main aside section.presentations button::after {
-    box-shadow: 0 5px 7px #666;
+    box-shadow: 0 5px 7px #858585;
   }
   main aside section.utilisation {
     padding: 3rem 0 2rem;
@@ -49,11 +47,10 @@
     padding-bottom: 3.8vw;
   }
   main aside section.utilisation div.utilisation-application {
-    width: 85%;
     border-radius: 1rem;
     padding: 2rem  1rem;
     margin-bottom: 2rem;
-    box-shadow: 0 0.5rem 0.75rem #888;
+    box-shadow: 0 0.5rem 0.75rem #858585;
     font-size: 1.15rem;
   }
   main aside section.utilisation div.utilisation-application p .icons-utilisation {
@@ -70,39 +67,41 @@
     padding: 0.5rem 0.75rem;
     margin-right: 0.5rem;
     font-size: 0.75rem;
-    left: 1rem;
+    left: -1.25rem;
+    top: 1.75rem;
   }
   main aside section.utilisation div.utilisation-application::after {
     border-radius: 1rem;
     box-shadow: 0 3px 7px #b3b3b3;
   }
   main nav.nos-restaurants {
-    padding-top: 3.5rem;
+    flex-basis: 75%;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
   }
   main nav.nos-restaurants h2 {
-    padding: 2rem 0 4rem;
+    padding-bottom: 2rem;
     padding-left: 4rem;
     font-size: 1.75rem;
     flex-basis: 100%;
   }
   main nav.nos-restaurants div.restaurants-home {
-    border: 1px solid green;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
+    margin-bottom: 3rem;
+    padding: 0;
     display: flex;
     flex-direction: row;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-image {
-    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.3);
+    max-width: 35%;
+    box-shadow: 0 0.5rem 0.75rem #4d4d4d;
     border-radius: 1rem 0 0 1rem;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-image a img {
     display: block;
     border-radius: 1rem 0 0 1rem;
-    max-width: 20%;
-    height: auto;
+    max-width: 100%;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-image .logo-nouveau {
     position: absolute;
@@ -110,11 +109,11 @@
     right: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5vw;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville {
-    padding: 1.5rem 1.5rem;
-    max-width: 25rem;
+    margin: 0;
+    flex: 0.75;
     box-shadow: 0 0.5rem 0.75rem #4d4d4d;
     border-radius: 0 1rem 1rem 0;
   }
@@ -122,7 +121,8 @@
     font-size: 1.5rem;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    padding: 0;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville .petit-coeur {
     top: 1rem;
