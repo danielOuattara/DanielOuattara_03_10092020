@@ -5,12 +5,38 @@
   box-sizing: border-box;
 }
 
-@keyframes centrage-texte {
+@-webkit-keyframes centrage-texte {
   0% {
+    opacity: 0;
   }
   100% {
     transform: translateY(20vh) scale(1.2);
     opacity: 1;
+  }
+}
+
+@keyframes centrage-texte {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(20vh) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-rings {
+  0% {
+    transform: translateZ(75px);
+  }
+  50% {
+    transform: translateZ(-75px);
+  }
+  90% {
+    transform: translateZ(75px);
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -29,6 +55,15 @@
   }
 }
 
+@-webkit-keyframes chargement-texte {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @keyframes chargement-texte {
   0%, 100% {
     opacity: 0;
@@ -38,12 +73,39 @@
   }
 }
 
+@-webkit-keyframes continuer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @keyframes continuer {
   0%, 100% {
     opacity: 1;
   }
   50% {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes apparition-home {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -65,6 +127,18 @@
   }
 }
 
+@-webkit-keyframes zooming {
+  5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  15%, 100%, 0% {
+    transform: scale(1);
+  }
+}
+
 @keyframes zooming {
   5% {
     transform: scale(0.9);
@@ -77,7 +151,25 @@
   }
 }
 
+@-webkit-keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes coeur-remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes deroule-menus {
   0% {
     opacity: 0;
   }
@@ -99,6 +191,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   overflow-x: hidden;
+  color: #000;
 }
 
 body header {
@@ -187,7 +280,8 @@ body main section.affiche h2 .fa-heart {
 }
 
 body main section.affiche h2 .fa-heart:hover {
-  animation: coeur-remplissage 550ms ease-out forwards;
+  -webkit-animation: coeur-remplissage 550ms ease-out forwards;
+          animation: coeur-remplissage 550ms ease-out forwards;
 }
 
 body main section.affiche h2 .fa-heart-o {
@@ -216,15 +310,18 @@ body main section.elements-menus h2 span {
 }
 
 body main .entrees {
-  animation: deroule-menus 500ms forwards 500ms;
+  -webkit-animation: deroule-menus 500ms forwards 500ms;
+          animation: deroule-menus 500ms forwards 500ms;
 }
 
 body main .plats {
-  animation: deroule-menus 500ms forwards 1000ms;
+  -webkit-animation: deroule-menus 500ms forwards 1000ms;
+          animation: deroule-menus 500ms forwards 1000ms;
 }
 
 body main .desserts {
-  animation: deroule-menus 500ms forwards 1500ms;
+  -webkit-animation: deroule-menus 500ms forwards 1500ms;
+          animation: deroule-menus 500ms forwards 1500ms;
 }
 
 body main section div {
@@ -243,7 +340,7 @@ body main section div:hover {
   cursor: pointer;
   box-shadow: 0 0.5vw 2vw #858585;
 }
-
+p
 body main section div:hover h3 {
   overflow: hidden;
 }
@@ -307,9 +404,8 @@ body main section div p:nth-child(4) {
   width: 22%;
   padding: 3.5vw;
   background-color: #99E2D0;
-  color: #99E2D0;
   transition: transform 500ms;
-  height: 101%;
+  height: 100%;
 }
 
 body main section div p:nth-child(4) i.fa-check-circle {

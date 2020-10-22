@@ -82,7 +82,7 @@
     transform: translateX(-30vw);
   }
   body main section div:hover p:nth-child(4) i.fa-check-circle {
-    transform: rotateZ(-360deg) 900ms 300ms;
+    transform: rotateZ(-360deg);
   }
   body main section div h3 {
     font-size: 1.55vw;
@@ -106,7 +106,6 @@
     border-radius: 0 0.5rem 0.5rem 0;
     padding: 1rem;
     background-color: #99E2D0;
-    color: #99E2D0;
   }
   body main section div p:nth-child(4) i.fa-check-circle {
     font-size: 1.5rem;

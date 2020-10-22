@@ -6,6 +6,7 @@
 
 @-webkit-keyframes centrage-texte {
   0% {
+    opacity: 0;
   }
   100% {
     transform: translateY(20vh) scale(1.2);
@@ -15,6 +16,7 @@
 
 @keyframes centrage-texte {
   0% {
+    opacity: 0;
   }
   100% {
     transform: translateY(20vh) scale(1.2);

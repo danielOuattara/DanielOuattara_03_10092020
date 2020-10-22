@@ -6,6 +6,7 @@
 
 @-webkit-keyframes centrage-texte {
   0% {
+    opacity: 0;
   }
   100% {
     transform: translateY(20vh) scale(1.2);
@@ -15,6 +16,7 @@
 
 @keyframes centrage-texte {
   0% {
+    opacity: 0;
   }
   100% {
     transform: translateY(20vh) scale(1.2);
@@ -192,6 +194,7 @@
   min-height: 100vh;
   background: #9356D7;
   font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 .container__title {
@@ -300,6 +303,7 @@
   opacity: 0;
   -webkit-animation: chargement-texte 2000ms 1500ms 3 backwards;
           animation: chargement-texte 2000ms 1500ms 3 backwards;
+  color: #fff;
 }
 
 .container__messages--continuer a {

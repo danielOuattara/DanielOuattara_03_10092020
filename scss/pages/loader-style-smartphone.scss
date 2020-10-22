@@ -14,6 +14,7 @@
     min-height: 100vh;
     background: $couleur-primaire;
     font-family: $font_texte;
+    color: #fff;
 
     &__title {
         font-size: 8vw;
@@ -82,6 +83,7 @@
             font-size: 4vw;
             opacity: 0;
             animation: chargement-texte 2000ms 1500ms 3 backwards;
+            color: #fff;
         }
     
         &--continuer {
