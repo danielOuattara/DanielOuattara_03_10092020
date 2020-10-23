@@ -6,7 +6,8 @@
 
 
     header {
-        box-shadow: 0 0.35rem 0.45rem $shadow-color;
+        -webkit-box-shadow: 0 0.35rem 0.45rem $shadow-color;
+                box-shadow: 0 0.35rem 0.45rem $shadow-color;
         margin-bottom: 0.5rem;
 
         h1.logo {
@@ -16,11 +17,16 @@
     }
 
     main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
 
         aside {
-            // flex-basis: 30%;
+            /* flex-basis: 30%; */
 
             section.geolocalisation {
                 padding: 1rem;
@@ -38,7 +44,7 @@
             section.presentations {
                 padding: 2.5rem 1.5rem;
 
-                h2:nth-child(1) {  // Réservez votre menu
+                h2:nth-child(1) {  /* Réservez votre menu*/
                     font-size: 1.5rem;
                     padding-bottom: 2rem;
                 }
@@ -52,7 +58,8 @@
                     font-size: 1.25rem;
                     border-radius: 10rem;
                     padding: 1rem 2rem;
-                    box-shadow: 0 5px 7px $shadow-color;
+                    -webkit-box-shadow: 0 5px 7px $shadow-color;
+                            box-shadow: 0 5px 7px $shadow-color;
 
                 }
             }
@@ -60,7 +67,7 @@
             section.utilisation {
                 padding: 3rem 0 2rem;
 
-                h2:nth-child(1) {  // Comment utiliser
+                h2:nth-child(1) {  /* Comment utiliser*/
                     font-size: 1.5rem;
                     padding-left: 6rem;
                     padding-bottom: 3.8vw;   
@@ -70,7 +77,8 @@
                     border-radius: 1rem;
                     padding: 3rem  1rem;
                     margin-bottom: 2rem;
-                    box-shadow: 0 0.5rem 0.75rem $shadow-color;
+                    -webkit-box-shadow: 0 0.5rem 0.75rem $shadow-color;
+                            box-shadow: 0 0.5rem 0.75rem $shadow-color;
                     font-size: 1.25rem;
 
                     p {
@@ -99,36 +107,53 @@
 
                     &::after {
                         border-radius: 1rem;
-                        box-shadow: 0 3px 7px #b3b3b3;
+                        -webkit-box-shadow: 0 3px 7px #b3b3b3;
+                                box-shadow: 0 3px 7px #b3b3b3;
                     }
                 }
             }
         }
 
         nav.nos-restaurants {
-            flex-basis: 75%;
+            -ms-flex-preferred-size: 75%;
+                flex-basis: 75%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
 
             h2 {
                 padding-bottom: 2rem;
                 padding-left: 4rem;
                 font-size: 1.75rem;
-                flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                    flex-basis: 100%;
             }
 
             div.restaurants-home {
                 margin-bottom: 3rem;
                 padding: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: row;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
             
                 div.contenaires-image {
 
                     max-width: 35%;
-                    box-shadow: 0 0.5rem 0.75rem #4d4d4d;
+                    -webkit-box-shadow: 0 0.5rem 0.75rem #4d4d4d;
+                            box-shadow: 0 0.5rem 0.75rem #4d4d4d;
                     border-radius: 1rem 0 0 1rem;
                     a {
 
@@ -151,8 +176,11 @@
 
                 div.contenaires-nom-et-ville {
                     margin: 0;
-                    flex: 0.75;
-                    box-shadow: 0 0.5rem 0.75rem #4d4d4d;
+                    -webkit-box-flex: 0.75;
+                        -ms-flex: 0.75;
+                            flex: 0.75;
+                    -webkit-box-shadow: 0 0.5rem 0.75rem #4d4d4d;
+                            box-shadow: 0 0.5rem 0.75rem #4d4d4d;
                     border-radius: 0 1rem 1rem 0;
 
                     h3 {
@@ -176,13 +204,22 @@
 
     footer {
 
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
 
         h2 {
             font-size: 1.5rem;
             padding: 1rem 1.5rem;
-            flex: 1;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
         }
 
         p {

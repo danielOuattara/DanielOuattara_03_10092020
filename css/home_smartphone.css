@@ -1,7 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes centrage-texte {
@@ -9,7 +11,8 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
@@ -19,20 +22,24 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -41,13 +48,16 @@
 
 @keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -128,25 +138,31 @@
 
 @-webkit-keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -197,7 +213,8 @@ body {
 header {
   text-align: center;
   position: relative;
-  box-shadow: 0 0.5vw 1.5vw #858585;
+  -webkit-box-shadow: 0 0.5vw 1.5vw #858585;
+          box-shadow: 0 0.5vw 1.5vw #858585;
   margin-bottom: 1vw;
 }
 
@@ -219,6 +236,7 @@ main aside section.geolocalisation {
 }
 
 main aside section.geolocalisation h2 {
+  /* nom ville géolocalisée*/
   font-weight: 500;
   font-size: 4.15vw;
   cursor: pointer;
@@ -236,10 +254,14 @@ main aside section.geolocalisation::after {
   right: 0;
   bottom: 0;
   left: 0;
+  background: -o-linear-gradient(275deg, #fface8, #c8a8eb);
   background: linear-gradient(175deg, #fface8, #c8a8eb);
-  box-shadow: 0 0.75vw 1.5vw #858585;
+  -webkit-box-shadow: 0 0.75vw 1.5vw #858585;
+          box-shadow: 0 0.75vw 1.5vw #858585;
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
@@ -254,12 +276,14 @@ main aside section.presentations {
 }
 
 main aside section.presentations h2:nth-child(1) {
+  /* Réservez votre menu*/
   font-weight: bold;
   font-size: 6.75vw;
   padding-bottom: 10.2vw;
 }
 
 main aside section.presentations p:nth-child(2) {
+  /* Phrase accroche*/
   font-weight: 300;
   font-size: 5vw;
   color: #656565;
@@ -268,14 +292,17 @@ main aside section.presentations p:nth-child(2) {
 }
 
 main aside section.presentations button {
+  /* Explorer nos restaurants */
   display: inline-block;
   font-size: 4.25vw;
   font-weight: 400;
   border-radius: 7vw;
   border: none;
   padding: 4.5vw 7vw;
+  background: -o-linear-gradient(275deg, #FF79DA, #9356D7);
   background: linear-gradient(175deg, #FF79DA, #9356D7);
-  box-shadow: 0 0.5vw 1.5vw #858585;
+  -webkit-box-shadow: 0 0.5vw 1.5vw #858585;
+          box-shadow: 0 0.5vw 1.5vw #858585;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -293,11 +320,15 @@ main aside section.presentations button::after {
   right: 0;
   bottom: 0;
   left: 0;
+  background: -o-linear-gradient(275deg, #ff93e1, #a06bdc);
   background: linear-gradient(175deg, #ff93e1, #a06bdc);
   background-color: #9356D7;
-  box-shadow: 0 0.75vw 2vw #777;
+  -webkit-box-shadow: 0 0.75vw 2vw #777;
+          box-shadow: 0 0.75vw 2vw #777;
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
@@ -312,6 +343,7 @@ main aside section.utilisation {
 }
 
 main aside section.utilisation h2:nth-child(1) {
+  /* Comment utiliser */
   padding-left: 5vw;
   font-weight: bold;
   font-size: 6.5vw;
@@ -326,7 +358,8 @@ main aside section.utilisation div.utilisation-application {
   border-radius: 5vw;
   padding: 7.25vw 6vw;
   margin-bottom: 6vw;
-  box-shadow: 0vw 1.5vw 2vw #e6e6e6;
+  -webkit-box-shadow: 0vw 1.5vw 2vw #e6e6e6;
+          box-shadow: 0vw 1.5vw 2vw #e6e6e6;
   font-size: 4.5vw;
   font-weight: 500;
   position: relative;
@@ -352,6 +385,7 @@ main aside section.utilisation div.utilisation-application .utilisation-applicat
 }
 
 main aside section.utilisation div.utilisation-application::before {
+  /* position: relative;*/
   z-index: 1;
   counter-increment: item;
   content: counter(item);
@@ -377,9 +411,12 @@ main aside section.utilisation div.utilisation-application::after {
   bottom: 0;
   left: 0;
   background: #fafafa;
-  box-shadow: 0vw 1vw 2vw #a0a0a0;
+  -webkit-box-shadow: 0vw 1vw 2vw #a0a0a0;
+          box-shadow: 0vw 1vw 2vw #a0a0a0;
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
@@ -394,6 +431,7 @@ main nav.nos-restaurants {
 }
 
 main nav.nos-restaurants h2 {
+  /* Nos Restaurants */
   margin-left: 5vw;
   padding-bottom: 5vw;
 }
@@ -409,6 +447,8 @@ main nav.nos-restaurants div.contenaires-image a img {
   border-radius: 3vw 3vw 0 0;
   max-width: 90%;
   height: auto;
+  -webkit-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 
@@ -436,7 +476,8 @@ main nav.nos-restaurants div.contenaires-nom-et-ville {
   border-radius: 0 0 4vw 4vw;
   max-width: 90%;
   margin-bottom: 4.5vw;
-  box-shadow: 0 1.5vw 2vw #e6e6e6;
+  -webkit-box-shadow: 0 1.5vw 2vw #e6e6e6;
+          box-shadow: 0 1.5vw 2vw #e6e6e6;
 }
 
 main nav.nos-restaurants div.contenaires-nom-et-ville h3 {

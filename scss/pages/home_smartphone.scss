@@ -36,7 +36,7 @@ body {
                 position: relative;
                 z-index: 1;
 
-                h2 {  // nom ville géolocalisée
+                h2 {  /* nom ville géolocalisée*/
                     font-weight: $font_weight_medium;
                     font-size: 4.15vw;
                     cursor: pointer;
@@ -73,13 +73,13 @@ body {
                 background: #f6f6f6 ;
                 text-align: center;
 
-                h2:nth-child(1) {  // Réservez votre menu 
+                h2:nth-child(1) {  /* Réservez votre menu*/ 
                     font-weight: $font_weight_bold;
                     font-size: 6.75vw;
                     padding-bottom: 10.2vw;
                 }
 
-                p:nth-child(2) {   // Phrase accroche
+                p:nth-child(2) {   /* Phrase accroche*/
                     font-weight: $font_weight_light;
                     font-size: 5vw;
                     color: #656565;
@@ -87,7 +87,7 @@ body {
                     width: 95%; 
                 }
 
-                button {   // Explorer nos restaurants 
+                button {   /* Explorer nos restaurants */
                     display: inline-block;
                     font-size: 4.25vw;
                     font-weight: $font_weight_regular;
@@ -134,7 +134,7 @@ body {
                 counter-reset: item;
                 position: relative;
 
-                h2:nth-child(1) {   // Comment utiliser
+                h2:nth-child(1) {   /* Comment utiliser */
                     padding-left: 5vw;
                     font-weight: $font_weight_bold;
                     font-size: 6.5vw;
@@ -177,7 +177,7 @@ body {
                     }
 
                     &::before {
-                        // position: relative;
+                        /* position: relative;*/
                         z-index: 1;
                         counter-increment: item;
                         content: counter(item) ;
@@ -224,7 +224,7 @@ body {
             padding: 15vw 0 12vw 0;
             text-align: left;
 
-            h2 {    // Nos Restaurants
+            h2 {    /* Nos Restaurants */
                 margin-left: 5vw;
                 padding-bottom: 5vw;
             }

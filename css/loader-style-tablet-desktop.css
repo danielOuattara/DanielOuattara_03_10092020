@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes centrage-texte {
@@ -9,7 +10,8 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
@@ -19,20 +21,24 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -41,13 +47,16 @@
 
 @keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -128,25 +137,31 @@
 
 @-webkit-keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

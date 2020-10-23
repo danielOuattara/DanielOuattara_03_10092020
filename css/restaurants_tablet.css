@@ -1,11 +1,17 @@
 @charset "UTF-8";
 @media screen and (min-width: 669px) {
   body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body header {
-    box-shadow: 0 0.25rem 0.5rem #858585;
+    -webkit-box-shadow: 0 0.25rem 0.5rem #858585;
+            box-shadow: 0 0.25rem 0.5rem #858585;
   }
   body header h1.logo {
     font-size: 2rem;
@@ -16,24 +22,31 @@
     left: -22rem;
     padding: 0.9rem 1rem;
   }
-  body section.bloc-image {
+  body div.bloc-image {
     position: relative;
     margin-top: 0.5rem;
   }
-  body section.bloc-image img {
+  body div.bloc-image img {
     display: block;
     max-width: 35%;
   }
   body main {
     margin-top: 1rem;
     padding-right: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-radius: unset;
   }
   body main section.affiche {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   body main section.affiche h2 {
     /* titre du restaurant */
@@ -48,7 +61,9 @@
   body main section.elements-menus {
     /* section entrees, plats, desserts */
     padding: 1rem 1.25rem;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   body main section.elements-menus h2 {
     /* titres entrées, plats, desserts */
@@ -66,23 +81,31 @@
     margin-bottom: 1.5rem;
     border-radius: 0.5rem;
     padding: 1.25vw;
-    box-shadow: 0 0.25vw 1vw #cfcfcf;
+    -webkit-box-shadow: 0 0.25vw 1vw #cfcfcf;
+            box-shadow: 0 0.25vw 1vw #cfcfcf;
   }
   body main section div:hover {
     cursor: pointer;
-    box-shadow: 0 0.25rem 0.5rem #858585;
+    -webkit-box-shadow: 0 0.25rem 0.5rem #858585;
+            box-shadow: 0 0.25rem 0.5rem #858585;
   }
   body main section div:hover p:nth-child(2) {
     overflow: hidden;
   }
   body main section div:hover p:nth-child(3) {
-    transform: translateX(-4rem);
+    -webkit-transform: translateX(-4rem);
+        -ms-transform: translateX(-4rem);
+            transform: translateX(-4rem);
   }
   body main section div:hover p:nth-child(4) {
-    transform: translateX(-30vw);
+    -webkit-transform: translateX(-30vw);
+        -ms-transform: translateX(-30vw);
+            transform: translateX(-30vw);
   }
   body main section div:hover p:nth-child(4) i.fa-check-circle {
-    transform: rotateZ(-360deg);
+    -webkit-transform: rotateZ(-360deg);
+        -ms-transform: rotate(-360deg);
+            transform: rotateZ(-360deg);
   }
   body main section div h3 {
     font-size: 1.55vw;
@@ -111,34 +134,44 @@
     font-size: 1.5rem;
     z-index: 1;
   }
-  body main section.commander {
+  body main div.commander {
     padding: 2rem 0 3rem;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     text-align: center;
   }
-  body main section.commander button {
+  body main div.commander button {
     margin-top: 2rem;
     font-size: 1.75vw;
     border-radius: 4vw;
     padding: 1.25vw 5vw;
-    box-shadow: 0 5px 7px silver;
+    -webkit-box-shadow: 0 5px 7px silver;
+            box-shadow: 0 5px 7px silver;
   }
-  body main section.commander button::after {
+  body main div.commander button::after {
     content: "";
     border-radius: 4vw;
-    box-shadow: 0 5px 7px #777;
+    -webkit-box-shadow: 0 5px 7px #777;
+            box-shadow: 0 5px 7px #777;
   }
-  body main section.commander button:hover::after {
+  body main div.commander button:hover::after {
     opacity: 1;
   }
   body footer {
     padding: 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body footer h2 {
     font-size: 2vw;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 0;
   }
   body footer p {

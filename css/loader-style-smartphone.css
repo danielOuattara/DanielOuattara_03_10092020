@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes centrage-texte {
@@ -9,7 +10,8 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
@@ -19,20 +21,24 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(20vh) scale(1.2);
+    -webkit-transform: translateY(20vh) scale(1.2);
+            transform: translateY(20vh) scale(1.2);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -41,13 +47,16 @@
 
 @keyframes animate-rings {
   0% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   50% {
-    transform: translateZ(-75px);
+    -webkit-transform: translateZ(-75px);
+            transform: translateZ(-75px);
   }
   90% {
-    transform: translateZ(75px);
+    -webkit-transform: translateZ(75px);
+            transform: translateZ(75px);
   }
   100% {
     opacity: 0;
@@ -128,25 +137,31 @@
 
 @-webkit-keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes zooming {
   5% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   10% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   15%, 100%, 0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -187,10 +202,19 @@
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: #9356D7;
   font-family: "Roboto", sans-serif;
@@ -211,8 +235,10 @@
   position: relative;
   width: 160px;
   height: 160px;
-  transform-style: preserve-3d;
-  transform: perspective(500px) rotateX(60deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotateX(60deg);
+          transform: perspective(500px) rotateX(60deg);
   margin-bottom: 10vh;
 }
 
@@ -220,9 +246,12 @@
   position: absolute;
   display: block;
   border: 5px solid #fff;
-  box-shadow: 0 5px 0 #ccc,
+  -webkit-box-shadow: 0 5px 0 #ccc,
  inset 0 5px 0 #ccc;
-  box-sizing: border-box;
+          box-shadow: 0 5px 0 #ccc,
+ inset 0 5px 0 #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 50%;
   animation: animate-rings 3.5s ease-in-out 2 both alternate-reverse;
 }
@@ -332,10 +361,14 @@
   right: 0;
   bottom: 0;
   left: 0;
+  background: -o-linear-gradient(275deg, #ff93e1, #a06bdc);
   background: linear-gradient(175deg, #ff93e1, #a06bdc);
-  box-shadow: 0 1vw 1vw #444444;
+  -webkit-box-shadow: 0 1vw 1vw #444444;
+          box-shadow: 0 1vw 1vw #444444;
   opacity: 0;
   z-index: -1;
+  -webkit-transition: opacity 250ms;
+  -o-transition: opacity 250ms;
   transition: opacity 250ms;
 }
 

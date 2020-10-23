@@ -26,7 +26,7 @@
             section.geolocalisation {
                 padding: 1.5vw;
 
-                h2 {  // nom ville géolocalisée
+                h2 {  /* nom ville géolocalisée */
                     font-size: 1.5vw;
 
                     .material-icons {
@@ -43,22 +43,22 @@
             section.presentations {
                 padding: 3vw 2vw;
 
-                h2:nth-child(1) {  // Réservez votre menu
+                h2:nth-child(1) {  /* Réservez votre menu */
                     font-size: 2.5vw;
                     padding-bottom: 2vw;
                 }
 
-                p:nth-child(2) {  // Découvrez ...etc
+                p:nth-child(2) {  /* Découvrez ...etc */
                     font-size: 1.75vw;
                     padding-bottom: 1vw;  
                     margin-bottom: 3vw;
                 }
 
-                button {  // Explorer nos restaurants
+                button {  /* Explorer nos restaurants */
                     font-size: 1.5vw;
                     border-radius: 7vw;
                     padding: 1.5vw 2vw;
-                    // background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire);
+                    /* background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire); */
                     box-shadow: 0 5px 7px $shadow-color;
 
                     &::after {
@@ -70,7 +70,7 @@
             section.utilisation {
                 padding: 3vw 0 2vw 0 ;
 
-                h2:nth-child(1) {  // Comment utiliser
+                h2:nth-child(1) {  /* Comment utiliser */
                     padding-left: 3vw;
                     font-size: 2.5vw;
                     padding-bottom: 5vw;           
@@ -125,7 +125,7 @@
             flex-direction: row;
             flex-wrap: wrap;
 
-            h2 {  // Nos restautants
+            h2 {  /* Nos restautants */
                 padding-bottom: 3vw;
                 font-size: 2.5vw;
                 flex-basis: 100%;
@@ -134,7 +134,7 @@
 
             div.restaurants-home {
                 flex: 1 1 50%;
-                // border: 1px solid red;
+                /* border: 1px solid red; */
                 padding: 1vw;
 
                 div.contenaires-image {
@@ -163,9 +163,9 @@
                     box-shadow: 0 1vw 1.5vw #e6e6e6;
 
 
-                    h3 {  // nom restaurant
+                    h3 {  /* nom restaurant */
                         font-size: 1.75vw;
-                        // font-weight: $font_weight_medium;
+                        /* font-weight: $font_weight_medium; */
                         padding: 0.25vw;
                     }
 

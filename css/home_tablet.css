@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @media screen and (min-width: 668px) {
   header {
-    box-shadow: 0 0.25vw 0.5vw #858585;
+    -webkit-box-shadow: 0 0.25vw 0.5vw #858585;
+            box-shadow: 0 0.25vw 0.5vw #858585;
     margin-bottom: 0.45vw;
     width: 100%;
   }
@@ -10,18 +12,30 @@
     padding-bottom: 1vw;
   }
   main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   main aside {
-    flex-basis: 35%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main aside section.geolocalisation {
     padding: 1.5vw;
   }
   main aside section.geolocalisation h2 {
+    /* nom ville géolocalisée */
     font-size: 1.5vw;
   }
   main aside section.geolocalisation h2 .material-icons {
@@ -29,33 +43,41 @@
     margin-right: 2vw;
   }
   main aside section.geolocalisation::after {
-    box-shadow: 0vw 0.25rem 0.5rem #858585;
+    -webkit-box-shadow: 0vw 0.25rem 0.5rem #858585;
+            box-shadow: 0vw 0.25rem 0.5rem #858585;
   }
   main aside section.presentations {
     padding: 3vw 2vw;
   }
   main aside section.presentations h2:nth-child(1) {
+    /* Réservez votre menu */
     font-size: 2.5vw;
     padding-bottom: 2vw;
   }
   main aside section.presentations p:nth-child(2) {
+    /* Découvrez ...etc */
     font-size: 1.75vw;
     padding-bottom: 1vw;
     margin-bottom: 3vw;
   }
   main aside section.presentations button {
+    /* Explorer nos restaurants */
     font-size: 1.5vw;
     border-radius: 7vw;
     padding: 1.5vw 2vw;
-    box-shadow: 0 5px 7px #858585;
+    /* background: linear-gradient( 175deg,$couleur_secondaire, $couleur_primaire); */
+    -webkit-box-shadow: 0 5px 7px #858585;
+            box-shadow: 0 5px 7px #858585;
   }
   main aside section.presentations button::after {
-    box-shadow: 0 3px 5px #777;
+    -webkit-box-shadow: 0 3px 5px #777;
+            box-shadow: 0 3px 5px #777;
   }
   main aside section.utilisation {
     padding: 3vw 0 2vw 0;
   }
   main aside section.utilisation h2:nth-child(1) {
+    /* Comment utiliser */
     padding-left: 3vw;
     font-size: 2.5vw;
     padding-bottom: 5vw;
@@ -64,7 +86,8 @@
     border-radius: 1rem;
     padding: 2vw 1.75vw;
     margin-bottom: 2rem;
-    box-shadow: 0 3px 7px #dcdcdc;
+    -webkit-box-shadow: 0 3px 7px #dcdcdc;
+            box-shadow: 0 3px 7px #dcdcdc;
     font-size: 0.85rem;
   }
   main aside section.utilisation div.utilisation-application p .icons-utilisation {
@@ -87,24 +110,37 @@
   }
   main aside section.utilisation div.utilisation-application::after {
     border-radius: 1rem;
-    box-shadow: 0 3px 7px #b3b3b3;
+    -webkit-box-shadow: 0 3px 7px #b3b3b3;
+            box-shadow: 0 3px 7px #b3b3b3;
   }
   main nav.nos-restaurants {
-    flex-basis: 65%;
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
     padding-top: 2vw;
     padding: 5vw 0 3vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main nav.nos-restaurants h2 {
+    /* Nos restautants */
     padding-bottom: 3vw;
     font-size: 2.5vw;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     text-align: center;
   }
   main nav.nos-restaurants div.restaurants-home {
-    flex: 1 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    /* border: 1px solid red; */
     padding: 1vw;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-image a img {
@@ -123,10 +159,13 @@
     border-radius: 0 0 1.5vw 1.5vw;
     max-width: 95%;
     margin-bottom: 2vw;
-    box-shadow: 0 1vw 1.5vw #e6e6e6;
+    -webkit-box-shadow: 0 1vw 1.5vw #e6e6e6;
+            box-shadow: 0 1vw 1.5vw #e6e6e6;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville h3 {
+    /* nom restaurant */
     font-size: 1.75vw;
+    /* font-weight: $font_weight_medium; */
     padding: 0.25vw;
   }
   main nav.nos-restaurants div.restaurants-home div.contenaires-nom-et-ville p:nth-child(4) {
@@ -141,13 +180,20 @@
   }
   footer {
     padding: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer h2 {
     font-size: 2.5vw;
     padding: 1.5vw 3vw;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   footer p {
     font-size: 1.5vw;

@@ -1,0 +1,24 @@
+{
+  "name": "danielouattara_03_10092020",
+  "version": "3.0.0",
+  "description": "ohmyfood restaurant application",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./scss/pages/home_tablet.scss:./css/home_tablet.css -w style compressed",
+    "prefix": "postcss ./css/home_tablet.css -use autoprefixer -d./scss/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielOuattara/DanielOuattara_03_10092020.git"
+  },
+  "author": "daniel.B OUATTARA",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/danielOuattara/DanielOuattara_03_10092020/issues"
+  },
+  "homepage": "https://github.com/danielOuattara/DanielOuattara_03_10092020#readme"
+}
